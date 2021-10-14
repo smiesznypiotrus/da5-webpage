@@ -1,0 +1,142 @@
+[
+    {
+        "day": "Poniedziałek",
+        "events": [
+            {
+                "hour": "18:30",
+                "name": "Nieszpory (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_nieszpory.svg?alt=media&token=83cb0da2-ee1b-4773-983f-00cd01a18c28"
+            },
+            {
+                "hour": "19:00",
+                "name": "Msza Święta (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+            },
+            {
+                "hour": "20:00",
+                "name": "Oaza studencka  (Online)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Oaza.svg?alt=media&token=0181ed72-b319-4495-8e5e-0cd4285d2fc1"
+            },
+            {
+                "hour": "20:00",
+                "name": "Spotkanie Taize (Online)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Taize.svg?alt=media&token=0ec7fbdb-4682-408e-9576-b14b51e64c90"
+            }
+        ]
+    },
+    {
+        "day": "Wtorek",
+        "events": [
+            {
+                "hour": "18:30",
+                "name": "Różaniec",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_rozaniec%2C%20adoracja.svg?alt=media&token=077d7048-0e92-447f-a3e3-3429adf15ee3"
+            },
+            {
+                "hour": "19:00",
+                "name": "Msza Święta (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+            },
+            {
+                "hour": "20:00",
+                "name": "Studenckie uwielbienie (Zawieszone)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Uwielbienie.svg?alt=media&token=aa3afb15-f17a-4af0-ac11-880ab7f04742"
+            },
+            {
+                "hour": "20:00",
+                "name": "Liturgiczna Służba Ołtarza (Online)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Liturgiczna.svg?alt=media&token=4987426d-2e89-48e4-b53d-6d5c8ad2b461"
+            }
+        ]
+    },
+    {
+        "day": "Środa",
+        "events": [
+            {
+                "hour": "18:30",
+                "name": "Cisza i słowo (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/icon_cisza%20i%20slowo%2C%20adoracja.svg?alt=media&token=fb52a5b7-6c1b-4ab6-b6ce-d590b0a11959"
+            },
+            {
+                "hour": "19:30",
+                "name": "Msza Święta (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+            },
+            {
+                "hour": "20:00",
+                "name": "Od Słowa do słowa (Online)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Od%20slowa.svg?alt=media&token=6b75e239-d1da-4500-a7a1-d4ca3372057a"
+            }
+        ]
+    },
+    {
+        "day": "Czwartek",
+        "events": [
+            {
+                "hour": "16:00",
+                "name": "Świetlica dla niepełnosprawnych (Zawieszone)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_swietlica.svg?alt=media&token=83c63810-aa61-4643-9597-99194c8d529b"
+            },
+            {
+                "hour": "18:30",
+                "name": "Adoracja w ciszy (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/icon_cisza%20i%20slowo%2C%20adoracja.svg?alt=media&token=fb52a5b7-6c1b-4ab6-b6ce-d590b0a11959"
+            },
+            {
+                "hour": "19:00",
+                "name": "Msza Święta (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+            },
+            {
+                "hour": "20:00",
+                "name": "Schola (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Schola.svg?alt=media&token=896bd71f-576c-44d9-94b8-1dcfac92d31d"
+            },
+            {
+                "hour": "20:30",
+                "name": "Wspólnota Męska Exodus (Na żywo i online)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Exodus.svg?alt=media&token=e8879b00-d164-4b3d-835d-0ed3515730bb"
+            }
+        ]
+    },
+    {
+        "day": "Piątek",
+        "events": [
+            {
+                "hour": "18:30",
+                "name": "Koronka do Bożego Miłosierdzia (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+            },
+            {
+                "hour": "19:00",
+                "name": "Msza Święta (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+            },
+            {
+                "hour": "20:00",
+                "name": "Sportowy piątek  (Zawieszone)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_sport.svg?alt=media&token=28f9f93f-72db-4512-862d-ba45aec8b280"
+            }
+        ]
+    },
+    {
+        "day": "Niedziela",
+        "events": [
+            {
+                "hour": "17:00",
+                "name": "Schola (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Schola.svg?alt=media&token=896bd71f-576c-44d9-94b8-1dcfac92d31d"
+            },
+            {
+                "hour": "19:00",
+                "name": "Msza Święta (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+            },
+            {
+                "hour": "20:00",
+                "name": "Dobry Start! (Na żywo)",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_dobrystart.svg?alt=media&token=e363eab1-eeef-47b0-85b5-1ed95fa558a4"
+            }
+        ]
+    }
+]

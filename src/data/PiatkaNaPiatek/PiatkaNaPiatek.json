@@ -1,0 +1,56 @@
+{
+    "articles": [ 
+        {
+            "title": "POST 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula pharetra pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices, mauris quis semper condimentum, elit libero aliquam turpis, nec fringilla ipsum libero sed magna. Aliquam eleifend turpis eget ex pulvinar, nec consequat urna vulputate. Quisque pulvinar, libero a rutrum tristique, turpis elit ullamcorper lorem, sed elementum nisi libero et ante. Suspendisse in convallis elit. Pellentesque sit amet vestibulum turpis, vel semper urna. Morbi sodales justo et sem placerat cursus.",
+            "image": "../../kategoria-02.jpg"
+        },
+        {
+            "title": "POST 2",
+            "description": "Vivamus interdum feugiat blandit. Proin purus sem, vehicula vitae sodales in, euismod vitae enim. In fermentum massa ut erat cursus volutpat. Integer ultricies convallis nisi at volutpat. Integer viverra id mauris mattis porta. Quisque ac augue non metus porttitor lobortis. Praesent ut accumsan dolor, eu lobortis lacus.",
+            "image": "../../kategoria-03.jpg"
+        },
+        {
+            "title": "POST 3",
+            "description": "Nullam massa dui, pulvinar eu mi vitae, tempus sollicitudin mauris. Nulla bibendum, orci ut molestie rutrum, enim metus vulputate dolor, nec mattis urna ligula sed felis. Sed a iaculis nibh, in auctor diam. Curabitur vitae fringilla odio, vel tincidunt lectus. Proin et efficitur mauris, non blandit ex. Praesent sit amet enim vehicula, tempor ipsum at, elementum sapien. Vestibulum non ante feugiat, maximus erat vitae, venenatis erat. Cras mattis quis diam nec auctor. Etiam id eros lacus. Etiam interdum enim vitae augue vestibulum mattis. Aliquam rutrum enim laoreet euismod tempus. Nunc sed odio mi. Nunc porttitor urna eu gravida vestibulum. Quisque eu sapien sed libero viverra gravida. Integer vehicula ipsum arcu, eu sagittis erat consectetur ut.",
+            "image": "../../kategoria-04.jpg"
+        },
+        {
+            "title": "POST 4",
+            "description": "Nullam massa dui, pulvinar eu mi vitae, tempus sollicitudin mauris. Nulla bibendum, orci ut molestie rutrum, enim metus vulputate dolor, nec mattis urna ligula sed felis. Sed a iaculis nibh, in auctor diam. Curabitur vitae fringilla odio, vel tincidunt lectus. Proin et efficitur mauris, non blandit ex. Praesent sit amet enim vehicula, tempor ipsum at, elementum sapien. Vestibulum non ante feugiat, maximus erat vitae, venenatis erat. Cras mattis quis diam nec auctor. Etiam id eros lacus. Etiam interdum enim vitae augue vestibulum mattis. Aliquam rutrum enim laoreet euismod tempus. Nunc sed odio mi. Nunc porttitor urna eu gravida vestibulum. Quisque eu sapien sed libero viverra gravida. Integer vehicula ipsum arcu, eu sagittis erat consectetur ut.",
+            "image": "../../kategoria-05.jpg"
+        },
+        {
+            "title": "POST 5",
+            "description": "Nullam massa dui, pulvinar eu mi vitae, tempus sollicitudin mauris. Nulla bibendum, orci ut molestie rutrum, enim metus vulputate dolor, nec mattis urna ligula sed felis. Sed a iaculis nibh, in auctor diam. Curabitur vitae fringilla odio, vel tincidunt lectus. Proin et efficitur mauris, non blandit ex. Praesent sit amet enim vehicula, tempor ipsum at, elementum sapien. Vestibulum non ante feugiat, maximus erat vitae, venenatis erat. Cras mattis quis diam nec auctor. Etiam id eros lacus. Etiam interdum enim vitae augue vestibulum mattis. Aliquam rutrum enim laoreet euismod tempus. Nunc sed odio mi. Nunc porttitor urna eu gravida vestibulum. Quisque eu sapien sed libero viverra gravida. Integer vehicula ipsum arcu, eu sagittis erat consectetur ut.",
+            "image": "../../kategoria-07.jpg"
+        },
+        {
+            "title": "POST 6",
+            "description": "Nullam massa dui, pulvinar eu mi vitae, tempus sollicitudin mauris. Nulla bibendum, orci ut molestie rutrum, enim metus vulputate dolor, nec mattis urna ligula sed felis. Sed a iaculis nibh, in auctor diam. Curabitur vitae fringilla odio, vel tincidunt lectus. Proin et efficitur mauris, non blandit ex. Praesent sit amet enim vehicula, tempor ipsum at, elementum sapien. Vestibulum non ante feugiat, maximus erat vitae, venenatis erat. Cras mattis quis diam nec auctor. Etiam id eros lacus. Etiam interdum enim vitae augue vestibulum mattis. Aliquam rutrum enim laoreet euismod tempus. Nunc sed odio mi. Nunc porttitor urna eu gravida vestibulum. Quisque eu sapien sed libero viverra gravida. Integer vehicula ipsum arcu, eu sagittis erat consectetur ut.",
+            "image": "../../kategoria-08.jpg"
+        },
+        {
+            "title": "POST 9",
+            "description": "Nullam massa dui, pulvinar eu mi vitae, tempus sollicitudin mauris. Nulla bibendum, orci ut molestie rutrum, enim metus vulputate dolor, nec mattis urna ligula sed felis. Sed a iaculis nibh, in auctor diam. Curabitur vitae fringilla odio, vel tincidunt lectus. Proin et efficitur mauris, non blandit ex. Praesent sit amet enim vehicula, tempor ipsum at, elementum sapien. Vestibulum non ante feugiat, maximus erat vitae, venenatis erat. Cras mattis quis diam nec auctor. Etiam id eros lacus. Etiam interdum enim vitae augue vestibulum mattis. Aliquam rutrum enim laoreet euismod tempus. Nunc sed odio mi. Nunc porttitor urna eu gravida vestibulum. Quisque eu sapien sed libero viverra gravida. Integer vehicula ipsum arcu, eu sagittis erat consectetur ut.",
+            "image": "../../kategoria-09.jpg"
+        },
+        {
+            "title": "POST 10",
+            "description": "Nullam massa dui, pulvinar eu mi vitae, tempus sollicitudin mauris. Nulla bibendum, orci ut molestie rutrum, enim metus vulputate dolor, nec mattis urna ligula sed felis. Sed a iaculis nibh, in auctor diam. Curabitur vitae fringilla odio, vel tincidunt lectus. Proin et efficitur mauris, non blandit ex. Praesent sit amet enim vehicula, tempor ipsum at, elementum sapien. Vestibulum non ante feugiat, maximus erat vitae, venenatis erat. Cras mattis quis diam nec auctor. Etiam id eros lacus. Etiam interdum enim vitae augue vestibulum mattis. Aliquam rutrum enim laoreet euismod tempus. Nunc sed odio mi. Nunc porttitor urna eu gravida vestibulum. Quisque eu sapien sed libero viverra gravida. Integer vehicula ipsum arcu, eu sagittis erat consectetur ut.",
+            "image": "../../kategoria-10.jpg"
+        },
+        {
+            "title": "POST 11",
+            "description": "Nullam massa dui, pulvinar eu mi vitae, tempus sollicitudin mauris. Nulla bibendum, orci ut molestie rutrum, enim metus vulputate dolor, nec mattis urna ligula sed felis. Sed a iaculis nibh, in auctor diam. Curabitur vitae fringilla odio, vel tincidunt lectus. Proin et efficitur mauris, non blandit ex. Praesent sit amet enim vehicula, tempor ipsum at, elementum sapien. Vestibulum non ante feugiat, maximus erat vitae, venenatis erat. Cras mattis quis diam nec auctor. Etiam id eros lacus. Etiam interdum enim vitae augue vestibulum mattis. Aliquam rutrum enim laoreet euismod tempus. Nunc sed odio mi. Nunc porttitor urna eu gravida vestibulum. Quisque eu sapien sed libero viverra gravida. Integer vehicula ipsum arcu, eu sagittis erat consectetur ut.",
+            "image": "../../kategoria-11.jpg"
+        },
+        {
+            "title": "POST 12",
+            "description": "Nullam massa dui, pulvinar eu mi vitae, tempus sollicitudin mauris. Nulla bibendum, orci ut molestie rutrum, enim metus vulputate dolor, nec mattis urna ligula sed felis. Sed a iaculis nibh, in auctor diam. Curabitur vitae fringilla odio, vel tincidunt lectus. Proin et efficitur mauris, non blandit ex. Praesent sit amet enim vehicula, tempor ipsum at, elementum sapien. Vestibulum non ante feugiat, maximus erat vitae, venenatis erat. Cras mattis quis diam nec auctor. Etiam id eros lacus. Etiam interdum enim vitae augue vestibulum mattis. Aliquam rutrum enim laoreet euismod tempus. Nunc sed odio mi. Nunc porttitor urna eu gravida vestibulum. Quisque eu sapien sed libero viverra gravida. Integer vehicula ipsum arcu, eu sagittis erat consectetur ut.",
+            "image": "../../kategoria-12.jpg"
+        }
+
+    ]
+}
+
