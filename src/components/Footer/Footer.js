@@ -11,6 +11,7 @@ import { facebookUrl, instagramUrl } from "../../layouts/Common.js";
 import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Favorite from "@material-ui/icons/Favorite";
+// import AccessibilityNewOutlinedIcon from '@mui/icons-material/AccessibilityNewOutlined';
 
 // Styles -----------------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/components/footerStyle";
@@ -40,7 +41,7 @@ export default function Footer(props) {
               <h4 style={{fontSize:"1rem"}}>© 2013-2018 Duszpasterswo Akademickie "Piątka" w Łodzi, ul. Skorupki 5 | Strona używa plików cookies.</h4>
             </ListItem>  */}
             <ListItem className={classes.inlineBlock}>
-              <span className={classes.block}>Follow Us:</span>
+              <span className={classes.block}>Śledź nas:</span>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a href={facebookUrl}>
@@ -80,7 +81,8 @@ export default function Footer(props) {
           </List>
         </div>
         <div className={classNames(classes.right, classes.footerRightText)}>
-          &copy; 2013-{1900 + new Date().getYear()}{" "}Duszpasterswo Akademickie "Piątka" w Łodzi |
+          &copy; 2013-{1900 + new Date().getYear()}{" "}DA "Piątka" w Łodzi | 
+          {/* Powered by Jesus  <AccessibilityNewOutlinedIcon className={classNames(classes.icon, classes.primaryColorText)} /> | */}
         Made with <Favorite className={classNames(classes.icon, classes.primaryColorText)} /> using Creative Tim and GatsbyJS
         </div>
       </div>

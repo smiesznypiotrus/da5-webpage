@@ -55,7 +55,7 @@ const GrupyIWspolnoty = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color="white"
         routes={[]}
         rightLinks={<HeaderLinks />}
         fixed
@@ -181,11 +181,11 @@ const GrupyIWspolnoty = () => {
                   style={{ width: "100px" }}
                   src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_swietlica.svg?alt=media&token=83c63810-aa61-4643-9597-99194c8d529b"
                   alt="Świetlica dla niepełnosprawnych"></img>
-                <p className={classNames(classes.lightText)}>Świetlica</p>
+                <p className={classNames(classes.lightText)}>Świetlica dla</p>
                 <p
                   className={classNames(classes.boldText)}
                   style={{ textAlign: "center" }}>
-                  DLA NIEPEŁNOSPRAWNYCH
+                  NIEPEŁNOSPRAWNYCH
                 </p>
               </div>
             </Link>
@@ -322,6 +322,38 @@ const GrupyIWspolnoty = () => {
               </div>
             </Link>
           </div>
+
+            {/*----------------ROW---------------------*/}
+            <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}>
+            <Link to="/grupy/dobry-start" className={classes.navLink}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  padding: "10px",
+                  margin: "20px 10px 30px 10px",
+                  minWidth: "200px",
+                }}>
+                <img
+                  style={{ width: "100px" }}
+                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Od%20slowa.svg?alt=media&token=6b75e239-d1da-4500-a7a1-d4ca3372057a"
+                  alt="Od Słowa do Słowa"></img>
+                <p className={classNames(classes.lightText)}>Dobry</p>
+                <p className={classNames(classes.boldText)}>START</p>
+              </div>
+            </Link>
+            
+
+           
+          </div>
+
         </div>
       </div>
 

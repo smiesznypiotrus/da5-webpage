@@ -94,14 +94,14 @@ const WTymMiesiacu = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color="white"
         routes={[]}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
+        // changeColorOnScroll={{
+        //   height: 150,
+        //   color: "white",
+        // }}
       />
 
       <div className={classNames("mobile-banner")}>

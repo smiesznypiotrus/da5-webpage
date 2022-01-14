@@ -33,6 +33,7 @@ import customStyles from "./CustomClasses.js"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import "../assets/css/custom-style.css"
 import { cardTitle } from "../assets/jss/material-kit-react.js"
+import statics from "../components/colors"
 
 const allStyles = {
   ...styles,
@@ -106,7 +107,7 @@ const HomePage = () => {
 
   return (
     <div className={modalOpen ? "modal-block" : ""}>
-      {modalOpen && (
+      {/* {modalOpen && (
         <div
           style={{
             backgroundColor: "black",
@@ -116,18 +117,19 @@ const HomePage = () => {
             position: "fixed",
             zIndex: "499",
           }}></div>
-      )}
+      )} */}
 
       {!modalOpen && (
         <Header
-          color="transparent"
+          color="white"
+          height="200"
           routes={[]}
           rightLinks={<HeaderLinks />}
           fixed
-          changeColorOnScroll={{
-            height: 100,
-            color: "white",
-          }}
+          // changeColorOnScroll={{
+          //   height: 200,
+          //   color: "rose",
+          // }}
         />
       )}
 
@@ -215,22 +217,23 @@ const HomePage = () => {
                 className={classNames(
                   classes.title,
                   "main-page-title",
-                  "home-title-320"
+                  "home-title-320",
+                  "shadow-background"
                 )}>
                 Duszpasterstwo Akademickie Piątka
               </h1>
 
               <div
-                className={classNames("yellow-background", "yellow-subtitle")}>
-                <h4
-                  className={classNames("home-hide-415")}
+                // className={classNames("yellow-background", "yellow-subtitle")}
+                >
+                <div
+                  className={classNames("home-hide-415", "quoteBody")}
                   style={{
                     margin: "0",
                     padding: "0",
-                    textShadow: "2px 2px 5px #404040",
                   }}>
                   Przyjdź, drzwi dla Ciebie są zawsze otwarte!
-                </h4>
+                </div>
               </div>
             </GridItem>
 
@@ -283,6 +286,7 @@ const HomePage = () => {
                 <GridContainer>
                   <GridItem xs={12} sm={12} md={4}>
                     <Herbata className={classNames(classes.svgLogo)} />
+                    <Link to="/grupyiwspolnoty">
                     <div className={classNames("purple-background")}>
                       <h5
                         className={classNames(
@@ -297,6 +301,7 @@ const HomePage = () => {
                         Wejdź na herbatę
                       </h5>
                     </div>
+                    </Link>
                     <h5
                       className={classNames(
                         classes.description,
@@ -307,6 +312,7 @@ const HomePage = () => {
                   </GridItem>
                   <GridItem xs={12} sm={12} md={4}>
                     <SpotkanieLogo className={classNames(classes.svgLogo)} />
+                    <Link to="/grupy/od-slowa-do-slowa">
                     <div className={classNames("purple-background")}>
                       <h5
                         className={classNames(
@@ -321,7 +327,7 @@ const HomePage = () => {
                         Przyjdź na spotkanie
                       </h5>
                     </div>
-
+                    </Link>
                     <h5
                       className={classNames(
                         classes.description,
@@ -332,6 +338,7 @@ const HomePage = () => {
                   </GridItem>
                   <GridItem xs={12} sm={12} md={4}>
                     <Wyjdz className={classNames(classes.svgLogo)} />
+                    <Link to="/akt">
                     <div className={classNames("purple-background")}>
                       <h5
                         className={classNames(
@@ -346,6 +353,7 @@ const HomePage = () => {
                         Wyjedź nami
                       </h5>
                     </div>
+                    </Link>
 
                     <h5
                       className={classNames(
@@ -371,7 +379,7 @@ const HomePage = () => {
                     padding: "10px 25px",
                     boxShadow: "3px 3px 5px #989898",
                   }}>
-                  POZNAJ NASZE GRUPY &#62;&#62;
+                  POZNAJ NASZE GRUPY
                 </Link>
               </GridItem>
             </GridContainer>

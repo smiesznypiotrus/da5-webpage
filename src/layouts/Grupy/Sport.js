@@ -302,7 +302,7 @@ const Sport = () => {
                                 classes.grayText,
                                 "body-text"
                               )}>
-                              Sala gimnastyczna Seminarium Duchownego
+                              Tymczasowo zawieszone :( &nbsp; trwa remont Sali gimnastycznej
                             </p>
                           </div>
                         </GridItem>

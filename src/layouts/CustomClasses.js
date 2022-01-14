@@ -8,7 +8,7 @@ const customClasses = {
         textAlign: "center"
     },
     grayText: {
-        color: "#3C4858"
+        color: "#000000" //#3C4858
     },
     purpleSubtitle: {
         color: "#662483",

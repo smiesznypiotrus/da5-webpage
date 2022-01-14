@@ -613,7 +613,7 @@ pre tt:after {
   content: "";
 }
 .quoteBody {
-  font-size: 1.3em;
+  font-size: 0.9em;
   font-family: 'Pacifico', cursive;
   line-height: 1.8rem;
   color: white;
@@ -721,10 +721,14 @@ pre tt:after {
   background-size: cover;
 }
 
+.shadow-background {
+  text-shadow: 2px 2px 8px #404040;
+}
+
 
 @media only screen and (max-width: 320px) {
   .home-title-320 {
-    font-size: 2rem;
+    font-size: 2rem; 
   }
 }
 
@@ -746,6 +750,7 @@ pre tt:after {
 
   .normal-banner {
     display: none;
+    color:white;
   }
 
   .mobile-banner {

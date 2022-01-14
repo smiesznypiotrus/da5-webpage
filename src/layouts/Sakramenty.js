@@ -82,15 +82,15 @@ const Sakramenty = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color="white"
         routes={[]}
         brand="Duszpasterstwo Akademickie Piątka"
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
+        // changeColorOnScroll={{
+        //   height: 150,
+        //   color: "white",
+        // }}
       />
 
       <div className={classNames("mobile-banner")}>
