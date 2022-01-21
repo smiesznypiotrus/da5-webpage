@@ -79,14 +79,14 @@ export default function Header(props) {
         </Link>
       )}
       {color === "white" && (
-      <Link to="/" className={"brand-logo"}>
-        <img
-          className={"brand-logo"}
-          src={require("../../assets/img/da5_logo_dark.png")}
-          alt="Duszpasterstwo Akademickie Logo"
-        />
-      </Link>
-    )}
+        <Link to="/" className={"brand-logo"}>
+          <img
+            className={"brand-logo"}
+            src={require("../../assets/img/da5_logo_dark.png")}
+            alt="Duszpasterstwo Akademickie Logo"
+          />
+        </Link>
+      )}
       {/* {color === "white" && (
         <Link to="/" className={"mobile-banner"}>
           <img
