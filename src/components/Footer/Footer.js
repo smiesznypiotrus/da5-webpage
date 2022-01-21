@@ -15,7 +15,7 @@ import Favorite from "@material-ui/icons/Favorite";
 
 // Styles -----------------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/components/footerStyle";
-import "../../assets/css/custom-style.css";
+import "../../assets/css/custom-style.css"
 import customClasses from "../../layouts/CustomClasses.js";
 
 const style = {

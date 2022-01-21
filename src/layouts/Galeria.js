@@ -22,6 +22,7 @@ import "font-awesome/css/font-awesome.min.css"
 import "../assets/css/custom-style.css"
 import "../assets/css/bnb-gallery-style.css"
 import { withStyles } from "@material-ui/styles"
+import statics from "../components/colors"
 
 const allStyles = {
   ...styles,
@@ -77,15 +78,12 @@ class Galeria extends React.Component {
     return (
       <>
         <Header
-          color="transparent"
+          color={statics.navBarColor}
           routes={[]}
           brand="Duszpasterstwo Akademickie Piątka"
           rightLinks={<HeaderLinks />}
           fixed
-          changeColorOnScroll={{
-            height: 150,
-            color: "white",
-          }}
+          
         />
 
         <div className={classNames("mobile-banner")}>

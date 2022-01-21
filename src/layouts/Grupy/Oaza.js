@@ -26,6 +26,7 @@ import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSec
 import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
+import statics from "../../components/colors"
 import "../../assets/css/oaza-style.css"
 
 const allStyles = {
@@ -103,13 +104,9 @@ const Oaza = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color={statics.navBarColor}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
       />
       <div className={classNames("mobile-banner")}>
         <Header color="white" routes={[]} rightLinks={<HeaderLinks />} fixed />

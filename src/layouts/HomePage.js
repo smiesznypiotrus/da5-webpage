@@ -121,7 +121,7 @@ const HomePage = () => {
 
       {!modalOpen && (
         <Header
-          color="white"
+          color={statics.navBarColor}
           height="200"
           routes={[]}
           rightLinks={<HeaderLinks />}
@@ -224,8 +224,8 @@ const HomePage = () => {
               </h1>
 
               <div
-                // className={classNames("yellow-background", "yellow-subtitle")}
-                >
+              // className={classNames("yellow-background", "yellow-subtitle")}
+              >
                 <div
                   className={classNames("home-hide-415", "quoteBody")}
                   style={{
@@ -287,20 +287,20 @@ const HomePage = () => {
                   <GridItem xs={12} sm={12} md={4}>
                     <Herbata className={classNames(classes.svgLogo)} />
                     <Link to="/grupyiwspolnoty">
-                    <div className={classNames("purple-background")}>
-                      <h5
-                        className={classNames(
-                          classes.description,
-                          classes.purpleSubtitle
-                        )}
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "white",
-                        }}>
-                        Wejdź na herbatę
-                      </h5>
-                    </div>
+                      <div className={classNames("purple-background")}>
+                        <h5
+                          className={classNames(
+                            classes.description,
+                            classes.purpleSubtitle
+                          )}
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "white",
+                          }}>
+                          Wejdź na herbatę
+                        </h5>
+                      </div>
                     </Link>
                     <h5
                       className={classNames(
@@ -313,20 +313,20 @@ const HomePage = () => {
                   <GridItem xs={12} sm={12} md={4}>
                     <SpotkanieLogo className={classNames(classes.svgLogo)} />
                     <Link to="/grupy/od-slowa-do-slowa">
-                    <div className={classNames("purple-background")}>
-                      <h5
-                        className={classNames(
-                          classes.description,
-                          classes.purpleSubtitle
-                        )}
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "white",
-                        }}>
-                        Przyjdź na spotkanie
-                      </h5>
-                    </div>
+                      <div className={classNames("purple-background")}>
+                        <h5
+                          className={classNames(
+                            classes.description,
+                            classes.purpleSubtitle
+                          )}
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "white",
+                          }}>
+                          Przyjdź na spotkanie
+                        </h5>
+                      </div>
                     </Link>
                     <h5
                       className={classNames(
@@ -339,20 +339,20 @@ const HomePage = () => {
                   <GridItem xs={12} sm={12} md={4}>
                     <Wyjdz className={classNames(classes.svgLogo)} />
                     <Link to="/akt">
-                    <div className={classNames("purple-background")}>
-                      <h5
-                        className={classNames(
-                          classes.description,
-                          classes.purpleSubtitle
-                        )}
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "white",
-                        }}>
-                        Wyjedź nami
-                      </h5>
-                    </div>
+                      <div className={classNames("purple-background")}>
+                        <h5
+                          className={classNames(
+                            classes.description,
+                            classes.purpleSubtitle
+                          )}
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "white",
+                          }}>
+                          Wyjedź nami
+                        </h5>
+                      </div>
                     </Link>
 
                     <h5
@@ -470,13 +470,16 @@ const HomePage = () => {
                         borderRadius: "15px",
                         padding: "5px 25px",
                         boxShadow: "3px 3px 5px black",
-                        fontSize:"15px"
+                        fontSize: "15px",
                       }}>
-                      <span className="quoteSubtitle">CHCESZ JECHAĆ W GORY JAK FRASSATI?</span>
+                      <span className="quoteSubtitle">
+                        CHCESZ JECHAĆ W GORY JAK FRASSATI?
+                      </span>
                       <br />
-                      <span className="quoteSubtitle" 
-                        style={{ fontWeight: "bold"}}>
-                          ZRÓB TO Z NAMI!
+                      <span
+                        className="quoteSubtitle"
+                        style={{ fontWeight: "bold" }}>
+                        ZRÓB TO Z NAMI!
                       </span>
                     </Link>
                   </div>

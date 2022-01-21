@@ -22,44 +22,44 @@ const useStyles = makeStyles(styles)
 export default function Header(props) {
   const classes = useStyles()
   const [mobileOpen, setMobileOpen] = React.useState(false)
-  React.useEffect(() => {
-    if (props.changeColorOnScroll) {
-      window.addEventListener("scroll", headerColorChange)
-    }
-    return function cleanup() {
-      if (props.changeColorOnScroll) {
-        window.removeEventListener("scroll", headerColorChange)
-      }
-    }
-  })
+  // React.useEffect(() => {
+  //   if (props.changeColorOnScroll) {
+  //     window.addEventListener("scroll", headerColorChange)
+  //   }
+  //   return function cleanup() {
+  //     if (props.changeColorOnScroll) {
+  //       window.removeEventListener("scroll", headerColorChange)
+  //     }
+  //   }
+  // })
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen)
   }
-  const headerColorChange = () => {
-    const { color, changeColorOnScroll } = props
-    const windowsScrollTop = window.pageYOffset
-    if (windowsScrollTop > changeColorOnScroll.height) {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[color])
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[changeColorOnScroll.color])
-      document.body.getElementsByTagName(
-        "img"
-      )[0].src = require("../../assets/img/da5_logo_dark.png")
-    } else {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[color])
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[changeColorOnScroll.color])
-      document.body.getElementsByTagName(
-        "img"
-      )[0].src = require("../../assets/img/da5_logo.png")
-    }
-  }
+  // const headerColorChange = () => {
+  //   const { color, changeColorOnScroll } = props
+  //   const windowsScrollTop = window.pageYOffset
+  //   if (windowsScrollTop > changeColorOnScroll.height) {
+  //     document.body
+  //       .getElementsByTagName("header")[0]
+  //       .classList.remove(classes[color])
+  //     document.body
+  //       .getElementsByTagName("header")[0]
+  //       .classList.add(classes[changeColorOnScroll.color])
+  //     document.body.getElementsByTagName(
+  //       "img"
+  //     )[0].src = require("../../assets/img/da5_logo_dark.png")
+  //   } else {
+  //     document.body
+  //       .getElementsByTagName("header")[0]
+  //       .classList.add(classes[color])
+  //     document.body
+  //       .getElementsByTagName("header")[0]
+  //       .classList.remove(classes[changeColorOnScroll.color])
+  //     document.body.getElementsByTagName(
+  //       "img"
+  //     )[0].src = require("../../assets/img/da5_logo.png")
+  //   }
+  // }
   const { color, rightLinks, leftLinks, fixed, absolute } = props
   const appBarClasses = classNames({
     [classes.appBar]: true,

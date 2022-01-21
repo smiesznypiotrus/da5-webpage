@@ -87,10 +87,6 @@ const Sakramenty = () => {
         brand="Duszpasterstwo Akademickie Piątka"
         rightLinks={<HeaderLinks />}
         fixed
-        // changeColorOnScroll={{
-        //   height: 150,
-        //   color: "white",
-        // }}
       />
 
       <div className={classNames("mobile-banner")}>
