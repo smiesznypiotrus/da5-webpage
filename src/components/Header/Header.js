@@ -87,7 +87,7 @@ export default function Header(props) {
           />
         </Link>
       )}
-      {/* {color === "white" && (
+      {color === "white" && (
         <Link to="/" className={"mobile-banner"}>
           <img
             className={"brand-logo"}
@@ -95,7 +95,7 @@ export default function Header(props) {
             alt="Duszpasterstwo Akademickie Logo"
           />
         </Link>
-      )} */}
+      )}
     </>
   )
   return (

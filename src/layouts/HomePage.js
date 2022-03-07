@@ -22,9 +22,9 @@ import EventsToday from "../components/EventsToday/EventsToday"
 import News from "../components/News/News"
 import { facebookUrl, instagramUrl, openWebsite } from "./Common.js"
 //SVG's -------------------------------------------------------------------
-import SpotkanieLogo from "../images/SVGs/Home/ico_how_to_start_1.svg"
-import Wyjdz from "../images/SVGs/Home/ico_how_to_start_2.svg"
-import Herbata from "../images/SVGs/Home/ico_how_to_start_3.svg"
+import Herbata from "../images/SVGs/Home/ico_how_to_start_1.svg"
+import SpotkanieLogo from "../images/SVGs/Home/ico_how_to_start_2.svg"
+import Wyjdz from "../images/SVGs/Home/ico_how_to_start_3.svg"
 import FbSvg from "../images/SVGs/Home/__Facebook.svg"
 import IgSvg from "../images/SVGs/Home/__instagram.svg"
 // Styles -----------------------------------------------------------------
@@ -419,7 +419,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* ========== Quote Slider ==========  */}
+        {/* ========== Quote Slider / Słowo od patrona ==========  */}
         <div style={{ paddingTop: "35px" }}>
           <div>
             <img
@@ -442,7 +442,7 @@ const HomePage = () => {
               sm={12}
               md={12}
               className={"carousel-outer"}
-              style={{ height: "250px", position: "relative" }}>
+              style={{ height: "400px", position: "relative" }}>
               <Carousel
                 animationHandler="fade"
                 className={"carousel"}
@@ -452,8 +452,8 @@ const HomePage = () => {
                 autoPlay={true}
                 infiniteLoop={true}
                 interval={6000}>
-                {/* ========== Quote 1 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* ========== Quote 1  // Cytat 1 ==========  */}
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Jezus jest ze mną. Nie mam się czego bać”
@@ -483,7 +483,7 @@ const HomePage = () => {
                       </span>
                     </Link>
                   </div>
-                </div>
+                </div> */}
                 {/* ========== Quote 2 ==========  */}
                 <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
@@ -491,9 +491,9 @@ const HomePage = () => {
                       „Prawdziwe dobro czyni się niepostrzeżenie, powoli,
                       codziennie, w zwykłych sprawach”
                     </p>
-                    <p className={"quoteAuthor"}>
+                    {/* <p className={"quoteAuthor"}>
                       błogosławiony Pier Giorgio Frassati
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 {/* ========== Quote 3 ==========  */}
@@ -502,13 +502,13 @@ const HomePage = () => {
                     <p className={"quoteBody"}>
                       „Puste słowa zastępuję modlitwami”
                     </p>
-                    <p className={"quoteAuthor"}>
+                    {/* <p className={"quoteAuthor"}>
                       błogosławiony Pier Giorgio Frassati
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 {/* ========== Quote 3 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Bóg bardzo dobrze podzielił nasze życie, przeplatając
@@ -518,9 +518,9 @@ const HomePage = () => {
                       błogosławiony Pier Giorgio Frassati
                     </p>
                   </div>
-                </div>
+                </div> */}
                 {/* ========== Quote 4 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Przyszłość jest w ręku Boga. Lepiej być nie może!”
@@ -529,7 +529,7 @@ const HomePage = () => {
                       błogosławiony Pier Giorgio Frassati
                     </p>
                   </div>
-                </div>
+                </div> */}
               </Carousel>
             </GridItem>
           </GridContainer>

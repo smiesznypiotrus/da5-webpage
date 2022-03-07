@@ -18,7 +18,7 @@ const customClasses = {
         fontSize: "0.9rem"
     },
     fullHeight: {
-        height: "250px",
+        height: "400px",
         //backgroundColor:"#144962"
     },
     sliderImage: {

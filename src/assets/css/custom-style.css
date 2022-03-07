@@ -616,7 +616,9 @@ pre tt:after {
   font-size: 0.9em;
   font-family: 'Pacifico', cursive;
   line-height: 1.8rem;
-  color: white;
+  color: black;
+  padding-left: 200px;
+  width: 60%;
 }
 .quoteAuthor {
   font-size: 0.8em;
@@ -717,7 +719,7 @@ pre tt:after {
 }
 
 .carousel-outer .carousel .slide {
-  background-image: url("./../../images/Home/Background_quote_wider.jpg");
+  background-image: url("./../../images/Home/background_quote_wider_new.jpg");
   background-size: cover;
 }
 
