@@ -227,7 +227,7 @@ const HomePage = () => {
               // className={classNames("yellow-background", "yellow-subtitle")}
               >
                 <div
-                  className={classNames("home-hide-415", "quoteBody")}
+                  className={classNames("home-hide-415", "quoteBodyOld")}
                   style={{
                     margin: "0",
                     padding: "0",

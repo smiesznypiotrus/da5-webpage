@@ -620,6 +620,12 @@ pre tt:after {
   padding-left: 200px;
   width: 60%;
 }
+.quoteBodyOld {
+  font-size: 1.2em;
+  font-family: 'Pacifico', cursive;
+  line-height: 1.8rem;
+  color: white;
+}
 .quoteAuthor {
   font-size: 0.8em;
   font-weight: 700;
