@@ -6,7 +6,7 @@ import classNames from "classnames"
 
 import React from "react"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import _ from "underscore"
 
 // Components used in this layout -----------------------------------------
@@ -19,6 +19,7 @@ import CardBody from "../../components/Card/CardBody"
 import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
 import Footer from "../../components/Footer/Footer.js"
+import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
 
 // Styles -----------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -392,20 +393,6 @@ const Schola = () => {
                             </p>
                           </div>
                         </GridItem>
-                        <GridItem style={{
-                            paddingTop: "30px"
-                          }}>
-                        <Link to="/grupyiwspolnoty"><p
-                          className={classNames(
-                            classes.description,
-                            classes.grayText,
-                            "meeting-date"
-                          )}
-                        >
-                          Wróć do przeglądania wspólnot
-                        </p>
-                        </Link>
-                        </GridItem>
                       </div>
                     </CardFooter>
                   </Card>
@@ -413,22 +400,7 @@ const Schola = () => {
               </GridContainer>
             </div>
           </div>
-          <Link to="/grupyiwspolnoty"><p
-                          className={classNames(
-                            classes.description,
-                            classes.grayText,
-                            classes.mobilePadding,
-                            "meeting-date"
-                          )} style={{
-                                textAlign: "center",
-                                paddingRight: "5%",
-                                paddingLeft: "5%",
-                                paddingBottom: "20px",
-                                }}
-                        >
-                          Wróć do przeglądania wspólnot
-                        </p>
-                        </Link>
+          <BackToGrupy/>
         </div>
       </div>
 

@@ -58,9 +58,6 @@ const customClasses = {
         fontWeight: "300",
         fontSize: "0.9rem"
     },
-    mobilePadding: {
-        textAlign: "center"
-    },
     contactContainer: {
         display: "flex",
         flexDirection: "column",

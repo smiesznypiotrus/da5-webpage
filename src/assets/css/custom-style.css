@@ -732,12 +732,19 @@ pre tt:after {
   background-size: cover;
 }
 
+.mobile-padding{
+  text-align: right;
+}
+
 @media only screen and (max-width: 480px) {
   .carousel-outer .carousel .slide {
     background-image: url("./../../images/Home/background_quote_mobile.jpg");
     width: auto;
     height: auto;
     background-size: cover;
+  }
+  .mobile-padding{
+    text-align: center;
   }
 }
 
