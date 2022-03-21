@@ -310,21 +310,18 @@ const Exodus = () => {
                       />
                     </GridItem>
                     <h4 className={classes.cardTitle}>
-                      Piotr Pyciak
+                      Jędrzej Tarantowicz
                       <br />
                       <small className={classes.smallTitle}>Lider</small>
                     </h4>
                     <CardBody>
                       <p
                         className={classNames(
-                          classes.description,
-                          classes.grayText,
+                          // classes.description,
+                          // classes.grayText,
                           "body-text"
                         )}>
-                        Jeden z młodszych członków grupy. Z racji, że trzeba tu
-                        coś o sobie napisać to wymienię swoje zainteresowania:
-                        górski trekking (nie tylko w Polsce), pielgrzymki oraz
-                        dobre memy.
+                        Opis Tomka. A nawet Jędrzeja
                         <br />
                         <br />
                         Nasze exodusowe hasło to "Walić! Walić! Walić!"
@@ -357,13 +354,13 @@ const Exodus = () => {
                             />
                           </Button>
                           <a
-                            href="mailto:piotr.pyciak@gmail.com"
+                            href="mailto:duszpasterstwo.piatka@gmail.com"
                             className={classNames(
                               classes.primaryColorText,
                               classes.margin5,
                               classes.spanText
                             )}>
-                            piotr.pyciak@gmail.com
+                            todo@gmail.com do uzupelnienia w kodzie
                           </a>
                         </div>
                         {/* =============================================================
@@ -384,14 +381,14 @@ const Exodus = () => {
                             />
                           </Button>
                           <a
-                            href="https://www.facebook.com/smiesznypiotrus "
+                            href="https://www.facebook.com/profile.php?id=100015229204682 "
                             className={classNames(
                               classes.margin5,
                               classes.spanText,
                               classes.description
                             )}
                             style={{ textDecoration: "none" }}>
-                            smiesznypiotrus
+                            Facebook
                           </a>
                         </div>
 

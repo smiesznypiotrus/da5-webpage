@@ -617,8 +617,6 @@ pre tt:after {
   font-family: 'Pacifico', cursive;
   line-height: 1.8rem;
   color: black;
-  padding-left: 200px;
-  width: 60%;
 }
 .quoteBodyOld {
   font-size: 1.2em;
@@ -711,8 +709,11 @@ pre tt:after {
 
 .yellow-background {
   background: #f9bb44;
-  padding: 7px 20px;
-  border-radius: 10px;
+  display: inline-block;
+  border-radius: 25px; 
+  padding:7px 25px; 
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 5px #C1C1C1;
 }
 
 .purple-background {
@@ -726,7 +727,18 @@ pre tt:after {
 
 .carousel-outer .carousel .slide {
   background-image: url("./../../images/Home/background_quote_wider_new.jpg");
+  width: auto;
+  height: auto;
   background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel-outer .carousel .slide {
+    background-image: url("./../../images/Home/background_quote_mobile.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+  }
 }
 
 .shadow-background {
@@ -798,6 +810,8 @@ pre tt:after {
   .quoteBody {
     font-size: 0.9em;
     line-height: 2rem;
+    padding-left: 200px;
+    width: 60%;
   }
   .quoteAuthor {
     font-size: 0.9em;

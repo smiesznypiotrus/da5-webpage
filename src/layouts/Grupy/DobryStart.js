@@ -23,7 +23,7 @@ import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
 import statics from "../../components/colors"
-import "../../assets/css/exodus-style.css"
+import "../../assets/css/dobrystart-style.css"
 
 const allStyles = {
   ...styles,
@@ -38,7 +38,7 @@ const DobryStart = () => {
 
   const data = useStaticQuery(graphql`
     query dobryStartGetPictures {
-      allFile(filter: { relativePath: { regex: "/Exodus/" } }) {
+      allFile(filter: { relativePath: { regex: "/DobryStart/" } }) {
         edges {
           node {
             name

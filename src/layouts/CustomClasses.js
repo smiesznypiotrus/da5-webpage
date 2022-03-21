@@ -17,6 +17,13 @@ const customClasses = {
         textTransform: "uppercase",
         fontSize: "0.9rem"
     },
+    yellowSubtitle: {
+        color: "#662483",
+        fontWeight: "600",
+        fontFamily: `'Lato', sans-serif`,
+        textTransform: "uppercase",
+        fontSize: "0.9rem"
+    },
     fullHeight: {
         height: "400px",
         //backgroundColor:"#144962"
@@ -50,6 +57,9 @@ const customClasses = {
         fontFamily: `'Lato', sans-serif`,
         fontWeight: "300",
         fontSize: "0.9rem"
+    },
+    mobilePadding: {
+        textAlign: "center"
     },
     contactContainer: {
         display: "flex",

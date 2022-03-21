@@ -286,7 +286,7 @@ const HomePage = () => {
                 <GridContainer>
                   <GridItem xs={12} sm={12} md={4}>
                     <Herbata className={classNames(classes.svgLogo)} />
-                    <Link to="/grupyiwspolnoty">
+                    <Link to="/dobry-start">
                       <div className={classNames("purple-background")}>
                         <h5
                           className={classNames(
@@ -350,7 +350,7 @@ const HomePage = () => {
                             padding: "0px",
                             color: "white",
                           }}>
-                          Wyjedź nami
+                          Wyjedź z nami
                         </h5>
                       </div>
                     </Link>
@@ -370,16 +370,21 @@ const HomePage = () => {
                   Możesz też po prostu przyjść na którekolwiek spotkanie lub
                   modlitwę, które odbywają się w duszpasterstwie.
                 </h5>
-                <Link
-                  to="/grupyiwspolnoty"
-                  className={classNames("yellow-background")}
-                  style={{
-                    color: "white",
-                    borderRadius: "25px",
-                    padding: "10px 25px",
-                    boxShadow: "3px 3px 5px #989898",
-                  }}>
-                  POZNAJ NASZE GRUPY
+                <Link to="/grupyiwspolnoty">
+                    <div className={classNames("yellow-background")}>
+                        <h5
+                          className={classNames(
+                            classes.description,
+                            classes.yellowSubtitle
+                          )}
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "white",
+                          }}>
+                          POZNAJ NASZE GRUPY
+                        </h5>
+                    </div>
                 </Link>
               </GridItem>
             </GridContainer>
@@ -441,7 +446,7 @@ const HomePage = () => {
               xs={12}
               sm={12}
               md={12}
-              className={"carousel-outer"}
+              className={"carousel-outer normal-banner"}
               style={{ height: "400px", position: "relative" }}>
               <Carousel
                 animationHandler="fade"
@@ -532,6 +537,46 @@ const HomePage = () => {
                 </div> */}
               </Carousel>
             </GridItem>
+            <GridItem
+              xs={12}
+              sm={12}
+              md={12}
+              className={"carousel-outer mobile-banner"}
+              style={{ height: "237px", position: "relative"}}>
+              <Carousel
+                animationHandler="fade"
+                className={"carousel"}
+                swipeable={false}
+                showStatus={false}
+                showThumbs={true}
+                autoPlay={true}
+                infiniteLoop={true}
+                interval={6000}>
+                {/* ========== Quote 2 ==========  */}
+                <div className={classes.fullHeight}>
+                  <div className={classes.overlay}>
+                    <p className={"quoteBody"}>
+                      „Prawdziwe dobro czyni się niepostrzeżenie, powoli,
+                      codziennie, w zwykłych sprawach”
+                    </p>
+                    {/* <p className={"quoteAuthor"}>
+                      błogosławiony Pier Giorgio Frassati
+                    </p> */}
+                  </div>
+                </div>
+                {/* ========== Quote 3 ==========  */}
+                <div className={classes.fullHeight}>
+                  <div className={classes.overlay}>
+                    <p className={"quoteBody"}>
+                      „Puste słowa zastępuję modlitwami”
+                    </p>
+                    {/* <p className={"quoteAuthor"}>
+                      błogosławiony Pier Giorgio Frassati
+                    </p> */}
+                  </div>
+                </div>
+              </Carousel>
+            </GridItem>
           </GridContainer>
         </div>
 
@@ -568,10 +613,10 @@ const HomePage = () => {
                   onKeyDown={() => openWebsite(facebookUrl)}
                   aria-hidden="true"
                 />
-                <h5
+                {/* <h5
                   className={classNames(classes.description, classes.grayText)}>
                   Facebook
-                </h5>
+                </h5> */}
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <IgSvg
@@ -581,10 +626,10 @@ const HomePage = () => {
                   onKeyDown={() => openWebsite(instagramUrl)}
                   aria-hidden="true"
                 />
-                <h5
+                {/* <h5
                   className={classNames(classes.description, classes.grayText)}>
                   Instagram
-                </h5>
+                </h5> */}
               </GridItem>
             </GridContainer>
           </div>

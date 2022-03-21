@@ -69,7 +69,7 @@ export default function Header(props) {
   })
   const brandComponent = (
     <>
-      {color === "transparent" && (
+      {/* {color === "transparent" && (
         <Link to="/">
           <img
             className={classNames("brand-logo")}
@@ -77,9 +77,9 @@ export default function Header(props) {
             alt="Duszpasterstwo Akademickie Logo"
           />
         </Link>
-      )}
+      )} */}
       {color === "white" && (
-        <Link to="/" className={"brand-logo"}>
+        <Link to="/" className={"normal-banner"}>
           <img
             className={"brand-logo"}
             src={require("../../assets/img/da5_logo_dark.png")}

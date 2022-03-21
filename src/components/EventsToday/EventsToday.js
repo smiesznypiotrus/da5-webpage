@@ -59,9 +59,12 @@ export default function EventsToday() {
                   style={{
                     color: "white",
                     textAlign: "center",
-                    borderRadius: "15px",
-                    boxShadow: "3px 3px 5px #989898",
+                    borderRadius: "25px",
                     marginTop: "-10px",
+                    fontWeight: "600",
+                    fontFamily: `'Lato', sans-serif`,
+                    textTransform: "uppercase",
+                    fontSize: "0.9rem"
                   }}>
           Zobacz plan tygodniowy
         </Link>

@@ -74,7 +74,7 @@ const Duszpasterstwo = () => {
   })
 
   const DuszpasterstwoPic = _.select(data.allFile.edges, node => {
-    return node.node.name === "priest"
+    return node.node.name === "duszpasterstwo"
   })
 
   return (
@@ -141,13 +141,13 @@ const Duszpasterstwo = () => {
             alt="..."
             className={classNames(classes.imgRaised, classes.imgFluid)}
             style={{
-              width: "50%",
+              width: "60%",
               borderRadius: "10px",
             }}
           />
         </div>
 
-        <p className={classes.description} style={{ margin: "25px" }}>
+        <p className={classes.description} style={{ margin: "25px 20% 0px 20%"}}>
           Okres studiów to bez wątpienia najpiękniejszy czas w życiu człowieka.
           Jest jednocześnie najważniejszym czasem, bo to właśnie wtedy młody
           człowiek decyduje o przyszłości swojego dorosłego życia. Wybory, które
@@ -168,7 +168,7 @@ const Duszpasterstwo = () => {
 
         <div className={classes.container}>
           <div className={classes.section}>
-            <GridContainer justify="center">
+            <GridContainer justify="center" spacing="0">
               <GridItem xs={12} sm={12} md={6}>
                 <FbSvg
                   className={classNames(classes.svgLogo)}
@@ -177,10 +177,6 @@ const Duszpasterstwo = () => {
                   onKeyDown={() => openWebsite(facebookUrl)}
                   aria-hidden="true"
                 />
-                <h5
-                  className={classNames(classes.description, classes.grayText)}>
-                  Facebook
-                </h5>
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <IgSvg
@@ -190,10 +186,6 @@ const Duszpasterstwo = () => {
                   onKeyDown={() => openWebsite(instagramUrl)}
                   aria-hidden="true"
                 />
-                <h5
-                  className={classNames(classes.description, classes.grayText)}>
-                  Instagram
-                </h5>
               </GridItem>
             </GridContainer>
           </div>

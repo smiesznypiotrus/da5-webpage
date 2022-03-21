@@ -20,7 +20,10 @@ export default function HeaderLinks() {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
+      <Link to="/plantygodnia" className={classes.navLink}>
+              Plan Tygodnia
+            </Link>
+        {/* <CustomDropdown
           noLiPadding
           buttonText="Plan"
           buttonProps={{
@@ -31,11 +34,11 @@ export default function HeaderLinks() {
             <Link to="/plantygodnia" className={classes.dropdownLink}>
               Plan Tygodnia
             </Link>,
-            <Link to="/wtymmiesiacu" className={classes.dropdownLink}>
-              W Tym Miesiącu
-            </Link>,
+            // <Link to="/wtymmiesiacu" className={classes.dropdownLink}>
+            //   W Tym Miesiącu
+            // </Link>,
           ]}
-        />
+        /> */}
       </ListItem>
 
       <ListItem className={classes.listItem}>
