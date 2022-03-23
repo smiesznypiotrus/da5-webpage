@@ -19,6 +19,7 @@ import CardBody from "../../components/Card/CardBody"
 import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
 import Footer from "../../components/Footer/Footer.js"
+import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
 
 // Styles -----------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -389,6 +390,7 @@ const Oaza = () => {
               </GridContainer>
             </div>
           </div>
+          <BackToGrupy/>
         </div>
       </div>
       <Footer />

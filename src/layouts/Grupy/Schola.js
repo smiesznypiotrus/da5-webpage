@@ -281,7 +281,7 @@ const Schola = () => {
                     <GridItem xs={6} sm={6} md={6} className={classes.itemGrid}>
                       <Img
                         fluid={liderPic[0].node.childImageSharp.fluid}
-                        alt="SwietlicaLeaderPic"
+                        alt="ScholaLeaderPic"
                         className={classNames(
                           classes.imgRaised,
                           classes.imgRoundedCircle,

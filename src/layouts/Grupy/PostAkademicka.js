@@ -2,9 +2,11 @@ import React from "react"
 // Utils -----------------------------------------------------------------
 import _ from "underscore"
 import classNames from "classnames"
+
 //Gatsby -----------------------------------------------------------------
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+
 // Components used in this layout -----------------------------------------
 import Header from "../../components/Header/Header"
 import HeaderLinks from "../../components/Header/HeaderLinks"
@@ -15,6 +17,8 @@ import CardBody from "../../components/Card/CardBody"
 import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
 import Footer from "../../components/Footer/Footer.js"
+import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
+
 // Styles -----------------------------------------------------------------
 import { makeStyles } from "@material-ui/core/styles"
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -436,6 +440,7 @@ const PostAkademicka = () => {
               </GridContainer>
             </div>
           </div>
+          <BackToGrupy/>
         </div>
       </div>
 

@@ -30,7 +30,7 @@ export default function Footer() {
     <Link to="/grupyiwspolnoty"><p
                           className={classNames(
                             classes.description,
-                            // classes.grayText,
+                            classes.grayText,
                             "mobile-padding"
                           )} style={{
                                 paddingRight: "5%",

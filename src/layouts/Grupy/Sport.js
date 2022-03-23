@@ -17,6 +17,7 @@ import GridItem from "../../components/Grid/GridItem"
 import Card from "../../components/Card/Card"
 import CardFooter from "../../components/Card/CardFooter"
 import Footer from "../../components/Footer/Footer.js"
+import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
 
 // Styles -----------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -310,6 +311,7 @@ const Sport = () => {
               </GridContainer>
             </div>
           </div>
+          <BackToGrupy/>
         </div>
       </div>
       <Footer />
