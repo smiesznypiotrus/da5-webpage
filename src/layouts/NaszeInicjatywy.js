@@ -234,7 +234,7 @@ const NaszeInicjatywy = () => {
                 className={classes.imgCardTop}
               />
               <Link
-                to="#"
+                to="/naszeinicjatywy/akt/"
                 style={{
                   alignSelf: "center",
                   cursor: "pointer",
@@ -303,7 +303,7 @@ const NaszeInicjatywy = () => {
               }}
               className={classes.imgCardTop}
               fluid={w4[0].node.childImageSharp.fluid}
-              alt={"Algoritmy Boga"}
+              alt={"Algorytmy Boga"}
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={6}>
