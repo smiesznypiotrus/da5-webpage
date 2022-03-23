@@ -290,7 +290,7 @@ const Uwielbienie = () => {
                     <GridItem xs={6} sm={6} md={6} className={classes.itemGrid}>
                       <Img
                         fluid={liderPic[0].node.childImageSharp.fluid}
-                        alt="ExodusLeaderPic"
+                        alt="LeaderPic"
                         className={classNames(
                           classes.imgRaised,
                           classes.imgRoundedCircle,
@@ -299,7 +299,7 @@ const Uwielbienie = () => {
                       />
                     </GridItem>
                     <h4 className={classes.cardTitle}>
-                      ks. Radosław Krych
+                      ks. Mateusz Wójtowicz
                       <br />
                       <small className={classes.smallTitle}>Lider</small>
                     </h4>
@@ -310,10 +310,8 @@ const Uwielbienie = () => {
                           classes.grayText,
                           "body-text"
                         )}>
-                        Imię zobowiązuje, więc staram się zarażać radością
-                        napotkane osoby. Trochę muzyk, trochę kucharz. Ksiądz na
-                        sto procent zakochany w Słowie. Grzesznik, ale kochany –
-                        przez Niego.
+                        Uwielbiać Boga nieustannie i dziękować Mu za to, ile codziennie dostaje… to i tak za mało, 
+                        ale robię co w moich siłach. I nie wyobrażam sobie  nie zapraszać Was do tego czym sam żyje.
                       </p>
                     </CardBody>
                     {/* =============================================================
@@ -374,14 +372,14 @@ const Uwielbienie = () => {
                             />
                           </Button>
                           <a
-                            href="https://www.facebook.com/profile.php?id=100001127734330"
+                            href="https://www.facebook.com/mateusz.wojtowicz.144"
                             className={classNames(
                               classes.margin5,
                               classes.spanText,
                               classes.description
                             )}
                             style={{ textDecoration: "none" }}>
-                            Radoslaw.krych
+                            mateusz.wojtowicz.144
                           </a>
                         </div>
                         <img
@@ -411,7 +409,8 @@ const Uwielbienie = () => {
                               className={classNames(
                                 classes.description,
                                 classes.grayText,
-                                "body-text"
+                                "body-text",
+                                "icon-label"
                               )}>
                               Kaplica
                             </p>

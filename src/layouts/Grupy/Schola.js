@@ -28,7 +28,7 @@ import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
 import statics from "../../components/colors"
-import "../../assets/css/swietlica-style.css"
+import "../../assets/css/group-style.css"
 
 const allStyles = {
   ...styles,
@@ -386,7 +386,8 @@ const Schola = () => {
                               className={classNames(
                                 classes.description,
                                 classes.grayText,
-                                "body-text"
+                                "body-text",
+                                "icon-label"
                               )}
                             >
                               Kawiarenka

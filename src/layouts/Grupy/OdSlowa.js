@@ -392,7 +392,8 @@ const OdSlowa = () => {
                               className={classNames(
                                 classes.description,
                                 classes.grayText,
-                                "body-text"
+                                "body-text",
+                                "icon-label"
                               )}
                             >
                               Kawiarenka

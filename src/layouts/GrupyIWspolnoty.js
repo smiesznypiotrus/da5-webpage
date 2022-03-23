@@ -214,7 +214,7 @@ const GrupyIWspolnoty = () => {
               </div>
             </Link>
 
-            <Link to="/grupy/taize" className={classes.navLink}>
+            {/* <Link to="/grupy/taize" className={classes.navLink}>
               <div
                 style={{
                   display: "flex",
@@ -230,6 +230,25 @@ const GrupyIWspolnoty = () => {
                   alt="Taize"></img>
                 <p className={classNames(classes.lightText)}>Spotkania</p>
                 <p className={classNames(classes.boldText)}>TAIZE</p>
+              </div>
+            </Link> */}
+
+            <Link to="/grupy/uwielbienie" className={classes.navLink}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  padding: "10px",
+                  margin: "20px 10px 30px 10px",
+                  minWidth: "200px",
+                }}>
+                <img
+                  style={{ width: "100px" }}
+                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Uwielbienie.svg?alt=media&token=aa3afb15-f17a-4af0-ac11-880ab7f04742"
+                  alt="Uwielbiene"></img>
+                <p className={classNames(classes.lightText)}>Studenckie</p>
+                <p className={classNames(classes.boldText)}>UWIELBIENIE</p>
               </div>
             </Link>
 
@@ -261,24 +280,6 @@ const GrupyIWspolnoty = () => {
               flexWrap: "wrap",
               justifyContent: "center",
             }}>
-            <Link to="/grupy/uwielbienie" className={classes.navLink}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  padding: "10px",
-                  margin: "20px 10px 30px 10px",
-                  minWidth: "200px",
-                }}>
-                <img
-                  style={{ width: "100px" }}
-                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Uwielbienie.svg?alt=media&token=aa3afb15-f17a-4af0-ac11-880ab7f04742"
-                  alt="Uwielbiene"></img>
-                <p className={classNames(classes.lightText)}>Studenckie</p>
-                <p className={classNames(classes.boldText)}>UWIELBIENIE</p>
-              </div>
-            </Link>
 
             <Link to="/grupy/sport" className={classes.navLink}>
               <div
@@ -317,16 +318,7 @@ const GrupyIWspolnoty = () => {
                 <p className={classNames(classes.boldText)}>AKADEMICKA</p>
               </div>
             </Link>
-          </div>
 
-          {/* ========== Row ==========  */} 
-          <div
-            style={{
-              display: "flex",
-                  flexDirection: "row",
-                  flexWrap: "wrap",
-                  justifyContent: "center",
-            }}>
             <Link to="/grupy/dobry-start" className={classes.navLink}>
               <div
                 style={{
@@ -346,6 +338,8 @@ const GrupyIWspolnoty = () => {
               </div>
             </Link>
           </div>
+
+          {/* ========== Row ==========  */} 
           <div
             style={{
               display: "flex",
@@ -353,6 +347,8 @@ const GrupyIWspolnoty = () => {
                   flexWrap: "wrap",
                   justifyContent: "center",
             }}>
+            
+                   
             <Link to="/grupy/postakademicka" className={classes.navLink}>
               <div
                 style={{

@@ -427,7 +427,8 @@ const PostAkademicka = () => {
                               className={classNames(
                                 classes.description,
                                 classes.grayText,
-                                "body-text"
+                                "body-text",
+                                "icon-label"
                               )}>
                               Salka “Underground”
                             </p>
