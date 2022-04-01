@@ -28,7 +28,7 @@ import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
 import statics from "../../components/colors"
-import "../../assets/css/exodus-style.css"
+import "../../assets/css/group-style.css"
 
 const allStyles = {
   ...styles,
@@ -81,7 +81,7 @@ const Akt = () => {
     return node.node.name === "background"
   })
   const logo = _.select(data.allFile.edges, node => {
-    return node.node.name === "akt_logo"
+    return node.node.name === "Akt_logo"
   })
 //   const point2 = _.select(data.allFile.edges, node => {
 //     return node.node.name === "ico__akt-23"
@@ -131,14 +131,10 @@ const Akt = () => {
         style={{
           display: "inline-block",
           position: "relative",
-          left: "40%",
+          left: "48%",
           transform: "translateX(-50%)",
         }}>
-        {/* <img
-          src={akt_logo[0].node.publicURL}
-          style={{ width: "40%", height: "auto", marginBottom: "0px" , textAlign: "left"}}
-          alt="Akt Banner">
-          </img> */}
+        
         <div className={classNames("padding-div")}>
           <div className={classes.container}>
             <div className={classes.section}>
@@ -146,138 +142,34 @@ const Akt = () => {
                 {/* =============================================================
                     Grupy picture and description
                   ============================================================= */}
+                <GridItem xs={12} sm={12} md={4}>
+                    <img
+                        src={logo[0].node.publicURL}
+                        style={{ width: "90%", height: "auto", marginBottom: "30px" , textAlign: "left", marginLeft: "7%"}}
+                        alt="Akt Banner">
+                    </img>
+                </GridItem>
                 <GridItem xs={12} sm={12} md={8}>
-                  <Img
-                    style={{
-                      width: "100%",
-                      objectFit: "cover",
-                      borderRadius: "3px",
-                      marginBottom: "10px",
-                    }}
-                    src={logo[0].node.childImageSharp.fluid}
-                    alt={logo[0].node.name}
-                  />
-                  {/* <h6 className={classNames("quote")}>
-                    Uwielbiaj duszo moja Pana
-                  </h6>
-                  <p
-                    className={classNames(
-                      classes.description,
-                      classes.grayText,
-                      "body-text"
-                    )}>
-                    W każdy wtorek o godz. 20.00 gromadzimy się w naszej kaplicy, aby
-                    <span className={classNames("akt-color")}>
-                      &nbsp;uwielbiać Jezusa w Najświętszym Sakramencie.
-                    </span>
-                  </p>
-
-                  <p
-                    className={classNames(
-                      classes.description,
-                      classes.grayText,
-                      "body-text"
-                    )}>
-                    Chcemy wówczas oddać chwałę naszemu Panu poprzez
-                    <span className={classNames("akt-color")}>
-                      &nbsp;pełen radości śpiew i spontaniczną modlitwę.&nbsp;
-                    </span>
-                  </p>
-
-                  <p
-                    className={classNames(
-                      classes.description,
-                      classes.grayText,
-                      "body-text"
-                    )}>
-                    <span className={classNames("akt-color")}>
-                      &nbsp;Przebywanie w Jego obecności&nbsp;
-                    </span>
-                    przez te kilkanaście minut ma nam pomóc odnajdywać Go w
-                    różnych sytuacjach życia i wszystkie te sytuacje czynić
-                    aktm za Jego miłość.
-                  </p>
-
-                  <br></br>
-
-                  <p
-                    className={classNames(
-                      classes.description,
-                      classes.grayText,
-                      "body-text",
-                      "strikearound-akt"
-                    )}>
-                    {" "}
-                    Przyjdź, jeśli…{" "}
-                  </p>
-
-                  <GridItem xs={12} sm={12} md={12}>
-                    <div className={classNames("icon-text-container")}>
-                      <img
-                        className={classNames("icon")}
-                        src={point1[0].node.publicURL}
-                        alt="Point 1"
-                      />
+                    <CardBody>
                       <p
                         className={classNames(
                           classes.description,
                           classes.grayText,
                           "body-text"
-                        )}>
-                        Poszukujesz przestrzeni
-                        <span className={classNames("akt-color")}>
-                          &nbsp;modlitwy wspólnotowej i doświadczenia bliskości
-                          Boga&nbsp;
-                        </span>
-                        modlitwy wspólnotowej i doświadczenia bliskości Boga.
+                        )}
+                        style={{
+                            marginTop: "-20px",
+                            fontFamily: "Lato",
+                            letterSpacing: "0.06em",
+                            paddingLeft: "7%",
+                            paddingRight: "6%",
+                        }}>
+                        <b>AKT czyli Akademicki Klub Turystyczny</b> to źródło podróżniczych inspiracji, które nie pozwolą nam usiedzieć w miejscu. 
+                        Wezwanie Papieża Franciszka do wstania z wygodnej sofy bierzemy w naszym Klubie dosłownie.<br/><br/>
+                        Organizujemy studenckie wyjazdy, ale chcemy stworzyć także - pomiędzy nimi - przestrzeń do dzielenia się naszymi podróżniczymi przygodami poprzez spotkania autorskie czy wystawy fotografii podróżniczej.<br/><br/> 
+                        Zapraszamy, choć AKTualnie możemy być w podroży…
                       </p>
-                    </div>
-                  </GridItem>
-
-                  <GridItem xs={12} sm={12} md={12}>
-                    <div className={classNames("icon-text-container")}>
-                      <img
-                        className={classNames("icon")}
-                        src={point2[0].node.publicURL}
-                        alt="Point 2"
-                      />
-                      <p
-                        className={classNames(
-                          classes.description,
-                          classes.grayText,
-                          "body-text"
-                        )}>
-                        Pragniesz rozwijać
-                        <span className={classNames("akt-color")}>
-                          &nbsp;wrażliwość na siebie i innych&nbsp;
-                        </span>
-                        oraz na dobro, którego często nie widzimy lub ponad
-                        którym przechodzimy do porządku dziennego.
-                      </p>
-                    </div>
-                  </GridItem>
-
-                  <GridItem xs={12} sm={12} md={12}>
-                    <div className={classNames("icon-text-container")}>
-                      <img
-                        className={classNames("icon")}
-                        src={point3[0].node.publicURL}
-                        alt="Point 3"
-                      />
-                      <p
-                        className={classNames(
-                          classes.description,
-                          classes.grayText,
-                          "body-text"
-                        )}>
-                        <span className={classNames("akt-color")}>
-                          Skupić się bardziej na Bogu &nbsp;
-                        </span>
-                        i Jego prowadzeniu, niż na sobie, swoich zamiarach,
-                        planach.
-                      </p>
-                    </div>
-                  </GridItem> */}
+                    </CardBody>
                 </GridItem>
                 {/* =============================================================
                     Group leader profile

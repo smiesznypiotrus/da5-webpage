@@ -98,7 +98,7 @@ const PostAkademicka = () => {
     return node.node.name === "Date_exodus"
   })
   const stairsLogo = _.select(data.allFile.edges, node => {
-    return node.node.name === "Location_exodus"
+    return node.node.name === "Localisation-06"
   })
 
   return (
@@ -314,7 +314,7 @@ const PostAkademicka = () => {
                       />
                     </GridItem>
                     <h4 className={classes.cardTitle}>
-                      Piotr Pyciak
+                      Joanna Malinowska
                       <br />
                       <small className={classes.smallTitle}>Lider</small>
                     </h4>
@@ -325,13 +325,11 @@ const PostAkademicka = () => {
                           classes.grayText,
                           "body-text"
                         )}>
-                        Jeden z młodszych członków grupy. Z racji, że trzeba tu
-                        coś o sobie napisać to wymienię swoje zainteresowania:
-                        górski trekking (nie tylko w Polsce), pielgrzymki oraz
-                        dobre memy.
-                        <br />
-                        <br />
-                        Nasze exodusowe hasło to "Walić! Walić! Walić!"
+                        Na skutek transferu z diecezji włocławskiej, spowodowanego marzeniami o dyplomie 
+                        Politechniki Łódzkiej, od roku akademickiego 2019/2020 odpowiedzialną wspólnoty jest 
+                        Joanna Malinowska. 15 lat formacji oazowej odcisnęło trwałe piętno na jej zdrowiu psychicznym, 
+                        nie rokując nadziei na poprawę. Oprócz spotkań oazowych, można ją często spotkać na wieczorach 
+                        gier planszowych lub zamkniętą gdzieś w escape roomie.
                       </p>
                     </CardBody>
                     {/* =============================================================
@@ -361,13 +359,13 @@ const PostAkademicka = () => {
                             />
                           </Button>
                           <a
-                            href="mailto:piotr.pyciak@gmail.com"
+                            href="mailto:malinowskajoanna1989@gmail.com"
                             className={classNames(
                               classes.primaryColorText,
                               classes.margin5,
                               classes.spanText
                             )}>
-                            piotr.pyciak@gmail.com
+                            malinowskajoanna1989@gmail.com
                           </a>
                         </div>
                         {/* =============================================================
@@ -378,25 +376,7 @@ const PostAkademicka = () => {
                             display: "flex",
                             flexDirection: "row",
                             alignItems: "center",
-                          }}>
-                          <Button
-                            justIcon
-                            color="transparent"
-                            className={classes.margin5}>
-                            <i
-                              className={classes.socials + " fa fa-facebook"}
-                            />
-                          </Button>
-                          <a
-                            href="https://www.facebook.com/smiesznypiotrus "
-                            className={classNames(
-                              classes.margin5,
-                              classes.spanText,
-                              classes.description
-                            )}
-                            style={{ textDecoration: "none" }}>
-                            smiesznypiotrus
-                          </a>
+                          }}>                          
                         </div>
 
                         <img
@@ -411,7 +391,7 @@ const PostAkademicka = () => {
                             classes.grayText,
                             "meeting-date"
                           )}>
-                          Czwartek
+                          Środa
                           <br />
                           <span style={{ fontWeight: "normal" }}>20:30</span>
                         </p>
@@ -430,7 +410,7 @@ const PostAkademicka = () => {
                                 "body-text",
                                 "icon-label"
                               )}>
-                              Salka “Underground”
+                              Kawiarenka
                             </p>
                           </div>
                         </GridItem>

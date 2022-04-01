@@ -27,6 +27,7 @@ import SpotkanieLogo from "../images/SVGs/Home/ico_how_to_start_2.svg"
 import Wyjdz from "../images/SVGs/Home/ico_how_to_start_3.svg"
 import FbSvg from "../images/SVGs/Home/__Facebook.svg"
 import IgSvg from "../images/SVGs/Home/__instagram.svg"
+import StartBanner from "../images/SVGs/Home/how_to_start_banner.svg"
 // Styles -----------------------------------------------------------------
 import styles from "../assets/jss/material-kit-react/views/landingPage.js"
 import customStyles from "./CustomClasses.js"
@@ -258,12 +259,12 @@ const HomePage = () => {
         {/* ========== Jak zacząć? ==========  */}
         <div>
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/how_to_start_banner.svg?alt=media&token=cb331a4c-0f05-4a5d-8912-2b0772c3a049"
+            src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/how_to_start_banner.svg?alt=media&token=8cb6ebba-2959-436b-acda-80f9714ed5a4"
             className={classNames("normal-banner")}
             alt="Jak zacząć?"
           />
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/how_to_start_mobile_banner.svg?alt=media&token=09596653-aea1-43a1-9ff1-3cbdbb46a2e6"
+            src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/how_to_start_banner_mobile.svg?alt=media&token=f75e273e-a23c-40c9-8001-073dd0f09b08"
             className={classNames("mobile-banner")}
             alt="Jak zacząć?"
           />
@@ -425,7 +426,7 @@ const HomePage = () => {
         </div>
 
         {/* ========== Quote Slider / Słowo od patrona ==========  */}
-        <div style={{ paddingTop: "35px" }}>
+        {/* <div style={{ paddingTop: "35px" }}>
           <div>
             <img
               src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/main_quote_banner.svg?alt=media&token=69a369c9-6cdb-4b25-9f07-51c7f34f8b7e"
@@ -456,7 +457,7 @@ const HomePage = () => {
                 showThumbs={true}
                 autoPlay={true}
                 infiniteLoop={true}
-                interval={6000}>
+                interval={6000}> */}
                 {/* ========== Quote 1  // Cytat 1 ==========  */}
                 {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
@@ -490,28 +491,28 @@ const HomePage = () => {
                   </div>
                 </div> */}
                 {/* ========== Quote 2 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Prawdziwe dobro czyni się niepostrzeżenie, powoli,
                       codziennie, w zwykłych sprawach”
-                    </p>
+                    </p> */}
                     {/* <p className={"quoteAuthor"}>
                       błogosławiony Pier Giorgio Frassati
                     </p> */}
-                  </div>
-                </div>
+                  {/* </div>
+                </div> */}
                 {/* ========== Quote 3 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Puste słowa zastępuję modlitwami”
-                    </p>
+                    </p> */}
                     {/* <p className={"quoteAuthor"}>
                       błogosławiony Pier Giorgio Frassati
                     </p> */}
-                  </div>
-                </div>
+                  {/* </div>
+                </div> */}
                 {/* ========== Quote 3 ==========  */}
                 {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
@@ -535,7 +536,7 @@ const HomePage = () => {
                     </p>
                   </div>
                 </div> */}
-              </Carousel>
+              {/* </Carousel>
             </GridItem>
             <GridItem
               xs={12}
@@ -551,34 +552,34 @@ const HomePage = () => {
                 showThumbs={true}
                 autoPlay={true}
                 infiniteLoop={true}
-                interval={6000}>
+                interval={6000}> */}
                 {/* ========== Quote 2 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Prawdziwe dobro czyni się niepostrzeżenie, powoli,
                       codziennie, w zwykłych sprawach”
-                    </p>
+                    </p> */}
                     {/* <p className={"quoteAuthor"}>
                       błogosławiony Pier Giorgio Frassati
                     </p> */}
-                  </div>
-                </div>
+                  {/* </div>
+                </div> */}
                 {/* ========== Quote 3 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Puste słowa zastępuję modlitwami”
-                    </p>
+                    </p> */}
                     {/* <p className={"quoteAuthor"}>
                       błogosławiony Pier Giorgio Frassati
                     </p> */}
-                  </div>
+                  {/* </div>
                 </div>
               </Carousel>
             </GridItem>
           </GridContainer>
-        </div>
+        </div> */}
 
         {/* ========== Obserwuj nas ==========  */}
         <div>

@@ -772,7 +772,7 @@ pre tt:after {
   .homeRaisedDiv {
     margin: 0px;
     overflow-x: hidden;
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 10px 10px 6px 6px;
   }
 
   .normal-banner {

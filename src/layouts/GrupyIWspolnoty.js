@@ -120,26 +120,7 @@ const GrupyIWspolnoty = () => {
               flexWrap: "wrap",
               justifyContent: "center",
             }}>
-            <Link to="/grupy/exodus" className={classes.navLink}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  padding: "10px",
-                  margin: "20px 10px 30px 10px",
-                  minWidth: "200px",
-                }}>
-                <img
-                  style={{ width: "100px" }}
-                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Exodus.svg?alt=media&token=e8879b00-d164-4b3d-835d-0ed3515730bb"
-                  alt="Exodus"></img>
-                <p className={classNames(classes.lightText)}>Męska wspólnota</p>
-                <p className={classNames(classes.boldText)}>EXODUS</p>
-              </div>
-            </Link>
-
-            <Link to="/grupy/oaza" className={classes.navLink}>
+        {/* <Link to="/grupy/oaza" className={classes.navLink}>
               <div
                 style={{
                   display: "flex",
@@ -158,33 +139,7 @@ const GrupyIWspolnoty = () => {
                   Ruch Światło Życie
                 </p>
               </div>
-            </Link>
-
-            <Link
-              to="/grupy/swietlica-dla-niepelnosprawnych"
-              className={classes.navLink}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  padding: "10px",
-                  margin: "20px 10px 30px 10px",
-                  minWidth: "200px",
-                  justifyContent: "center",
-                }}>
-                <img
-                  style={{ width: "100px" }}
-                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_swietlica.svg?alt=media&token=83c63810-aa61-4643-9597-99194c8d529b"
-                  alt="Świetlica dla niepełnosprawnych"></img>
-                <p className={classNames(classes.lightText)}>Świetlica dla</p>
-                <p
-                  className={classNames(classes.boldText)}
-                  style={{ textAlign: "center" }}>
-                  NIEPEŁNOSPRAWNYCH
-                </p>
-              </div>
-            </Link>
+            </Link> */}         
           </div>
 
           {/* ========== Row ==========  */} 
@@ -361,10 +316,54 @@ const GrupyIWspolnoty = () => {
                 }}>
                 <img
                   style={{ width: "100px" }}
-                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Od%20slowa.svg?alt=media&token=6b75e239-d1da-4500-a7a1-d4ca3372057a"
+                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Oaza.svg?alt=media&token=0181ed72-b319-4495-8e5e-0cd4285d2fc1"
                   alt="Dobry start"></img>
                 <p className={classNames(classes.lightText)}>Grupa</p>
                 <p className={classNames(classes.boldText)}>POSTAKADEMICKA</p>
+              </div>
+            </Link>
+            <Link to="/grupy/exodus" className={classes.navLink}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  padding: "10px",
+                  margin: "20px 10px 30px 10px",
+                  minWidth: "200px",
+                }}>
+                <img
+                  style={{ width: "100px" }}
+                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Exodus.svg?alt=media&token=e8879b00-d164-4b3d-835d-0ed3515730bb"
+                  alt="Exodus"></img>
+                <p className={classNames(classes.lightText)}>Męska wspólnota</p>
+                <p className={classNames(classes.boldText)}>EXODUS</p>
+              </div>
+            </Link>
+
+            <Link
+              to="/grupy/swietlica-dla-niepelnosprawnych"
+              className={classes.navLink}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  padding: "10px",
+                  margin: "20px 10px 30px 10px",
+                  minWidth: "200px",
+                  justifyContent: "center",
+                }}>
+                <img
+                  style={{ width: "100px" }}
+                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_swietlica.svg?alt=media&token=83c63810-aa61-4643-9597-99194c8d529b"
+                  alt="Świetlica dla niepełnosprawnych"></img>
+                <p className={classNames(classes.lightText)}>Świetlica dla</p>
+                <p
+                  className={classNames(classes.boldText)}
+                  style={{ textAlign: "center" }}>
+                  NIEPEŁNOSPRAWNYCH
+                </p>
               </div>
             </Link>
           </div>
