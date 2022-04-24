@@ -1,5 +1,5 @@
 import React from "react"
-import DobryStart from "./../../layouts/Grupy/PostAkademicka"
+import Obczajnik from "./../../layouts/Grupy/PostAkademicka"
 import SEO from "../../components/seo"
 
 const PostAkademickaPage = () => (
@@ -8,7 +8,7 @@ const PostAkademickaPage = () => (
       title="Postakademicka"
       description="Grupa postakademicka po mszy czy coś"
       keywords="Postakademicka, Dinozaury, Spotkanie"></SEO>
-    <DobryStart />
+    <Obczajnik />
   </>
 )
 

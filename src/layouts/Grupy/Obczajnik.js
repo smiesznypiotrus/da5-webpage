@@ -2,11 +2,9 @@ import React from "react"
 // Utils -----------------------------------------------------------------
 import _ from "underscore"
 import classNames from "classnames"
-
 //Gatsby -----------------------------------------------------------------
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-
 // Components used in this layout -----------------------------------------
 import Header from "../../components/Header/Header"
 import HeaderLinks from "../../components/Header/HeaderLinks"
@@ -18,7 +16,6 @@ import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
 import Footer from "../../components/Footer/Footer.js"
 import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
-
 // Styles -----------------------------------------------------------------
 import { makeStyles } from "@material-ui/core/styles"
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -27,7 +24,7 @@ import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
 import statics from "../../components/colors"
-import "../../assets/css/postakademicka-style.css"
+import "../../assets/css/dobrystart-style.css"
 
 const allStyles = {
   ...styles,
@@ -37,12 +34,12 @@ const allStyles = {
 
 const useStyles = makeStyles(allStyles)
 
-const PostAkademicka = () => {
+const Obczajnik = () => {
   const classes = useStyles()
 
   const data = useStaticQuery(graphql`
-    query postAkademickaGetPictures {
-      allFile(filter: { relativePath: { regex: "/PostAkademicka/" } }) {
+    query obczajnikGetPictures {
+      allFile(filter: { relativePath: { regex: "/Obczajnik/" } }) {
         edges {
           node {
             name
@@ -91,14 +88,17 @@ const PostAkademicka = () => {
   const point3 = _.select(data.allFile.edges, node => {
     return node.node.name === "Points__EXODUS_3"
   })
-  const liderPic = _.select(data.allFile.edges, node => {
-    return node.node.name === "Lider_profile"
+  const MarialiderPic = _.select(data.allFile.edges, node => {
+    return node.node.name === "Maria_profile"
+  })
+  const BartekliderPic = _.select(data.allFile.edges, node => {
+    return node.node.name === "Bartek_profile"
   })
   const dateBanner = _.select(data.allFile.edges, node => {
     return node.node.name === "Date_exodus"
   })
   const stairsLogo = _.select(data.allFile.edges, node => {
-    return node.node.name === "Localisation-10"
+    return node.node.name === "Location_exodus"
   })
 
   return (
@@ -139,7 +139,7 @@ const PostAkademicka = () => {
         <img
           src={banner[0].node.publicURL}
           style={{ width: "100%", height: "auto", marginBottom: "0px" }}
-          alt="PostakademickaBanner"
+          alt="ExodusBanner"
           ></img>
         <div className={classNames("padding-div")}>
           <div className={classes.container}>
@@ -160,53 +160,21 @@ const PostAkademicka = () => {
                     alt={groupPic[0].node.name}
                   />
                   <h6 className={classNames("quote")}>
-                    Czy jesteś gotowy na więcej?
+                  Przepis na idealny niedzielny wieczór:
                   </h6>
                   <p
                     className={classNames(
                       classes.description,
                       classes.grayText,
                       "body-text"
-                    )}>
-                    Jesteśmy grupą młodych mężczyzn,
-                    <span className={classNames("body-text-orange")}>
-                      &nbsp;chcących zmieniać świat na lepsze - oczywiście
-                      zaczynając od siebie.
-                    </span>
+                    )}>  
+                    1. Zacznij od Akademickiej Mszy św. w Archikatedrze o godzinie 19:00 doprawionej szczyptą 
+                    anielskich głosów naszej scholi.<br/>2. Tuż po niej skieruj się na północny zachód wprost do 
+                    budynku znajdującego się przy ul. Skorupki 5.<br/>3. Po przejściu 54 schodów dotarłeś do obCZAJNIKa! 
+                    Czyli spotkania, na którym zaspokoisz swoje pragnienie (mamy herbatkę i ciasteczka!) oraz poznasz 
+                    nowych ludzi i nawiążesz nowe przyjaźnie! Wpadaj i obczaj jak to działa!
+                    
                   </p>
-
-                  <p
-                    className={classNames(
-                      classes.description,
-                      classes.grayText,
-                      "body-text"
-                    )}>
-                    Poprzez
-                    <span className={classNames("body-text-orange")}>
-                      &nbsp;modlitwę, ascezę i braterstwo,&nbsp;
-                    </span>
-                    które poza cotygodniowymi spotkaniami obejmuję także wiele
-                    ciekawych wypadów, staramy się pogłębiać relację z Ojcem.
-                    Bóg jest dla nas kimś żywym i prawdziwym i choć brzmi to
-                    dość kościołkowo jesteśmy grupą zwykłych chłopaków, którzy
-                    nierzadko właśnie poprzez wspólną formację zrozumieli, że
-                    <span className={classNames("body-text-orange")}>
-                      &nbsp;relacja z Bogiem polega na czymś więcej niż tylko
-                      wieczornym pacierzu.&nbsp;
-                    </span>
-                  </p>
-
-                  <p
-                    className={classNames(
-                      classes.description,
-                      classes.grayText,
-                      "body-text"
-                    )}>
-                    Oczywiście poza modlitwą, rozmową i formacją cenimy sobie
-                    wspólne górskie wypady czy zwykłe wyjścia na bilard.
-                  </p>
-
-                  <br></br>
 
                   <p
                     className={classNames(
@@ -301,11 +269,11 @@ const PostAkademicka = () => {
                     Group leader profile
                   ============================================================= */}
                 <GridItem xs={12} sm={12} md={4}>
-                  <Card plain>
+                  {/* <Card plain> */}
                     <GridItem xs={6} sm={6} md={6} className={classes.itemGrid}>
                       <Img
-                        fluid={liderPic[0].node.childImageSharp.fluid}
-                        alt="ExodusLeaderPic"
+                        fluid={BartekliderPic[0].node.childImageSharp.fluid}
+                        alt="BartekLeaderPic"
                         className={classNames(
                           classes.imgRaised,
                           classes.imgRoundedCircle,
@@ -314,24 +282,43 @@ const PostAkademicka = () => {
                       />
                     </GridItem>
                     <h4 className={classes.cardTitle}>
-                      Joanna Malinowska
+                      Bartek Paczkowski
                       <br />
                       <small className={classes.smallTitle}>Lider</small>
                     </h4>
-                    <CardBody>
+                  {/* <Card plain> */}
+                    <GridItem xs={6} sm={6} md={6} className={classes.itemGrid}>
+                      <Img
+                        fluid={MarialiderPic[0].node.childImageSharp.fluid}
+                        alt="MariaLeaderPic"
+                        className={classNames(
+                          classes.imgRaised,
+                          classes.imgRoundedCircle,
+                          classes.imgFluid
+                        )}
+                      />
+                    </GridItem>
+                    <h4 className={classes.cardTitle}>
+                      Marysia Kamerduła
+                      <br />
+                      <small className={classes.smallTitle}>Liderka</small>
+                    </h4>
+                    {/* <CardBody>
                       <p
                         className={classNames(
                           classes.description,
                           classes.grayText,
                           "body-text"
                         )}>
-                        Na skutek transferu z diecezji włocławskiej, spowodowanego marzeniami o dyplomie 
-                        Politechniki Łódzkiej, od roku akademickiego 2019/2020 odpowiedzialną wspólnoty jest 
-                        Joanna Malinowska. 15 lat formacji oazowej odcisnęło trwałe piętno na jej zdrowiu psychicznym, 
-                        nie rokując nadziei na poprawę. Oprócz spotkań oazowych, można ją często spotkać na wieczorach 
-                        gier planszowych lub zamkniętą gdzieś w escape roomie.
+                        Jeden z młodszych członków grupy. Z racji, że trzeba tu
+                        coś o sobie napisać to wymienię swoje zainteresowania:
+                        górski trekking (nie tylko w Polsce), pielgrzymki oraz
+                        dobre memy.
+                        <br />
+                        <br />
+                        Nasze exodusowe hasło to "Walić! Walić! Walić!"
                       </p>
-                    </CardBody>
+                    </CardBody> */}
                     {/* =============================================================
                         Leader contact
                       ============================================================= */}
@@ -344,7 +331,7 @@ const PostAkademicka = () => {
                         {/* =============================================================
                             Mail information
                           ============================================================= */}
-                        <div
+                        {/* <div
                           style={{
                             display: "flex",
                             flexDirection: "row",
@@ -359,30 +346,50 @@ const PostAkademicka = () => {
                             />
                           </Button>
                           <a
-                            href="mailto:malinowskajoanna1989@gmail.com"
+                            href="mailto:piotr.pyciak@gmail.com"
                             className={classNames(
                               classes.primaryColorText,
                               classes.margin5,
                               classes.spanText
                             )}>
-                            malinowskajoanna1989@gmail.com
+                            piotr.pyciak@gmail.com
                           </a>
-                        </div>
+                        </div> */}
                         {/* =============================================================
                             Facebook information
                           ============================================================= */}
-                        <div
+                        {/* <div
                           style={{
                             display: "flex",
                             flexDirection: "row",
                             alignItems: "center",
-                          }}>                          
-                        </div>
-
+                          }}>
+                          <Button
+                            justIcon
+                            color="transparent"
+                            className={classes.margin5}>
+                            <i
+                              className={classes.socials + " fa fa-facebook"}
+                            />
+                          </Button>
+                          <a
+                            href="https://www.facebook.com/smiesznypiotrus "
+                            className={classNames(
+                              classes.margin5,
+                              classes.spanText,
+                              classes.description
+                            )}
+                            style={{ textDecoration: "none" }}>
+                            smiesznypiotrus
+                          </a>
+                        </div> */}
+                        {/* =============================================================
+                            Meeting information
+                          ============================================================= */}
                         <img
                           src={dateBanner[0].node.publicURL}
                           alt="DateBanner"
-                          style={{ paddingTop: "25px" }}
+                          style={{ paddingTop: "25px" }} //25px
                         />
 
                         <p
@@ -391,9 +398,9 @@ const PostAkademicka = () => {
                             classes.grayText,
                             "meeting-date"
                           )}>
-                          Środa
+                          Niedziela
                           <br />
-                          <span style={{ fontWeight: "normal" }}>20:30</span>
+                          <span style={{ fontWeight: "normal" }}>20:00</span>
                         </p>
 
                         <GridItem xs={12} sm={12} md={12}>
@@ -410,13 +417,13 @@ const PostAkademicka = () => {
                                 "body-text",
                                 "icon-label"
                               )}>
-                              Kawiarenka
+                              Salka “Underground”
                             </p>
                           </div>
                         </GridItem>
                       </div>
                     </CardFooter>
-                  </Card>
+                  {/* </Card> */}
                 </GridItem>
               </GridContainer>
             </div>
@@ -430,4 +437,4 @@ const PostAkademicka = () => {
   )
 }
 
-export default PostAkademicka
+export default Obczajnik

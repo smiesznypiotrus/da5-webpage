@@ -34,7 +34,7 @@ const ONMovie = () => {
       allOnMovieJson {
         edges {
           node {
-            links
+            playlistLink
           }
         }
       }
@@ -62,17 +62,29 @@ const ONMovie = () => {
     return node.node.name === "background"
   })
 
-  const links = data.allOnMovieJson.edges[0].node.links
+  // const links = data.allOnMovieJson.edges[0].node.links
 
-  _.forEach(links, link => {
-      videoComponents.push(
-          <>
-            <div className="podcast" key={link} style={{ marginTop: '30px', marginBottom: '30px'}}>
-                <Youtube id={link} />
-            </div>
-          </>
-      )
-  })
+  // _.forEach(links, link => {
+  //     videoComponents.push(
+  //         <>
+  //           <div className="podcast" key={link} style={{ marginTop: '30px', marginBottom: '30px'}}>
+  //               <Youtube id={link} />
+  //           </div>
+  //         </>
+  //     )
+  // })
+
+  const playlistLink = data.allOnMovieJson.edges[0].node.playlistLink
+
+  videoComponents.push(
+    <>
+      <div className="podcast" key={playlistLink} style={{ marginTop: '30px', marginBottom: '30px'}}>
+          <Youtube id={playlistLink} />
+      </div>
+    </>
+)
+
+
 
 
   return (

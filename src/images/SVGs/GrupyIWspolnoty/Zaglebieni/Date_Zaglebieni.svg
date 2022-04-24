@@ -9,10 +9,13 @@
 	.st3{fill:#FFFFFF;}
 </style>
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="22" x2="230" y2="22" gradientTransform="matrix(1 0 0 -1 0 42)">
-	<stop  offset="0" style="stop-color:#00936E"/>
-	<stop  offset="0.292" style="stop-color:#007E53"/>
-	<stop  offset="0.7555" style="stop-color:#00612D"/>
-	<stop  offset="1" style="stop-color:#00561F"/>
+	<stop  offset="0" style="stop-color:#6870B2"/>
+	<stop  offset="3.763855e-03" style="stop-color:#686FB1"/>
+	<stop  offset="0.191" style="stop-color:#535790"/>
+	<stop  offset="0.382" style="stop-color:#434476"/>
+	<stop  offset="0.5779" style="stop-color:#373663"/>
+	<stop  offset="0.7804" style="stop-color:#302E58"/>
+	<stop  offset="1" style="stop-color:#2E2B54"/>
 </linearGradient>
 <rect class="st0" width="230" height="40"/>
 <rect x="0.8" y="12.2" class="st1" width="221" height="24.4"/>

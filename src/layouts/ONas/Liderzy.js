@@ -78,11 +78,11 @@ const Liderzy = () => {
   })
 
   const ProPic1 = _.select(data.allFile.edges, node => {
-    return node.node.name === "Lider_profile"
+    return node.node.name === "Maria_profile"
   })
 
   const ProPic2 = _.select(data.allFile.edges, node => {
-    return node.node.name === "Vicelider_profile"
+    return node.node.name === "Bartek_profile"
   })
 
   return (
@@ -170,7 +170,7 @@ const Liderzy = () => {
                       className={classes.description}
                       style={{ marginBottom: "0px" }}>
                       Maria pierwszy raz przyszła do Piątki na któreś spotkanie integracyjne w 2019 roku,
-                       a później została na grach, na scholi - a potem została Liderką Studiuje produkcje filmową
+                       a później została na grach, na scholi - a potem została Liderką. Studiuje produkcje filmową
                       i częściej jeździ rowerem niż chodzi. Co więcej, Marysia ma sprecyzowane preferencje kulinarne: 
                        jeśli majonez - tylko kielecki, jeśli kanapki z nutellą - to i z masłem, jeśli żart - to suchar.
                     </p>

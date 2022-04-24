@@ -2,11 +2,9 @@ import React from "react"
 // Utils -----------------------------------------------------------------
 import _ from "underscore"
 import classNames from "classnames"
-
 //Gatsby -----------------------------------------------------------------
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-
 // Components used in this layout -----------------------------------------
 import Header from "../../components/Header/Header"
 import HeaderLinks from "../../components/Header/HeaderLinks"
@@ -18,7 +16,6 @@ import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
 import Footer from "../../components/Footer/Footer.js"
 import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
-
 // Styles -----------------------------------------------------------------
 import { makeStyles } from "@material-ui/core/styles"
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -27,7 +24,7 @@ import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
 import statics from "../../components/colors"
-import "../../assets/css/postakademicka-style.css"
+import "../../assets/css/dobrystart-style.css"
 
 const allStyles = {
   ...styles,
@@ -37,12 +34,12 @@ const allStyles = {
 
 const useStyles = makeStyles(allStyles)
 
-const PostAkademicka = () => {
+const Babel = () => {
   const classes = useStyles()
 
   const data = useStaticQuery(graphql`
-    query postAkademickaGetPictures {
-      allFile(filter: { relativePath: { regex: "/PostAkademicka/" } }) {
+    query babelGetPictures {
+      allFile(filter: { relativePath: { regex: "/Babel/" } }) {
         edges {
           node {
             name
@@ -95,10 +92,10 @@ const PostAkademicka = () => {
     return node.node.name === "Lider_profile"
   })
   const dateBanner = _.select(data.allFile.edges, node => {
-    return node.node.name === "Date_exodus"
+    return node.node.name === "Date_Babel"
   })
   const stairsLogo = _.select(data.allFile.edges, node => {
-    return node.node.name === "Localisation-10"
+    return node.node.name === "Location_exodus"
   })
 
   return (
@@ -139,7 +136,7 @@ const PostAkademicka = () => {
         <img
           src={banner[0].node.publicURL}
           style={{ width: "100%", height: "auto", marginBottom: "0px" }}
-          alt="PostakademickaBanner"
+          alt="ExodusBanner"
           ></img>
         <div className={classNames("padding-div")}>
           <div className={classes.container}>
@@ -305,7 +302,7 @@ const PostAkademicka = () => {
                     <GridItem xs={6} sm={6} md={6} className={classes.itemGrid}>
                       <Img
                         fluid={liderPic[0].node.childImageSharp.fluid}
-                        alt="ExodusLeaderPic"
+                        alt="BabelLeaderPic"
                         className={classNames(
                           classes.imgRaised,
                           classes.imgRoundedCircle,
@@ -314,7 +311,7 @@ const PostAkademicka = () => {
                       />
                     </GridItem>
                     <h4 className={classes.cardTitle}>
-                      Joanna Malinowska
+                      Martyna Bagińska
                       <br />
                       <small className={classes.smallTitle}>Lider</small>
                     </h4>
@@ -325,11 +322,8 @@ const PostAkademicka = () => {
                           classes.grayText,
                           "body-text"
                         )}>
-                        Na skutek transferu z diecezji włocławskiej, spowodowanego marzeniami o dyplomie 
-                        Politechniki Łódzkiej, od roku akademickiego 2019/2020 odpowiedzialną wspólnoty jest 
-                        Joanna Malinowska. 15 lat formacji oazowej odcisnęło trwałe piętno na jej zdrowiu psychicznym, 
-                        nie rokując nadziei na poprawę. Oprócz spotkań oazowych, można ją często spotkać na wieczorach 
-                        gier planszowych lub zamkniętą gdzieś w escape roomie.
+                        Jestem studentką pedagogiki opiekuńczo - wychowawczej, a w duszpasterstwie pojawiłam się pierwszy raz około 1,5 roku temu. Moją największą pasją jest podróżowanie i poznawanie nowych kultur! 
+Dlatego właśnie zaangażowałam się w działanie grupy anglojęzycznej Babel! Cieszę się, że mogłam stworzyć tutaj to, czego brakowało mi tak mocno podczas mieszkania za granicą - wielokulturową i różnorodną wspólnotę osób o podobnych wartościach.
                       </p>
                     </CardBody>
                     {/* =============================================================
@@ -359,30 +353,48 @@ const PostAkademicka = () => {
                             />
                           </Button>
                           <a
-                            href="mailto:malinowskajoanna1989@gmail.com"
+                            href="mailto:martyna.baginska8@gmail.com"
                             className={classNames(
                               classes.primaryColorText,
                               classes.margin5,
                               classes.spanText
                             )}>
-                            malinowskajoanna1989@gmail.com
+                            martyna.baginska8@gmail.com
                           </a>
                         </div>
                         {/* =============================================================
                             Facebook information
                           ============================================================= */}
-                        <div
+                        {/* <div
                           style={{
                             display: "flex",
                             flexDirection: "row",
                             alignItems: "center",
-                          }}>                          
-                        </div>
+                          }}>
+                          <Button
+                            justIcon
+                            color="transparent"
+                            className={classes.margin5}>
+                            <i
+                              className={classes.socials + " fa fa-facebook"}
+                            />
+                          </Button>
+                          <a
+                            href="https://www.facebook.com/smiesznypiotrus "
+                            className={classNames(
+                              classes.margin5,
+                              classes.spanText,
+                              classes.description
+                            )}
+                            style={{ textDecoration: "none" }}>
+                            smiesznypiotrus
+                          </a>
+                        </div> */}
 
                         <img
                           src={dateBanner[0].node.publicURL}
                           alt="DateBanner"
-                          style={{ paddingTop: "25px" }}
+                          style={{ paddingTop: "25px" }} //25px
                         />
 
                         <p
@@ -391,9 +403,9 @@ const PostAkademicka = () => {
                             classes.grayText,
                             "meeting-date"
                           )}>
-                          Środa
+                          Niedziela
                           <br />
-                          <span style={{ fontWeight: "normal" }}>20:30</span>
+                          <span style={{ fontWeight: "normal" }}>20:00</span>
                         </p>
 
                         <GridItem xs={12} sm={12} md={12}>
@@ -410,7 +422,7 @@ const PostAkademicka = () => {
                                 "body-text",
                                 "icon-label"
                               )}>
-                              Kawiarenka
+                              Salka “Underground”
                             </p>
                           </div>
                         </GridItem>
@@ -430,4 +442,4 @@ const PostAkademicka = () => {
   )
 }
 
-export default PostAkademicka
+export default Babel

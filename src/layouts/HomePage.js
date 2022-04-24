@@ -287,7 +287,7 @@ const HomePage = () => {
                 <GridContainer>
                   <GridItem xs={12} sm={12} md={4}>
                     <Herbata className={classNames(classes.svgLogo)} />
-                    <Link to="/dobry-start">
+                    <Link to="/obczajnik">
                       <div className={classNames("purple-background")}>
                         <h5
                           className={classNames(
@@ -348,7 +348,7 @@ const HomePage = () => {
                           )}
                           style={{
                             margin: "0px",
-                            padding: "0px",
+                            padding: "0px 10px 0px 10px",
                             color: "white",
                           }}>
                           Wyjedź z nami

@@ -34,12 +34,12 @@ const allStyles = {
 
 const useStyles = makeStyles(allStyles)
 
-const DobryStart = () => {
+const Zaglebieni = () => {
   const classes = useStyles()
 
   const data = useStaticQuery(graphql`
-    query dobryStartGetPictures {
-      allFile(filter: { relativePath: { regex: "/DobryStart/" } }) {
+    query zaglebieniGetPictures {
+      allFile(filter: { relativePath: { regex: "/Zaglebieni/" } }) {
         edges {
           node {
             name
@@ -77,7 +77,7 @@ const DobryStart = () => {
     return node.node.name === "background"
   })
   const banner = _.select(data.allFile.edges, node => {
-    return node.node.name === "Banner_01"
+    return node.node.name === "Banner_Zaglebieni"
   })
   const point1 = _.select(data.allFile.edges, node => {
     return node.node.name === "Points__EXODUS_1"
@@ -92,7 +92,7 @@ const DobryStart = () => {
     return node.node.name === "Lider_profile"
   })
   const dateBanner = _.select(data.allFile.edges, node => {
-    return node.node.name === "Date_exodus"
+    return node.node.name === "Date_Zaglebieni"
   })
   const stairsLogo = _.select(data.allFile.edges, node => {
     return node.node.name === "Location_exodus"
@@ -302,7 +302,7 @@ const DobryStart = () => {
                     <GridItem xs={6} sm={6} md={6} className={classes.itemGrid}>
                       <Img
                         fluid={liderPic[0].node.childImageSharp.fluid}
-                        alt="ExodusLeaderPic"
+                        alt="ZaglebieniLeaderPic"
                         className={classNames(
                           classes.imgRaised,
                           classes.imgRoundedCircle,
@@ -311,7 +311,7 @@ const DobryStart = () => {
                       />
                     </GridItem>
                     <h4 className={classes.cardTitle}>
-                      Piotr Pyciak
+                      x Mateusz Wójtowicz
                       <br />
                       <small className={classes.smallTitle}>Lider</small>
                     </h4>
@@ -322,14 +322,7 @@ const DobryStart = () => {
                           classes.grayText,
                           "body-text"
                         )}>
-                        Jeden z młodszych członków grupy. Z racji, że trzeba tu
-                        coś o sobie napisać to wymienię swoje zainteresowania:
-                        górski trekking (nie tylko w Polsce), pielgrzymki oraz
-                        dobre memy.
-                        <br />
-                        <br />
-                        Nasze exodusowe hasło to "Walić! Walić! Walić!"
-                      </p>
+                        Uwielbiać Boga nieustannie i dziękować Mu za to, ile codziennie dostaje… to i tak za mało, ale robię co w moich siłach. I nie wyobrażam sobie  nie zapraszać Was do tego czym sam żyje.</p>
                     </CardBody>
                     {/* =============================================================
                         Leader contact
@@ -358,19 +351,19 @@ const DobryStart = () => {
                             />
                           </Button>
                           <a
-                            href="mailto:piotr.pyciak@gmail.com"
+                            href="mailto:TODO"
                             className={classNames(
                               classes.primaryColorText,
                               classes.margin5,
                               classes.spanText
                             )}>
-                            piotr.pyciak@gmail.com
+                            TODO
                           </a>
                         </div>
                         {/* =============================================================
                             Facebook information
                           ============================================================= */}
-                        <div
+                        {/* <div
                           style={{
                             display: "flex",
                             flexDirection: "row",
@@ -394,12 +387,12 @@ const DobryStart = () => {
                             style={{ textDecoration: "none" }}>
                             smiesznypiotrus
                           </a>
-                        </div>
+                        </div> */}
 
                         <img
                           src={dateBanner[0].node.publicURL}
                           alt="DateBanner"
-                          style={{ paddingTop: "25px" }}
+                          style={{ paddingTop: "25px" }} //25px
                         />
 
                         <p
@@ -408,9 +401,9 @@ const DobryStart = () => {
                             classes.grayText,
                             "meeting-date"
                           )}>
-                          Czwartek
+                          Niedziela
                           <br />
-                          <span style={{ fontWeight: "normal" }}>20:30</span>
+                          <span style={{ fontWeight: "normal" }}>20:00</span>
                         </p>
 
                         <GridItem xs={12} sm={12} md={12}>
@@ -447,4 +440,4 @@ const DobryStart = () => {
   )
 }
 
-export default DobryStart
+export default Zaglebieni

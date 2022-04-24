@@ -274,7 +274,7 @@ const GrupyIWspolnoty = () => {
               </div>
             </Link>
 
-            <Link to="/grupy/dobry-start" className={classes.navLink}>
+            <Link to="/grupy/obczajnik" className={classes.navLink}>
               <div
                 style={{
                   display: "flex",
@@ -288,8 +288,10 @@ const GrupyIWspolnoty = () => {
                   style={{ width: "100px" }}
                   src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Od%20slowa.svg?alt=media&token=6b75e239-d1da-4500-a7a1-d4ca3372057a"
                   alt="Dobry start"></img>
-                <p className={classNames(classes.lightText)}>Dobry</p>
-                <p className={classNames(classes.boldText)}>START</p>
+                {/* <p className={classNames(classes.lightText)}>ob<b>Czajnik</b></p> */}
+                <p className={classNames(classes.boldText)}>obCZAJNIK</p>
+                <p className={classNames(classes.lightText)}>Zapoznawcza herbata</p>
+                {/* <p className={classNames(classes.boldText)}style={{paddingTop: "10px"}}>obCZAJNIK</p> */}
               </div>
             </Link>
           </div>
@@ -316,8 +318,8 @@ const GrupyIWspolnoty = () => {
                 }}>
                 <img
                   style={{ width: "100px" }}
-                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Oaza.svg?alt=media&token=0181ed72-b319-4495-8e5e-0cd4285d2fc1"
-                  alt="Dobry start"></img>
+                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/ico_postakademicka.svg?alt=media&token=e65436f3-6d61-4cac-bbc7-0c0552979d77"
+                  alt="Postakademicka"></img>
                 <p className={classNames(classes.lightText)}>Grupa</p>
                 <p className={classNames(classes.boldText)}>POSTAKADEMICKA</p>
               </div>
@@ -358,11 +360,11 @@ const GrupyIWspolnoty = () => {
                   style={{ width: "100px" }}
                   src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_swietlica.svg?alt=media&token=83c63810-aa61-4643-9597-99194c8d529b"
                   alt="Świetlica dla niepełnosprawnych"></img>
-                <p className={classNames(classes.lightText)}>Świetlica dla</p>
+                <p className={classNames(classes.boldText)}>SKORUPKI</p>
                 <p
-                  className={classNames(classes.boldText)}
+                  className={classNames(classes.lightText)}
                   style={{ textAlign: "center" }}>
-                  NIEPEŁNOSPRAWNYCH
+                  Świetlica dla
                 </p>
               </div>
             </Link>
