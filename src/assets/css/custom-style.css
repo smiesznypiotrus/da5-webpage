@@ -707,6 +707,33 @@ pre tt:after {
   align-items: center;
 }
 
+.body-akt {
+  margin-top: -20px;
+  font-family: Lato;
+  letter-spacing: 0.06em;
+  padding-left: 7%;
+  padding-right: 6%;
+}
+
+.img-akt {
+  width: 90%;
+  height: auto;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 7%;
+}
+
+.grid-text-header {
+  text-align: left;
+  font-weight: bold;
+  padding: 15px 10px 10px 20px;
+}
+
+.grid-text {
+  text-align: left;
+  padding: 15px 50px 15px 8px;
+}
+
 .yellow-background {
   background: #f9bb44;
   display: inline-block;
@@ -810,6 +837,15 @@ pre tt:after {
 
   .yellow-subtitle {
     display: none;
+  }
+
+  .body-akt {
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+  .img-akt {
+    margin-left: 0px;
   }
 }
 

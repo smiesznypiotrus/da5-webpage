@@ -83,9 +83,9 @@ const Akt = () => {
   const logo = _.select(data.allFile.edges, node => {
     return node.node.name === "Akt_logo"
   })
-//   const point2 = _.select(data.allFile.edges, node => {
-//     return node.node.name === "ico__akt-23"
-//   })
+  const head_banner = _.select(data.allFile.edges, node => {
+    return node.node.name === "maroko_banner"
+  })
 //   const point3 = _.select(data.allFile.edges, node => {
 //     return node.node.name === "ico__akt-24"
 //   })
@@ -145,7 +145,7 @@ const Akt = () => {
                 <GridItem xs={12} sm={12} md={4}>
                     <img
                         src={logo[0].node.publicURL}
-                        style={{ width: "90%", height: "auto", marginBottom: "30px" , textAlign: "left", marginLeft: "7%"}}
+                        className={classNames("img-akt")}
                         alt="Akt Banner">
                     </img>
                 </GridItem>
@@ -155,15 +155,9 @@ const Akt = () => {
                         className={classNames(
                           classes.description,
                           classes.grayText,
-                          "body-text"
-                        )}
-                        style={{
-                            marginTop: "-20px",
-                            fontFamily: "Lato",
-                            letterSpacing: "0.06em",
-                            paddingLeft: "7%",
-                            paddingRight: "6%",
-                        }}>
+                          "body-text",
+                          "body-akt"
+                        )}>
                         <b>AKT czyli Akademicki Klub Turystyczny</b> to źródło podróżniczych inspiracji, które nie pozwolą nam usiedzieć w miejscu. 
                         Wezwanie Papieża Franciszka do wstania z wygodnej sofy bierzemy w naszym Klubie dosłownie.<br/><br/>
                         Organizujemy studenckie wyjazdy, ale chcemy stworzyć także - pomiędzy nimi - przestrzeń do dzielenia się naszymi podróżniczymi przygodami poprzez spotkania autorskie czy wystawy fotografii podróżniczej.<br/><br/> 
@@ -171,144 +165,268 @@ const Akt = () => {
                       </p>
                     </CardBody>
                 </GridItem>
-                {/* =============================================================
-                    Group leader profile
-                  ============================================================= */}
-                {/* <GridItem xs={12} sm={12} md={4}>
-                  <Card plain>
-                    <GridItem xs={6} sm={6} md={6} className={classes.itemGrid}>
-                      <Img
-                        fluid={liderPic[0].node.childImageSharp.fluid}
-                        alt="LeaderPic"
-                        className={classNames(
-                          classes.imgRaised,
-                          classes.imgRoundedCircle,
-                          classes.imgFluid
-                        )}
-                      />
-                    </GridItem>
-                    <h4 className={classes.cardTitle}>
-                      ks. Mateusz Wójtowicz
-                      <br />
-                      <small className={classes.smallTitle}>Lider</small>
-                    </h4>
-                    <CardBody>
-                      <p
-                        className={classNames(
-                          classes.description,
-                          classes.grayText,
-                          "body-text"
-                        )}>
-                        Uwielbiać Boga nieustannie i dziękować Mu za to, ile codziennie dostaje… to i tak za mało, 
-                        ale robię co w moich siłach. I nie wyobrażam sobie  nie zapraszać Was do tego czym sam żyje.
-                      </p>
-                    </CardBody> */}
-                    {/* =============================================================
-                        Leader contact
-                      ============================================================= */}
-                    {/* <CardFooter
-                      className={classNames(
-                        classes.justifyCenter,
-                        classes.contactContainer
-                      )}>
-                      <div> */}
-                        {/* =============================================================
-                            Mail information
-                          ============================================================= */}
-                        {/* <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "row",
-                            alignItems: "center",
-                          }}>
-                          <Button
-                            justIcon
-                            color="transparent"
-                            className={classes.margin5}>
-                            <i
-                              className={classes.socials + " fa fa-envelope"}
-                            />
-                          </Button>
-                          <a
-                            href="mailto:duszpasterstwo.piatka@gmail.com"
-                            className={classNames(
-                              classes.primaryColorText,
-                              classes.margin5,
-                              classes.spanText
-                            )}>
-                            duszpasterstwo.piatka@gmail.com
-                          </a>
-                        </div> */}
-                        {/* =============================================================
-                            Phone information
-                          ============================================================= */}
-
-                        {/* =============================================================
-                            Facebook information
-                          ============================================================= */}
-                        {/* <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "row",
-                            alignItems: "center",
-                          }}>
-                          <Button
-                            justIcon
-                            color="transparent"
-                            className={classes.margin5}>
-                            <i
-                              className={classes.socials + " fa fa-facebook"}
-                            />
-                          </Button>
-                          <a
-                            href="https://www.facebook.com/mateusz.wojtowicz.144"
-                            className={classNames(
-                              classes.margin5,
-                              classes.spanText,
-                              classes.description
-                            )}
-                            style={{ textDecoration: "none" }}>
-                            mateusz.wojtowicz.144
-                          </a>
-                        </div>
-                        <img
-                          src={dateBanner[0].node.publicURL}
-                          alt="DateBanner"
-                          style={{ paddingTop: "25px" }}
-                        />
-                        <p
-                          className={classNames(
+                <GridContainer style={{
+                  boxShadow: " 0px 3px 6px #00000029",
+                  borderRadius: "10px",
+                  margin: "40px",
+                  width: "100%",
+                  paddingBottom: "30px",
+                }}>
+                  <GridItem xs={12} sm={12} md={12} style={{
+                    padding: "0px",
+                  }}>
+                    <div style= {{
+                      height: "50px",
+                      backgroundColor: "#B8935A",
+                      borderRadius: "10px 10px 0px 0px",
+                      textAlign: "left",
+                      padding: "12px 15px",
+                      fontFamily: "Lato",
+                      fontWeight: "bold",
+                    }}>Nasza najbliższa podróż:</div>
+                  </GridItem>
+                  <GridItem xs={12} style={{
+                    padding: "0px",
+                  }}>
+                  <Img
+                    style={{
+                      width: "100%",
+                      objectFit: "cover",
+                      marginBottom: "20px",
+                    }}
+                    fluid={head_banner[0].node.childImageSharp.fluid}
+                    alt={head_banner[0].node.name}
+                  />
+                  </GridItem>
+                  <GridItem xs={2}>
+                  <div className={classNames(
                             classes.description,
                             classes.grayText,
-                            "meeting-date"
+                            "body-text",
+                            "grid-text-header",
+                          )}
+                          style= {{
+                            fontWeight: "bold",
+                          }}>
+                          Termin</div>
+                  </GridItem>
+                  <GridItem xs={10}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
                           )}>
-                          Wtorek
-                          <br />
-                          <span style={{ fontWeight: "normal" }}>20:00</span>
-                        </p>
-
-                        <GridItem xs={12} sm={12} md={12}>
-                          <div className={classNames("icon-text-container")}>
-                            <img
-                              alt="Location_Logo"
-                              className={classNames("icon")}
-                              src={stairsLogo[0].node.publicURL}
-                            />
-                            <p
-                              className={classNames(
-                                classes.description,
-                                classes.grayText,
-                                "body-text",
-                                "icon-label"
-                              )}>
-                              Kaplica
-                            </p>
-                          </div>
-                        </GridItem>
+                      Wyjazd wieczorem 08.07, powrót w nocy z 18/19.05.2021 r. 6 dni roboczych, 2 weekendy</div>
+                  </GridItem>
+                  <GridItem xs={2}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text-header",
+                          )}
+                          style= {{
+                            fontWeight: "bold",
+                          }}>
+                      Dla kogo?</div>
+                  </GridItem>
+                  <GridItem xs={10}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
+                          )}>
+                      Dla studentów i młodych w wieku 18-30 lat. Wyjazd będzie aktywny, więc zalecamy przygotować się kondycyjnie. Żeby zapisać się na wyjazd nie musisz być aktywnym członkiem DA5, choć serdecznie do tego zapraszamy!</div>
+                  </GridItem>
+                  <GridItem xs={2}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text-header",
+                          )}
+                          style= {{
+                            fontWeight: "bold",
+                          }}>
+                      Koszt</div>
+                  </GridItem>
+                  <GridItem xs={10}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
+                          )}
+                          style={{
+                            fontWeight: "bold",
+                          }}>
+                      <p>1300zł</p>
+                      <div>Cena zawiera:</div>
+                      <p style={{
+                        fontWeight: "normal",
+                        paddingTop: "8px",
+                        marginBottom: "20px"
+                        }}>Noclegi, Wyżywienie, Transport, Sprzęt turystyczny (kuchenki gazowe, palniki etc.), Ubezpieczenie turystyczne, Bilety wstępu, Opieka duchowa naszych duszpasterzy</p>
+                      <div>Cena nie zawiera:</div>
+                      <p style={{
+                        fontWeight: "normal",
+                        paddingTop: "8px",
+                        marginBottom: "10px",
+                        }}>Posiłków "na mieście", Namiotów i śpiworów, ewentualnych testów na Covid</p>
                       </div>
-                    </CardFooter>
-                  </Card>
-                </GridItem>*/}
+                  </GridItem>
+                  <GridItem xs={2}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text-header",
+                          )}
+                          style= {{
+                            fontWeight: "bold",
+                          }}>
+                      Wyżywienie</div>
+                  </GridItem>
+                  <GridItem xs={10}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
+                          )}>
+                      Jedzenie przyrządzamy wspólnie z produktów kupowanych ze wspólnej kasy. W planie dwa posiłki kuchni lokalnej w restauracjach i min. 2 ogniska.</div>
+                  </GridItem>
+                  <GridItem xs={2}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text-header",
+                          )}>
+                      Noclegi</div>
+                  </GridItem>
+                  <GridItem xs={10}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
+                          )}>
+                      Około połowa noclegów na kempingach, druga połowa na kwaterach i hostelach. Każdy nocleg odbywa się w innym miejscu.</div>
+                  </GridItem>
+                  <GridItem xs={2}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text-header",
+                          )}>
+                      Trasa</div>
+                  </GridItem>
+                  <GridItem xs={10}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
+                          )}>
+                      Szczegółowy plan wyjazdu możecie zobaczyć na powyższej mapie.</div>
+                  </GridItem>
+                  <GridItem xs={2} style={{
+                            paddingRight: "0px"
+                          }}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text-header",
+                          )}>
+                      Data zgłoszenia</div>
+                  </GridItem>
+                  <GridItem xs={10}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
+                          )}>
+                      Do 8 czerwca</div>
+                  </GridItem>
+                  <GridItem xs={2}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text-header",
+                          )}>
+                      Zaliczka</div>
+                  </GridItem>
+                  <GridItem xs={10}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
+                          )}>
+                      500zł, płatna do 10 czerwca</div>
+                  </GridItem>
+                  <GridItem xs={2}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text-header",
+                          )}>
+                      Plan wyjazdu</div>
+                  </GridItem>
+                  <GridItem xs={10}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
+                          )}
+                          style={{
+                            marginBottom: "20px",
+                          }}>
+                      Wyjazd ma charakter objazdowy. Zobaczymy drewniane cerkwie położone na północy państwa w górzystym regionie Maramuresz. Ten odizolowany od reszty obszar posiada liczne obiekty sakralne zbudowane z drewna, a pochodzące nawet z XVII wieku. Liczne jeziora górskie i wąwozy, piękne doliny, wodospady podkreślają tylko niezwykłość tego kraju. Dla miłośników pieszych wędrówek i zdobywania szczytów atrakcji z pewnością nie zabraknie. Czym byłaby Rumunia bez Transylwanii i wampirów? To właśnie z tego regionu świata pochodzą opowieści o straszliwych krwiopijcach, którym przewodzić miał legendarny Drakula, który nie przez przypadek zasłużył sobie na taką pamięć. W planie również: trzy trekkingi górskie o zróżnicowanym poziomie trudności, minimum dwa wieczory przy ognisku, wizyta w kopalni soli oraz zwiedzanie dwóch starówek rumuńskich miast.</div>
+                  </GridItem>
+                  <GridItem xs={6}>
+                    <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "grid-text",
+                          )}
+                          style={{
+                            textAlign: "right",
+                            paddingRight: "10px",
+                          }}>
+                      Zgłoszenie na wyjazd przyjmujemy<br/>przez maila duszpasterstwa:</div>
+                  </GridItem>
+                  <GridItem xs={6}>
+                    <a 
+                    href="mailto:piotr.pyciak@gmail.com"
+                    className={classNames(
+                      classes.contactUs
+                    )}
+                    // style= {{
+                    //     height: "50px",
+                    //     width: "250px",
+                    //     backgroundColor: "#B8935A",
+                    //     borderRadius: "20px",
+                    //     marginTop: "15px",
+                    //     paddingTop: "13px",
+                    //     textAlign: "center",
+                    //     fontFamily: "Lato",
+                    //     fontWeight: "bold",
+                    //   }}
+                      >Napisz do nas
+                      </a>
+                  </GridItem>
+                </GridContainer>
               </GridContainer> 
             </div>
           </div>

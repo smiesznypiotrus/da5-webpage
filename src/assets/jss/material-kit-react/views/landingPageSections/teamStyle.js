@@ -42,6 +42,18 @@ const teamStyle = {
   margin5: {
     margin: "5px"
   },
+  contactUs: {
+    display: "block",
+    lineHeight: "50px",
+    height: "50px",
+    width: "250px",
+    backgroundColor: "#B8935A",
+    color: "white",
+    borderRadius: "20px",
+    fontFamily: "Lato",
+    fontWeight: "bold",
+    marginTop: "15px",
+  },
   boldText: {
     marginBottom: '3px',
     fontWeight: 'bold',

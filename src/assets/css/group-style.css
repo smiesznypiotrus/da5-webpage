@@ -68,4 +68,7 @@ p.strikearoundSw:before {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .padding-div {
+        padding: 0px;
+    }
 }
