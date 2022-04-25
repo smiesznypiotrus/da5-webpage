@@ -6,7 +6,7 @@ import classNames from "classnames"
 
 import React from "react"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import _ from "underscore"
 
 // Components used in this layout -----------------------------------------
@@ -74,9 +74,6 @@ const Akt = () => {
     }
   `)
 
-//   const groupPic = _.select(data.allFile.edges, node => {
-//     return node.node.name === "group_photo"
-//   })
   const background = _.select(data.backgroundPic.edges, node => {
     return node.node.name === "background"
   })
@@ -86,18 +83,13 @@ const Akt = () => {
   const head_banner = _.select(data.allFile.edges, node => {
     return node.node.name === "maroko_banner"
   })
-//   const point3 = _.select(data.allFile.edges, node => {
-//     return node.node.name === "ico__akt-24"
-//   })
-//   const liderPic = _.select(data.allFile.edges, node => {
-//     return node.node.name === "Lider_profile"
-//   })
-//   const dateBanner = _.select(data.allFile.edges, node => {
-//     return node.node.name === "Date_uwielbienia"
-//   })
-//   const stairsLogo = _.select(data.allFile.edges, node => {
-//     return node.node.name === "Localisation-04"
-//   })
+  const rumunia_banner = _.select(data.allFile.edges, node => {
+    return node.node.name === "rumunia_banner"
+  })
+  const camino_banner = _.select(data.allFile.edges, node => {
+    return node.node.name === "camino_banner"
+  })
+
 
   return (
     <>
@@ -137,11 +129,11 @@ const Akt = () => {
         
         <div className={classNames("padding-div")}>
           <div className={classes.container}>
-            <div className={classes.section}>
+            <div className={classes.section}
+              style={{
+                padding: "70px 0px 40px 0px",
+              }}>
               <GridContainer>
-                {/* =============================================================
-                    Grupy picture and description
-                  ============================================================= */}
                 <GridItem xs={12} sm={12} md={4}>
                     <img
                         src={logo[0].node.publicURL}
@@ -165,12 +157,15 @@ const Akt = () => {
                       </p>
                     </CardBody>
                 </GridItem>
-                <GridContainer style={{
-                  boxShadow: " 0px 3px 6px #00000029",
-                  borderRadius: "10px",
-                  margin: "40px",
-                  width: "100%",
-                  paddingBottom: "30px",
+                <GridContainer className={classNames(
+                          "normal-banner"
+                        )}
+                          style={{
+                            boxShadow: " 0px 3px 6px #00000029",
+                            borderRadius: "10px",
+                            margin: "40px 40px 80px 40px",
+                            width: "100%",
+                            paddingBottom: "30px",
                 }}>
                   <GridItem xs={12} sm={12} md={12} style={{
                     padding: "0px",
@@ -411,23 +406,47 @@ const Akt = () => {
                     href="mailto:piotr.pyciak@gmail.com"
                     className={classNames(
                       classes.contactUs
-                    )}
-                    // style= {{
-                    //     height: "50px",
-                    //     width: "250px",
-                    //     backgroundColor: "#B8935A",
-                    //     borderRadius: "20px",
-                    //     marginTop: "15px",
-                    //     paddingTop: "13px",
-                    //     textAlign: "center",
-                    //     fontFamily: "Lato",
-                    //     fontWeight: "bold",
-                    //   }}
-                      >Napisz do nas
+                    )}>Napisz do nas
                       </a>
                   </GridItem>
-                </GridContainer>
-              </GridContainer> 
+                </GridContainer> */}
+                <GridItem xs={12}>
+                  <div className={classNames(
+                            classes.description,
+                            classes.grayText,
+                            "body-text",
+                            "mobile-text",
+                          )}
+                          style={{
+                      fontWeight: "bold",
+                      textAlign: "center",
+                    }}>
+                    Poprzednie wyjazdy
+                  </div>
+                </GridItem>
+                <GridItem xs={12}>
+                  <Link to="/galeria">
+                  <Img
+                    className={classNames(
+                      classes.previousTrip,
+                    )}
+                    fluid={rumunia_banner[0].node.childImageSharp.fluid}
+                    alt={rumunia_banner[0].node.name}
+                  />
+                  </Link>
+                  </GridItem>
+                  <GridItem xs={12}>
+                    <Link to="/galeria">
+                      <Img
+                        className={classNames(
+                          classes.previousTrip,
+                        )}
+                        fluid={camino_banner[0].node.childImageSharp.fluid}
+                        alt={camino_banner[0].node.name}
+                      />
+                    </Link>
+                  </GridItem>
+              </GridContainer>
             </div>
           </div>
         </div>

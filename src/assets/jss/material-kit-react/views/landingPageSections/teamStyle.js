@@ -54,6 +54,13 @@ const teamStyle = {
     fontWeight: "bold",
     marginTop: "15px",
   },
+  previousTrip: {
+    width: "auto",
+    objectFit: "cover",
+    margin: "0 25px 20px 25px",
+    // marginBottom: "20px",
+    borderRadius: "10px",
+  },
   boldText: {
     marginBottom: '3px',
     fontWeight: 'bold',

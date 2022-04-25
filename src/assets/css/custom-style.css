@@ -734,6 +734,11 @@ pre tt:after {
   padding: 15px 50px 15px 8px;
 }
 
+.mobile-text {
+  font-size: 2.0vw;
+  margin-bottom: 40px;
+}
+
 .yellow-background {
   background: #f9bb44;
   display: inline-block;
@@ -809,6 +814,11 @@ pre tt:after {
 
   .mobile-banner {
     display: block;
+  }
+
+  .mobile-text {
+    font-size: 5.0vw;
+    margin-bottom: 25px;
   }
 
   .no-padding-480 {
