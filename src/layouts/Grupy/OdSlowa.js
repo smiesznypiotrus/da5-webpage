@@ -75,7 +75,7 @@ const OdSlowa = () => {
   `)
 
   const groupPic = _.select(data.allFile.edges, node => {
-    return node.node.name === "Photo_4"
+    return node.node.name === "GroupPic"
   })
   const background = _.select(data.backgroundPic.edges, node => {
     return node.node.name === "background"

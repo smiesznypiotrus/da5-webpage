@@ -139,7 +139,7 @@ const NaszeInicjatywy = () => {
         }}>
 
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/nasze_inicjatywy_banner.svg?alt=media&token=5795f062-dad1-485e-9a97-83ad90cbe75e"
+          src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/events_banner_6px.svg?alt=media&token=4fc4a339-99d2-49e7-af13-a1f9627ba056"
           className={classNames("normal-banner")}
           alt="Nasze Inicjatywy"
         />
@@ -151,20 +151,20 @@ const NaszeInicjatywy = () => {
         />
 
         <GridContainer
-          justify="left"
+          justify="flex-start"
           style={{ paddingLeft: "50px", paddingRight: "50px" }}>
           <GridItem xs={12} sm={12} md={4}>
             <Card>
-              <Img
-                fluid={OnMovie[0].node.childImageSharp.fluid}
-                style={{ height: "225px", width: "100%" }}
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/OnMovie.jpg?alt=media&token=80b2dd0f-5082-45e6-9dd4-213137b327aa"
+                style={{ height: "225px", width: "100%", height: "auto", marginBottom: "0" }}
                 alt="Nasze Inicjatywy"
                 className={classes.imgCardTop}
               />
               <Link
                 to="/naszeinicjatywy/onmovie/"
                 style={{
-                  alignSelf: "center",
+                  alignSelf: "left",
                   cursor: "pointer",
                   color: "inherit",
                 }}>
@@ -179,16 +179,16 @@ const NaszeInicjatywy = () => {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card>
-              <Img
-                fluid={szkutnia[0].node.childImageSharp.fluid}
-                style={{ height: "225px", width: "100%" }}
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/SZKUTNIA.jpg?alt=media&token=6a088262-1f48-457f-8243-17a4ff9e0721"
+                style={{ height: "225px", width: "100%", height: "auto", marginBottom: "0" }}
                 alt="Stock camera image"
                 className={classes.imgCardTop}
               />
               <Link
                 to="/naszeinicjatywy/szkutnia/"
                 style={{
-                  alignSelf: "center",
+                  alignSelf: "left",
                   cursor: "pointer",
                   color: "inherit",
                 }}>
@@ -203,16 +203,16 @@ const NaszeInicjatywy = () => {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card>
-              <Img
-                fluid={piatekPic[0].node.childImageSharp.fluid}
-                style={{ height: "225px", width: "100%" }}
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Piatek_fb.jpg?alt=media&token=20987808-477b-414e-8f81-6e1e5f2e9a9d"
+                style={{ height: "225px", width: "100%", height: "auto", marginBottom: "0" }}
                 alt="Stock camera image"
                 className={classes.imgCardTop}
               />
               <Link
                 to="/naszeinicjatywy/piatkanapiatek/"
                 style={{
-                  alignSelf: "center",
+                  alignSelf: "left",
                   cursor: "pointer",
                   color: "inherit",
                 }}>
@@ -227,16 +227,16 @@ const NaszeInicjatywy = () => {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card>
-              <Img
-                fluid={akt[0].node.childImageSharp.fluid}
-                style={{ height: "225px", width: "100%" }}
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/akt.jpg?alt=media&token=4bd88370-87a4-4efb-a3e8-ea3cdff037d4"
+                style={{ height: "225px", width: "100%", height: "auto", marginBottom: "0" }}
                 alt="Stock camera image"
                 className={classes.imgCardTop}
               />
               <Link
                 to="/naszeinicjatywy/akt/"
                 style={{
-                  alignSelf: "center",
+                  alignSelf: "left",
                   cursor: "pointer",
                   color: "inherit",
                 }}>
@@ -248,7 +248,7 @@ const NaszeInicjatywy = () => {
           </GridItem>
         </GridContainer>
         <GridContainer  
-          justify="left"
+          justify="flex-start"
           style={{ padding: "15px 50px"}}>
           <GridItem xs={12} sm={12} md={6}>
               <Img
