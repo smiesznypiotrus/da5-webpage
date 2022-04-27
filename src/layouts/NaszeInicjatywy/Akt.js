@@ -18,8 +18,10 @@ import Card from "../../components/Card/Card"
 import CardBody from "../../components/Card/CardBody"
 import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
+import DropdownItem from "../../components/Dropdownitem/DropdownItem"
 import Footer from "../../components/Footer/Footer.js"
 import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
+import useCollapse from "react-collapsed"
 
 // Styles -----------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -123,8 +125,9 @@ const Akt = () => {
         style={{
           display: "inline-block",
           position: "relative",
-          left: "48%",
+          left: "50%",
           transform: "translateX(-50%)",
+          // borderRadius: "0px",
         }}>
         
         <div className={classNames("padding-div")}>
@@ -158,6 +161,111 @@ const Akt = () => {
                     </CardBody>
                 </GridItem>
                 <GridContainer className={classNames(
+                          "mobile-banner",
+                        )}
+                          style={{
+                            boxShadow: " 0px 3px 6px #00000029",
+                            borderRadius: "10px",
+                            margin: "40px 40px 40px 40px",
+                            width: "100%",
+                            paddingBottom: "15px"}}>
+                  <GridItem xs={12} style={{
+                    padding: "0px",
+                  }}>
+                    <div style= {{
+                      height: "50px",
+                      backgroundColor: "#B8935A",
+                      borderRadius: "10px 10px 0px 0px",
+                      textAlign: "left",
+                      padding: "12px 15px",
+                      fontFamily: "Lato",
+                      fontWeight: "bold",
+                    }}>Nasza najbliższa podróż:</div>
+                  </GridItem>
+                  <GridItem xs={12}>
+                  <DropdownItem title="Termin" style={{
+                    color: "black",
+                  }}>
+                    Wyjazd wieczoem 08.07, powrót w nocy z 18/19.05.2021 r. 6 dni roboczych, 2 weekendy
+                  </DropdownItem>
+                  </GridItem>
+                  <GridItem xs={12}>
+                  <DropdownItem title="Dla kogo?" style={{
+                    color: "black",
+                  }}>
+                    Dla studentów i młodych w wieku 18-30 lat. Wyjazd będzie aktywny, więc zalecamy przygotować się kondycyjnie. Żeby zapisać się na wyjazd nie musisz być aktywnym członkiem DA5, choć serdecznie do tego zapraszamy!
+                  </DropdownItem>
+                  </GridItem>
+                  <GridItem xs={12}>
+                  <DropdownItem title="Koszt" style={{
+                    color: "black",
+                  }}>
+                    <div><p style={{
+                      fontWeight: "bold",
+                      marginBottom: "10px",
+                      paddingTop: "5px",
+                    }}>1300zł</p>
+                      <div style={{
+                      fontWeight: "bold",
+                    }}>Cena zawiera:</div>
+                      <p style={{
+                        paddingTop: "5px",
+                        marginBottom: "10px"
+                        }}>Noclegi, Wyżywienie, Transport, Sprzęt turystyczny (kuchenki gazowe, palniki etc.), Ubezpieczenie turystyczne, Bilety wstępu, Opieka duchowa naszych duszpasterzy</p>
+                      <div style={{
+                      fontWeight: "bold",
+                    }}>Cena nie zawiera:</div>
+                      <p style={{
+                        paddingTop: "5px",
+                        marginBottom: "10px",
+                        }}>Posiłków "na mieście", Namiotów i śpiworów, ewentualnych testów na Covid</p>
+                      </div>
+                  </DropdownItem>
+                  </GridItem>
+                  <GridItem xs={12}>
+                  <DropdownItem title="Wyżywienie" style={{
+                    color: "black",
+                  }}>
+                   Jedzenie przyrządzamy wspólnie z produktów kupowanych ze wspólnej kasy. W planie dwa posiłki kuchni lokalnej w restauracjach i min. 2 ogniska.
+                  </DropdownItem>
+                  </GridItem>
+                  <GridItem xs={12}>
+                  <DropdownItem title="Noclegi" style={{
+                    color: "black",
+                  }}>
+                    Około połowa noclegów na kempingach, druga połowa na kwaterach i hostelach. Każdy nocleg odbywa się w innym miejscu.
+                  </DropdownItem>
+                  </GridItem>
+                  <GridItem xs={12}>
+                  <DropdownItem title="Trasa" style={{
+                    color: "black",
+                  }}>
+                    Szczegółowy plan wyjazdu możecie zobaczyć na powyższej mapie.
+                  </DropdownItem>
+                  </GridItem>
+                  <GridItem xs={12}>
+                  <DropdownItem title="Data zgłoszenia" style={{
+                    color: "black",
+                  }}>
+                    Do 8 czerwca
+                  </DropdownItem>
+                  </GridItem>
+                  <GridItem xs={12}>
+                  <DropdownItem title="Zaliczka" style={{
+                    color: "black",
+                  }}>
+                    500zł, płatna do 10 czerwca
+                  </DropdownItem>
+                  </GridItem>
+                  <GridItem xs={12}>
+                  <DropdownItem title="Plan wyjazdu" style={{
+                    color: "black",
+                  }}>
+                    Wyjazd ma charakter objazdowy. Zobaczymy drewniane cerkwie położone na północy państwa w górzystym regionie Maramuresz. Ten odizolowany od reszty obszar posiada liczne obiekty sakralne zbudowane z drewna, a pochodzące nawet z XVII wieku. Liczne jeziora górskie i wąwozy, piękne doliny, wodospady podkreślają tylko niezwykłość tego kraju. Dla miłośników pieszych wędrówek i zdobywania szczytów atrakcji z pewnością nie zabraknie. Czym byłaby Rumunia bez Transylwanii i wampirów? To właśnie z tego regionu świata pochodzą opowieści o straszliwych krwiopijcach, którym przewodzić miał legendarny Drakula, który nie przez przypadek zasłużył sobie na taką pamięć. W planie również: trzy trekkingi górskie o zróżnicowanym poziomie trudności, minimum dwa wieczory przy ognisku, wizyta w kopalni soli oraz zwiedzanie dwóch starówek rumuńskich miast.
+                  </DropdownItem>
+                  </GridItem>
+                </GridContainer>
+                <GridContainer className={classNames(
                           "normal-banner"
                         )}
                           style={{
@@ -167,7 +275,7 @@ const Akt = () => {
                             width: "100%",
                             paddingBottom: "30px",
                 }}>
-                  <GridItem xs={12} sm={12} md={12} style={{
+                  <GridItem xs={12} style={{
                     padding: "0px",
                   }}>
                     <div style= {{
@@ -409,7 +517,7 @@ const Akt = () => {
                     )}>Napisz do nas
                       </a>
                   </GridItem>
-                </GridContainer> */}
+                </GridContainer>
                 <GridItem xs={12}>
                   <div className={classNames(
                             classes.description,
