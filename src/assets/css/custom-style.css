@@ -821,6 +821,10 @@ pre tt:after {
     margin-bottom: 25px;
   }
 
+  .uncut-upper-corners {
+    border-radius: 0px 0px 10px 10px;
+  }
+
   .no-padding-480 {
     padding: 0;
   }
