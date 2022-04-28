@@ -1,8 +1,8 @@
 .quote {
-    font-size: 2rem;
-    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    font-family: 'Kalam', cursive;
     color: gray;
-    font-weight: 50;
+    font-weight: 40;
     margin-top: 20px;
     line-height: 1.3;
 }
@@ -22,10 +22,7 @@
     font-weight: bold;
 }
 
-.body-text-highlight {
-    color:#279396;
-    font-weight: 500;
-}
+
 
 p.strikearoundSw {
     position: relative;
@@ -60,6 +57,46 @@ p.strikearoundSw:before {
 }
 .padding-div {
     padding: 0px 25px;
+}
+
+.body-text-bold {
+    font-weight: bold;
+}
+
+.color-babel {
+    color: #29235C;
+}
+
+.color-exodus {
+    color: #E77542;
+}
+
+.color-odslowa {
+    color: #265D31;
+}
+
+.color-uwielbienie {
+    color: #60A731;
+}
+
+.color-liturgiczna {
+    color: #FFCC00;
+}
+
+.color-sport {
+    color: #A1182C;
+}
+
+.color-schola {
+    color: #0E456E;
+}
+
+.color-skorupki {
+    color:#279396;
+}
+
+.color-zaglebieni {
+    color:#36355D;
 }
 
 

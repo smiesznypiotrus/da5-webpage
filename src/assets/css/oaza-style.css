@@ -1,4 +1,4 @@
-.oaza-color {
+/* .oaza-color {
     color:#81368B;
     font-weight: 500;
 }
@@ -22,10 +22,6 @@ p.strikearound-oaza:before, p.strikearound-oaza:after {
 p.strikearound-oaza:before {
     margin-left: -50%;
     text-align: right;
-}
-.odslowa-color {
-    color: #265D31;
-    font-weight: 500;
 }
 p.strikearound-odslowa {
     position: relative;
@@ -74,10 +70,6 @@ p.strikearound-taize:before {
     text-align: right;
 }
 
-.liturgiczna-color {
-    color: #FFCC00;
-    font-weight: 500;
-}
 p.strikearound-liturgiczna {
     position: relative;
     z-index: 1;
@@ -98,11 +90,6 @@ p.strikearound-liturgiczna:before, p.strikearound-liturgiczna:after {
 p.strikearound-liturgiczna:before {
     margin-left: -50%;
     text-align: right;
-}
-
-.uwielbienie-color {
-    color: #60A731;
-    font-weight: 500;
 }
 p.strikearound-uwielbienie {
     position: relative;
@@ -126,10 +113,6 @@ p.strikearound-uwielbienie:before {
     text-align: right;
 }
 
-.sport-color {
-    color: #A1182C;
-    font-weight: 500;
-}
 p.strikearound-sport {
     position: relative;
     z-index: 1;
@@ -153,10 +136,6 @@ p.strikearound-sport:before {
 }
 
 
-.schola-color {
-    color: #0E456E;
-    font-weight: 500;
-}
 p.strikearound-schola {
     position: relative;
     z-index: 1;
@@ -178,4 +157,4 @@ p.strikearound-schola:before {
     margin-left: -50%;
     text-align: right;
 }
-
+ */

@@ -1,6 +1,6 @@
 .quote {
-    font-size: 2rem;
-    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    font-family: 'Kalam';
     color: gray;
     font-weight: 50;
     margin-top: 20px;
@@ -9,7 +9,7 @@
 
 .body-text {
     font-family: 'Lato', sans-serif;
-    text-align: center;
+    text-align: left;
 }
 
 .icon-label {
