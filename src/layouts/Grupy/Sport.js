@@ -160,7 +160,7 @@ const Sport = () => {
                       "body-text"
                     )}>
                     Duszpasterstwo Akademickie
-                    <span className={classNames("sport-color")}>
+                    <span className={classNames("body-text-bold", "color-sport")}>
                       &nbsp;stawia na Twój rozwój fizyczny,&nbsp;
                     </span>
                     proponując możliwość uprawiania sportu.
@@ -184,11 +184,11 @@ const Sport = () => {
                       "body-text"
                     )}>
                     Oczywiście wybieramy
-                    <span className={classNames("sport-color")}>
+                    <span className={classNames("body-text-bold", "color-sport")}>
                       &nbsp;wyłącznie gry zespołowe,&nbsp;
                     </span>
                     tak aby
-                    <span className={classNames("sport-color")}>
+                    <span className={classNames("body-text-bold", "color-sport")}>
                       &nbsp;wzmocnić nie tylko ciało, ale i naszą wspólnotę.
                     </span>
                   </p>

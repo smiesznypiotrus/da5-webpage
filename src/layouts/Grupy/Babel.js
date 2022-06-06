@@ -24,7 +24,7 @@ import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
 import statics from "../../components/colors"
-import "../../assets/css/dobrystart-style.css"
+import "../../assets/css/group-style.css"
 
 const allStyles = {
   ...styles,
@@ -77,7 +77,7 @@ const Babel = () => {
     return node.node.name === "background"
   })
   const banner = _.select(data.allFile.edges, node => {
-    return node.node.name === "Banner_01"
+    return node.node.name === "Banner_Babel"
   })
   const point1 = _.select(data.allFile.edges, node => {
     return node.node.name === "Points__EXODUS_1"
@@ -136,7 +136,7 @@ const Babel = () => {
         <img
           src={banner[0].node.publicURL}
           style={{ width: "100%", height: "auto", marginBottom: "0px" }}
-          alt="ExodusBanner"
+          alt="BabelBanner"
           ></img>
         <div className={classNames("padding-div")}>
           <div className={classes.container}>
@@ -157,7 +157,7 @@ const Babel = () => {
                     alt={groupPic[0].node.name}
                   />
                   <h6 className={classNames("quote")}>
-                    Czy jesteś gotowy na więcej?
+                  "Take five" with DA5!
                   </h6>
                   <p
                     className={classNames(
@@ -165,42 +165,25 @@ const Babel = () => {
                       classes.grayText,
                       "body-text"
                     )}>
-                    Jesteśmy grupą młodych mężczyzn,
-                    <span className={classNames("body-text-orange")}>
-                      &nbsp;chcących zmieniać świat na lepsze - oczywiście
-                      zaczynając od siebie.
-                    </span>
-                  </p>
-
-                  <p
+                    Jesteśmy świeżo działającą <span className={classNames("body-text-bold", "color-babel")}>grupą anglojęzyczną</span> pomagającą osobom z <span className={classNames("body-text-bold", "color-babel")}>innych krajów</span> odnaleźć swoje miejsce w Łodzi!</p>
+                    <p
                     className={classNames(
                       classes.description,
                       classes.grayText,
                       "body-text"
-                    )}>
-                    Poprzez
-                    <span className={classNames("body-text-orange")}>
-                      &nbsp;modlitwę, ascezę i braterstwo,&nbsp;
-                    </span>
-                    które poza cotygodniowymi spotkaniami obejmuję także wiele
-                    ciekawych wypadów, staramy się pogłębiać relację z Ojcem.
-                    Bóg jest dla nas kimś żywym i prawdziwym i choć brzmi to
-                    dość kościołkowo jesteśmy grupą zwykłych chłopaków, którzy
-                    nierzadko właśnie poprzez wspólną formację zrozumieli, że
-                    <span className={classNames("body-text-orange")}>
-                      &nbsp;relacja z Bogiem polega na czymś więcej niż tylko
-                      wieczornym pacierzu.&nbsp;
-                    </span>
-                  </p>
-
-                  <p
+                    )}>Jak to wszystko funkcjonuje?</p>
+<p
                     className={classNames(
                       classes.description,
                       classes.grayText,
                       "body-text"
-                    )}>
-                    Oczywiście poza modlitwą, rozmową i formacją cenimy sobie
-                    wspólne górskie wypady czy zwykłe wyjścia na bilard.
+                    )}>Polscy studenci każdego miesiąca szykują wydarzenia, spotkania a także <span className={classNames("body-text-bold", "color-babel")}>uwielbienia w języku angielskim.</span> Jest to jedna z nielicznych szans doświadczenia wspólnoty i żywego <span className={classNames("body-text-bold", "color-babel")}>kontaktu z Panem Bogiem</span> w kraju, w którym tak właściwie wszystko dla naszych przyjaciół zza granicy jest <span className={classNames("body-text-bold", "color-babel")}>nieznane.</span></p>
+<p
+                    className={classNames(
+                      classes.description,
+                      classes.grayText,
+                      "body-text"
+                    )}>Oprócz wspólnej <span className={classNames("body-text-bold", "color-babel")}>modlitwy i wsparcia duchowego</span> warto wspomnieć, że jest to świetna okazja do poprawienia swoich umiejętności językowych a także poznania wielu <span className={classNames("body-text-bold", "color-babel")}>innych tradycji i kultur.</span>
                   </p>
 
                   <br></br>
@@ -230,14 +213,11 @@ const Babel = () => {
                           classes.grayText,
                           "body-text"
                         )}>
-                        Poszukujesz wspólnoty, która oprócz
-                        <span className={classNames("body-text-orange")}>
-                          &nbsp;modlitwy&nbsp;
+                        Chciałbyś  
+                        <span className={classNames("body-text-bold", "color-babel")}>
+                        &nbsp;otworzyć się&nbsp;
                         </span>
-                        da Ci także możliwość nawiązania
-                        <span className={classNames("body-text-orange")}>
-                          &nbsp;bliższych relacji i przyjaźni.&nbsp;
-                        </span>
+                        na innych, a tym samym pomóc w organizacji spotkań i wydarzeń.
                       </p>
                     </div>
                   </GridItem>
@@ -247,34 +227,6 @@ const Babel = () => {
                       <img
                         className={classNames("icon")}
                         src={point2[0].node.publicURL}
-                        alt=""
-                      />
-
-                      <p
-                        className={classNames(
-                          classes.description,
-                          classes.grayText,
-                          "body-text"
-                        )}>
-                        Chcesz zmieniać siebie, aby być
-                        <span className={classNames("body-text-orange")}>
-                          &nbsp;lepszym dla innych. &nbsp;
-                        </span>
-                        Potrafisz od siebie wymagać i widzisz
-                        <span className={classNames("body-text-orange")}>
-                          &nbsp;potrzebę ciągłej zmiany na drodze do prawdziwej
-                          męskości,&nbsp;
-                        </span>
-                        do której wzywa nas Bóg.
-                      </p>
-                    </div>
-                  </GridItem>
-
-                  <GridItem xs={12} sm={12} md={12}>
-                    <div className={classNames("icon-text-container")}>
-                      <img
-                        className={classNames("icon")}
-                        src={point3[0].node.publicURL}
                         alt="Punkt 2"
                       />
 
@@ -284,12 +236,38 @@ const Babel = () => {
                           classes.grayText,
                           "body-text"
                         )}>
-                        Chcesz
-                        <span className={classNames("body-text-orange")}>
-                          &nbsp;zaangażować się w formację, &nbsp;
+                        Chcesz zobaczyć funkcjonowanie 
+                        <span className={classNames("body-text-bold", "color-babel")}>
+                          &nbsp;wspólnoty anglojęzycznej&nbsp;
                         </span>
-                        a nie tylko przyjść na spotkanie raz w miesiącu jako
-                        anonimowy gość.
+                        złożonej z wielu przedstawicieli
+                        <span className={classNames("body-text-bold", "color-babel")}>
+                          &nbsp;krajów europejskich,&nbsp;
+                        </span>
+                        i nie tylko.
+                      </p>
+                    </div>
+                  </GridItem>
+
+                  <GridItem xs={12} sm={12} md={12}>
+                    <div className={classNames("icon-text-container")}>
+                      <img
+                        className={classNames("icon")}
+                        src={point3[0].node.publicURL}
+                        alt="Punkt 3"
+                      />
+
+                      <p
+                        className={classNames(
+                          classes.description,
+                          classes.grayText,
+                          "body-text"
+                        )}>
+                        Lubisz
+                        <span className={classNames("body-text-bold", "color-babel")}>
+                          &nbsp;posługiwać się powszechnie znanymi językami&nbsp;
+                        </span>
+                        i chcialbys pomóc w przyjęciu zagranicznych studentów w DA5.
                       </p>
                     </div>
                   </GridItem>

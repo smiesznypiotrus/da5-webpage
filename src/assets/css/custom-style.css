@@ -664,6 +664,10 @@ pre tt:after {
   );
 }
 
+.normal-banner {
+  object-fit: fill;
+}
+
 .mobile-banner {
   display: none;
   /* background-color: rgba(232,78,27,1); */
@@ -671,6 +675,17 @@ pre tt:after {
 
 .yellow-subtitle {
   display: inline-block;
+}
+
+.icon-shadow {
+    /* height: 100px;
+    width: 100px; */
+    border-radius: 50px;
+    /* margin: 20px; */
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  /* background-image: url("https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Grupy%20i%20wsp%C3%B3lnoty%2FPostakademicka%2Fico_postakademicka_new.svg?alt=media&token=cfa327a1-2484-44c9-a89f-1c5c3fada432"); */
 }
 
 .modal-width {

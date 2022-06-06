@@ -172,11 +172,11 @@ const Schola = () => {
                     )}
                   >
                     Schola duszpasterstwa akademickiego to grupa osób, których 
-                    <span className={classNames("schola-color")}>
+                    <span className={classNames("body-text-bold", "color-schola")}>
                       &nbsp;pasją jest śpiew i gra na instrumentach.&nbsp;
                     </span>
                     Poprzez swój śpiew chcą 
-                    <span className={classNames("schola-color")}>
+                    <span className={classNames("body-text-bold", "color-schola")}>
                       &nbsp;oddawać chwałę Panu Bogu&nbsp;
                     </span>
                     i pomóc innym uczestnikom liturgii w odpowiednim przeżyciu Mszy świętej.
@@ -190,7 +190,7 @@ const Schola = () => {
                     )}
                   >
                       Oprócz śpiewania na liturgii członkowie scholi akademickiej 
-                    <span className={classNames("schola-color")}>
+                    <span className={classNames("body-text-bold", "color-schola")}>
                     &nbsp;biorą udział w różnego rodzaju wydarzeniach&nbsp;
                     </span>
                     np. koncercie kolęd w auli duszpasterstwa, czy kolędowaniu u podopiecznych Zakładu Opiekuńczo-Leczniczego.

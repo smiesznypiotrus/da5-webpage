@@ -29,6 +29,7 @@ import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
 import statics from "../../components/colors"
 import "../../assets/css/oaza-style.css"
+import "../../assets/css/group-style.css"
 
 const allStyles = {
   ...styles,
@@ -168,7 +169,7 @@ const OdSlowa = () => {
                     )}
                   >
                       Spotkania formacyjne od Słowa do słowa są propozycją dla tych wszystkich, którzy - w swym poszukiwaniu Prawdziwego Boga - 
-                    <span className={classNames("odslowa-color")}>
+                    <span className={classNames("body-text-bold", "color-odslowa")}>
                       &nbsp;nie zadowalają się prostymi odpowiedziami na najtrudniejsze pytania.
                     </span>
                   </p>
@@ -180,7 +181,7 @@ const OdSlowa = () => {
                     )}
                   >
                     Chcemy pytać o Boga i o naszą wiarę, chcemy 
-                    <span className={classNames("odslowa-color")}>
+                    <span className={classNames("body-text-bold", "color-odslowa")}>
                       &nbsp;rozmawiać o tym co dla nas najważniejsze i pozwolić się prowadzić najważniejszym Słowom:&nbsp;
                     </span>
                     tym co mówi do nas Bóg w Piśmie Świętym i w nauczaniu Kościoła.
@@ -191,10 +192,9 @@ const OdSlowa = () => {
 
                   <p
                     className={classNames(
-                      classes.description,
-                      classes.grayText,
                       "body-text",
-                      "strikearound-odslowa"
+                      "strikearound",
+                      "color-odslowa"
                     )}
                   >
                     {" "}
@@ -215,7 +215,7 @@ const OdSlowa = () => {
                           "body-text"
                         )}
                       >
-                    <span className={classNames("odslowa-color")}>
+                    <span className={classNames("body-text-bold", "color-odslowa")}>
                         Chcesz dołączyć do duszpasterstwa akademickiego „Piątka” &nbsp;
                     </span>
                     – te spotkania to dobry wybór dla nowych osób
@@ -236,7 +236,7 @@ const OdSlowa = () => {
                           "body-text"
                         )}
                       >
-                          <span className={classNames("odslowa-color")}>
+                          <span className={classNames("body-text-bold", "color-odslowa")}>
                           Masz wiele pytań  &nbsp;
                     </span>
                     - tych odnośnie wiary, jak i tych życiowych - a nie zawsze masz z kim o nich porozmawiać
@@ -259,11 +259,11 @@ const OdSlowa = () => {
                       >
                     <br/>
                     Zdajesz sobie sprawę z tego, że idąc przez życie samotnie, może faktycznie będziesz szedł 
-                    <span className={classNames("odslowa-color")}>
+                    <span className={classNames("body-text-bold", "color-odslowa")}>
                     &nbsp;szybko&nbsp;
                     </span>, 
                     ale tylko wtedy 
-                    <span className={classNames("odslowa-color")}>
+                    <span className={classNames("body-text-bold", "color-odslowa")}>
                     &nbsp;zajdziesz daleko &nbsp;
                     </span>
                     kiedy ktoś będzie Ci w tej drodze towarzyszył

@@ -1,4 +1,4 @@
-.quote {
+/* .quote {
     font-size: 1.8rem;
     font-family: 'Kalam';
     color: gray;
@@ -51,7 +51,6 @@ p.strikearound:before {
 .icon-text-container {
     display: flex;
     flex:1;
-    /* background-color: blue; */
     align-items: center;
     margin-bottom: 15px;
 }
@@ -69,4 +68,4 @@ p.strikearound:before {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+} */

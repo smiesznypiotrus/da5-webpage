@@ -168,14 +168,7 @@ const Liturgiczna = () => {
                       "body-text"
                     )}
                   >
-                      Akademicka Służba Liturgiczna Ołtarza naszego duszpasterstwa  to grupa młodych mężczyzn, którzy chcą 
-                    <span className={classNames("liturgiczna-color")}>
-                    &nbsp;pogłębiać wiedzę z dziedziny liturgii,&nbsp;
-                    </span>
-                    a także
-                    <span className={classNames("liturgiczna-color")}>
-                    &nbsp;służyć Panu przy Stole Eucharystycznym.&nbsp;
-                    </span> 
+                    Liturgiczna Służba Ołtarza naszego duszpasterstwa to grupa młodych mężczyzn, którzy chcą <span className={classNames("body-text-bold", "color-liturgiczna")}>pogłębiać relację z Panem Bogiem</span> poprzez bezpośredni <span className={classNames("body-text-bold", "color-liturgiczna")}>udział w Uczcie Eucharystycznej.</span> Pogłębianie naszej wiedzy z dziedziny liturgii i stosowanie jej w praktyce służy lepszemu posługiwaniu na <span className={classNames("body-text-bold", "color-liturgiczna")}>Cześć i Chwałę Pana.</span>
                   </p>
                   <p
                     className={classNames(
@@ -184,22 +177,18 @@ const Liturgiczna = () => {
                       "body-text"
                     )}
                   >
-                    Grupa ta formuje się w każdy czwartek o godz. 20:00. Podczas tych spotkań duży nacisk kładzie się na 
-                    <span className={classNames("liturgiczna-color")}>
-                      &nbsp;rozwój ducha liturgii&nbsp;
-                    </span>
-                    wśród Służby Liturgicznej oraz na 
-                    <span className={classNames("liturgiczna-color")}>
-                      &nbsp;przygotowanie praktyczne do Mszy świętej&nbsp;
-                    </span>
-                    i nabożeństw. 
-                    <br /><br/>
-                    Grupa jest bardzo otwarta na nowe osoby i możesz być pewny, że odnajdziesz się w niej i zostaniesz przyjęty  z wielką radością. 
+                  Spotkania formacyjne odbywają się w każdą niedzielę o 18:00 przed Mszą Świętą. Podczas tych spotkań duży nacisk kładzie się na omawianie bieżących spraw, omawianie przebiegu Liturgii i <span className={classNames("body-text-bold", "color-liturgiczna")}>rozwój ducha liturgii</span> wśród członków grupy.
                   </p>
-                  
-
+                  <p
+                    className={classNames(
+                      classes.description,
+                      classes.grayText,
+                      "body-text"
+                    )}
+                  >
+                  Jesteśmy bardzo otwarci na nowe osoby, dlatego jeśli szukasz formacji nastawionej na pogłębianie relacji z Panem Bogiem przejawiające się w budowaniu piękna liturgii, to LSO jest miejsce dla Ciebie.
+                  </p>
                   <br></br>
-
                   <p
                     className={classNames(
                       classes.description,
@@ -227,7 +216,7 @@ const Liturgiczna = () => {
                         )}
                       >
                         Chcesz pogłębiać swoją relację z Panem Bogiem, będąc  
-                        <span className={classNames("liturgiczna-color")}>
+                        <span className={classNames("body-text-bold", "color-liturgiczna")}>
                             &nbsp;blisko Jego ołtarza.&nbsp;
                         </span>
                       </p>
@@ -248,11 +237,11 @@ const Liturgiczna = () => {
                         )}
                       >
                         Jesteś 
-                        <span className={classNames("liturgiczna-color")}>
+                        <span className={classNames("body-text-bold", "color-liturgiczna")}>
                             &nbsp;zdyscyplinowany,&nbsp;
                         </span>
                         potrafisz 
-                        <span className={classNames("liturgiczna-color")}>
+                        <span className={classNames("body-text-bold", "color-liturgiczna")}>
                             &nbsp;wymagać od siebie&nbsp;
                         </span>
                         i chciałbyś formować się w duchu liturgii.
@@ -276,7 +265,7 @@ const Liturgiczna = () => {
                       >
                           Lubisz przygotowywać bądź uczestniczyć w liturgii, która jest 
                     
-                    <span className={classNames("liturgiczna-color")}>
+                    <span className={classNames("body-text-bold", "color-liturgiczna")}>
                     &nbsp;dobrze i dokładnie przygotowana, aby swoim pięknem przybliżała wiernych do Chrystusa.&nbsp;
                     </span>
                     
@@ -301,7 +290,7 @@ const Liturgiczna = () => {
                       />
                     </GridItem>
                     <h4 className={classes.cardTitle}>
-                    Damian Tomaszewski
+                    Mateusz Jędrzejec
                       <br />
                       <small className={classes.smallTitle}>Lider</small>
                     </h4>

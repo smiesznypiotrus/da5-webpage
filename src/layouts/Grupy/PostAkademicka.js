@@ -26,8 +26,8 @@ import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSec
 import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
-import statics from "../../components/colors"
-import "../../assets/css/postakademicka-style.css"
+import swietlica from "../../components/colors"
+import "../../assets/css/group-style.css"
 
 const allStyles = {
   ...styles,
@@ -104,7 +104,7 @@ const PostAkademicka = () => {
   return (
     <>
       <Header
-        color={statics.navBarColor}
+        color={swietlica.navBarColor}
         rightLinks={<HeaderLinks />}
         fixed
       />

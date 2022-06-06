@@ -20,13 +20,14 @@ import Card from "../components/Card/Card.js"
 import CardBody from "../components/Card/CardBody.js"
 import EventsToday from "../components/EventsToday/EventsToday"
 import News from "../components/News/News"
-import { facebookUrl, instagramUrl, openWebsite } from "./Common.js"
+import { facebookUrl, instagramUrl, youtubeUrl, openWebsite } from "./Common.js"
 //SVG's -------------------------------------------------------------------
 import Herbata from "../images/SVGs/Home/ico_how_to_start_1.svg"
 import SpotkanieLogo from "../images/SVGs/Home/ico_how_to_start_2.svg"
 import Wyjdz from "../images/SVGs/Home/ico_how_to_start_3.svg"
 import FbSvg from "../images/SVGs/Home/__Facebook.svg"
 import IgSvg from "../images/SVGs/Home/__instagram.svg"
+import YtSvg from "../images/SVGs/Home/__Youtube.svg"
 import StartBanner from "../images/SVGs/Home/how_to_start_banner.svg"
 // Styles -----------------------------------------------------------------
 import styles from "../assets/jss/material-kit-react/views/landingPage.js"
@@ -273,7 +274,7 @@ const HomePage = () => {
         <div className={classes.container}>
           <div className={classes.firstSection}>
             <h5 className={classNames(classes.description, classes.grayText)}>
-              Duszpasterstwo Akademickie to propozycja dla tych, którzy w swych
+              <b>Duszpasterstwo Akademickie</b> to propozycja dla tych, którzy w swych
               poszukiwaniach właściwej drogi nie boją się zaufać drugiemu
               człowiekowi i chcą iść naprzód we wspólnocie.
               <br />
@@ -287,7 +288,7 @@ const HomePage = () => {
                 <GridContainer>
                   <GridItem xs={12} sm={12} md={4}>
                     <Herbata className={classNames(classes.svgLogo)} />
-                    <Link to="/obczajnik">
+                    <Link to="/grupy/obczajnik">
                       <div className={classNames("purple-background")}>
                         <h5
                           className={classNames(
@@ -604,9 +605,8 @@ const HomePage = () => {
                 </h5>
               </GridItem>
             </GridContainer>
-
             <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={6}>
+              <GridItem xs={12} sm={12} md={4}>
                 <FbSvg
                   className={classNames(classes.svgLogo)}
                   style={{ cursor: "pointer" }}
@@ -614,12 +614,8 @@ const HomePage = () => {
                   onKeyDown={() => openWebsite(facebookUrl)}
                   aria-hidden="true"
                 />
-                {/* <h5
-                  className={classNames(classes.description, classes.grayText)}>
-                  Facebook
-                </h5> */}
               </GridItem>
-              <GridItem xs={12} sm={12} md={6}>
+              <GridItem xs={12} sm={12} md={4}>
                 <IgSvg
                   className={classNames(classes.svgLogo)}
                   style={{ cursor: "pointer" }}
@@ -627,9 +623,18 @@ const HomePage = () => {
                   onKeyDown={() => openWebsite(instagramUrl)}
                   aria-hidden="true"
                 />
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <YtSvg
+                  className={classNames(classes.svgLogo)}
+                  style={{ cursor: "pointer" }}
+                  onClick={() => openWebsite(youtubeUrl)}
+                  onKeyDown={() => openWebsite(youtubeUrl)}
+                  aria-hidden="true"
+                />
                 {/* <h5
                   className={classNames(classes.description, classes.grayText)}>
-                  Instagram
+                  Facebook
                 </h5> */}
               </GridItem>
             </GridContainer>

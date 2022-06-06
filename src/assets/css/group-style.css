@@ -22,32 +22,8 @@
     font-weight: bold;
 }
 
-
-
-p.strikearoundSw {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    text-align: center;
-    font-weight: bold;
-    color: black;
-}
-p.strikearoundSw:before, p.strikearoundSw:after {
-    position: absolute;
-    top: 51%;
-    overflow: hidden;
-    width: 50%;
-    height: 2px;
-    content: '\a0';
-    background-color: #279396
-}
-p.strikearoundSw:before {
-    margin-left: -50%;
-    text-align: right;
-}
 .icon-text-container {
     display: flex;
-    /* background-color: blue; */
     align-items: center;
     justify-content: center;
 }
@@ -71,8 +47,36 @@ p.strikearoundSw:before {
     color: #E77542;
 }
 
+
+/* Od słowa do słowa */
 .color-odslowa {
     color: #265D31;
+}
+
+
+
+/* Przyjdz do nas jeśli */
+p.strikearound {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+p.strikearound:before, p.strikearound:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    margin-left: 10px;
+    height: 2px;
+    content: '\a0';
+    background-color: #265D31
+}
+p.strikearound:before {
+    margin-left: -51%;
+    text-align: right;
 }
 
 .color-uwielbienie {

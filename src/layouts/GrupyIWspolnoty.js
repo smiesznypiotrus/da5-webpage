@@ -2,6 +2,7 @@ import React from "react"
 // Utils -----------------------------------------------------------------
 import classNames from "classnames"
 import _ from "underscore"
+// import {getStorage, ref, getDownloadURL} from "firebase/storage"
 //Gatsby -----------------------------------------------------------------
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
@@ -317,8 +318,10 @@ const GrupyIWspolnoty = () => {
                   minWidth: "200px",
                 }}>
                 <img
-                  style={{ width: "100px" }}
-                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/ico_postakademicka.svg?alt=media&token=e65436f3-6d61-4cac-bbc7-0c0552979d77"
+                  style={{ width: "100px", backgroundImage: "src('https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Grupy%20i%20wsp%C3%B3lnoty%2FPostakademicka%2Fico_postakademicka_new.svg?alt=media&token=cfa327a1-2484-44c9-a89f-1c5c3fada43')" }}
+                  className={classNames("icon-shadow")}
+                  // backgroundImage={}
+                  // src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Grupy%20i%20wsp%C3%B3lnoty%2FPostakademicka%2Fico_postakademicka_new.svg?alt=media&token=cfa327a1-2484-44c9-a89f-1c5c3fada432"
                   alt="Postakademicka"></img>
                 <p className={classNames(classes.lightText)}>Grupa</p>
                 <p className={classNames(classes.boldText)}>POSTAKADEMICKA</p>
@@ -408,7 +411,7 @@ const GrupyIWspolnoty = () => {
                 }}>
                 <img
                   style={{ width: "100px" }}
-                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/ico_zaglebieni_new.svg?alt=media&token=646c8d3f-908e-41d9-87a8-e9e5f7f9b9a1"
+                  src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Grupy%20i%20wsp%C3%B3lnoty%2FZaglebieni%2Fico_zaglebieni_new.svg?alt=media&token=fda578fd-2055-4773-bd98-f48af19e684e"
                   alt="Exodus"></img>
                 <p className={classNames(classes.lightText)}>Spotkania biblijne</p>
                 <p className={classNames(classes.boldText)}>ZAGŁĘBIENI</p>

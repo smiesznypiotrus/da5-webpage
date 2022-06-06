@@ -166,7 +166,7 @@ const Exodus = () => {
                       "body-text"
                     )}>
                     Jesteśmy grupą młodych mężczyzn,
-                    <span className={classNames("body-text-orange")}>
+                    <span className={classNames("body-text-bold", "color-exodus")}>
                       &nbsp;chcących zmieniać świat na lepsze - oczywiście
                       zaczynając od siebie.
                     </span>
@@ -179,7 +179,7 @@ const Exodus = () => {
                       "body-text"
                     )}>
                     Poprzez
-                    <span className={classNames("body-text-orange")}>
+                    <span className={classNames("body-text-bold", "color-exodus")}>
                       &nbsp;modlitwę, ascezę i braterstwo,&nbsp;
                     </span>
                     które poza cotygodniowymi spotkaniami obejmuję także wiele
@@ -187,7 +187,7 @@ const Exodus = () => {
                     Bóg jest dla nas kimś żywym i prawdziwym i choć brzmi to
                     dość kościołkowo jesteśmy grupą zwykłych chłopaków, którzy
                     nierzadko właśnie poprzez wspólną formację zrozumieli, że
-                    <span className={classNames("body-text-orange")}>
+                    <span className={classNames("body-text-bold", "color-exodus")}>
                       &nbsp;relacja z Bogiem polega na czymś więcej niż tylko
                       wieczornym pacierzu.&nbsp;
                     </span>
@@ -231,11 +231,11 @@ const Exodus = () => {
                           "body-text"
                         )}>
                         Poszukujesz wspólnoty, która oprócz
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;modlitwy&nbsp;
                         </span>
                         da Ci także możliwość nawiązania
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;bliższych relacji i przyjaźni.&nbsp;
                         </span>
                       </p>
@@ -257,11 +257,11 @@ const Exodus = () => {
                           "body-text"
                         )}>
                         Chcesz zmieniać siebie, aby być
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;lepszym dla innych. &nbsp;
                         </span>
                         Potrafisz od siebie wymagać i widzisz
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;potrzebę ciągłej zmiany na drodze do prawdziwej
                           męskości,&nbsp;
                         </span>
@@ -285,7 +285,7 @@ const Exodus = () => {
                           "body-text"
                         )}>
                         Chcesz
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;zaangażować się w formację, &nbsp;
                         </span>
                         a nie tylko przyjść na spotkanie raz w miesiącu jako

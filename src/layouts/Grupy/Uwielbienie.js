@@ -26,9 +26,9 @@ import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
 import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSections/teamStyle.js"
 import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
-import "../../assets/css/custom-style.css"
+// import "../../assets/css/custom-style.css"
 import statics from "../../components/colors"
-import "../../assets/css/exodus-style.css"
+import "../../assets/css/group-style.css"
 
 const allStyles = {
   ...styles,
@@ -170,7 +170,7 @@ const Uwielbienie = () => {
                       "body-text"
                     )}>
                     W każdy wtorek o godz. 20.00 gromadzimy się w naszej kaplicy, aby
-                    <span className={classNames("uwielbienie-color")}>
+                    <span className={classNames("body-text-bold", "color-uwielbienie")}>
                       &nbsp;uwielbiać Jezusa w Najświętszym Sakramencie.
                     </span>
                   </p>
@@ -182,7 +182,7 @@ const Uwielbienie = () => {
                       "body-text"
                     )}>
                     Chcemy wówczas oddać chwałę naszemu Panu poprzez
-                    <span className={classNames("uwielbienie-color")}>
+                    <span className={classNames("body-text-bold", "color-uwielbienie")}>
                       &nbsp;pełen radości śpiew i spontaniczną modlitwę.&nbsp;
                     </span>
                   </p>
@@ -193,7 +193,7 @@ const Uwielbienie = () => {
                       classes.grayText,
                       "body-text"
                     )}>
-                    <span className={classNames("uwielbienie-color")}>
+                    <span className={classNames("body-text-bold", "color-uwielbienie")}>
                       &nbsp;Przebywanie w Jego obecności&nbsp;
                     </span>
                     przez te kilkanaście minut ma nam pomóc odnajdywać Go w
@@ -228,7 +228,7 @@ const Uwielbienie = () => {
                           "body-text"
                         )}>
                         Poszukujesz przestrzeni
-                        <span className={classNames("uwielbienie-color")}>
+                        <span className={classNames("body-text-bold", "color-uwielbienie")}>
                           &nbsp;modlitwy wspólnotowej i doświadczenia bliskości
                           Boga&nbsp;
                         </span>
@@ -251,7 +251,7 @@ const Uwielbienie = () => {
                           "body-text"
                         )}>
                         Pragniesz rozwijać
-                        <span className={classNames("uwielbienie-color")}>
+                        <span className={classNames("body-text-bold", "color-uwielbienie")}>
                           &nbsp;wrażliwość na siebie i innych&nbsp;
                         </span>
                         oraz na dobro, którego często nie widzimy lub ponad
@@ -273,7 +273,7 @@ const Uwielbienie = () => {
                           classes.grayText,
                           "body-text"
                         )}>
-                        <span className={classNames("uwielbienie-color")}>
+                        <span className={classNames("body-text-bold", "color-uwielbienie")}>
                           Skupić się bardziej na Bogu &nbsp;
                         </span>
                         i Jego prowadzeniu, niż na sobie, swoich zamiarach,

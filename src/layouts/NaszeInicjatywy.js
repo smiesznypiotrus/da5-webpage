@@ -67,18 +67,6 @@ const NaszeInicjatywy = () => {
   const background = _.select(data.backgroundPic.edges, node => {
     return node.node.name === "background"
   })
-  const OnMovie = _.select(data.allFile.edges, node => {
-    return node.node.name === "OnMovie"
-  })
-  const szkutnia = _.select(data.allFile.edges, node => {
-    return node.node.name === "SZKUTNIA"
-  })
-  const piatekPic = _.select(data.allFile.edges, node => {
-    return node.node.name === "Piatek_fb"
-  })
-  const akt = _.select(data.allFile.edges, node => {
-    return node.node.name === "akt"
-  })
   const w1 = _.select(data.allFile.edges, node => {
     return node.node.name === "1"
   })
@@ -152,37 +140,37 @@ const NaszeInicjatywy = () => {
 
         <GridContainer
           justify="flex-start"
-          style={{ paddingLeft: "50px", paddingRight: "50px" }}>
+          style={{ paddingLeft: "50px", paddingRight: "50px", paddingBottom: "20px" }}>
           <GridItem xs={12} sm={12} md={4}>
-            <Card>
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/OnMovie.jpg?alt=media&token=80b2dd0f-5082-45e6-9dd4-213137b327aa"
-                style={{ height: "225px", width: "100%", height: "auto", marginBottom: "0" }}
-                alt="Nasze Inicjatywy"
-                className={classes.imgCardTop}
-              />
-              <Link
+          <Link
                 to="/naszeinicjatywy/onmovie/"
                 style={{
                   alignSelf: "left",
                   cursor: "pointer",
                   color: "inherit",
                 }}>
+            <Card>
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/OnMovie.jpg?alt=media&token=80b2dd0f-5082-45e6-9dd4-213137b327aa"
+                style={{ width: "100%", height: "auto", marginBottom: "0" }}
+                alt="Nasze Inicjatywy"
+                className={classes.imgCardTop}
+              />
                 <CardBody style={{ minHeight: "200px" }}>
                   <h5 className={classes.cardTitle}>ONMovie</h5>
                   <p style={{ lineHeight: "2" }}>
                     Tutaj możesz oglądać nasze filmy naszego kanalu
                   </p>
                 </CardBody>
-              </Link>
-            </Card>
+              </Card>
+            </Link>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card>
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/SZKUTNIA.jpg?alt=media&token=6a088262-1f48-457f-8243-17a4ff9e0721"
-                style={{ height: "225px", width: "100%", height: "auto", marginBottom: "0" }}
-                alt="Stock camera image"
+                style={{ width: "100%", height: "auto", marginBottom: "0" }}
+                alt="Szkutnia"
                 className={classes.imgCardTop}
               />
               <Link
@@ -205,7 +193,7 @@ const NaszeInicjatywy = () => {
             <Card>
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Piatek_fb.jpg?alt=media&token=20987808-477b-414e-8f81-6e1e5f2e9a9d"
-                style={{ height: "225px", width: "100%", height: "auto", marginBottom: "0" }}
+                style={{ width: "100%", height: "auto", marginBottom: "0" }}
                 alt="Stock camera image"
                 className={classes.imgCardTop}
               />
@@ -229,7 +217,7 @@ const NaszeInicjatywy = () => {
             <Card>
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/akt.jpg?alt=media&token=4bd88370-87a4-4efb-a3e8-ea3cdff037d4"
-                style={{ height: "225px", width: "100%", height: "auto", marginBottom: "0" }}
+                style={{ width: "100%", height: "auto", marginBottom: "0" }}
                 alt="Stock camera image"
                 className={classes.imgCardTop}
               />
@@ -245,94 +233,6 @@ const NaszeInicjatywy = () => {
                 </CardBody>
               </Link>
             </Card>
-          </GridItem>
-        </GridContainer>
-        <GridContainer  
-          justify="flex-start"
-          style={{ padding: "15px 50px"}}>
-          <GridItem xs={12} sm={12} md={6}>
-              <Img
-                style={{
-                  width: "100%",
-                  display: "block",
-                  objectFit: "cover",
-                  borderRadius: "3px",
-                  marginBottom: "15px"
-                }}
-                className={classes.imgCardTop}
-                fluid={w1[0].node.childImageSharp.fluid}
-                alt={"Zaczynamy nowy rok"}
-              />
-            </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
-            <Img
-              style={{
-                width: "100%",
-                display: "block",
-                objectFit: "cover",
-                borderRadius: "3px",
-                marginBottom: "15px"
-              }}
-              className={classes.imgCardTop}
-              fluid={w2[0].node.childImageSharp.fluid}
-              alt={"Misa en Español"}
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
-            <Img
-              style={{
-                width: "100%",
-                display: "block",
-                objectFit: "cover",
-                borderRadius: "3px",
-                marginBottom: "15px"
-              }}
-              className={classes.imgCardTop}
-              fluid={w3[0].node.childImageSharp.fluid}
-              alt={"Roraty"}
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
-            <Img
-              style={{
-                width: "100%",
-                display: "block",
-                objectFit: "cover",
-                borderRadius: "3px",
-                marginBottom: "15px"
-              }}
-              className={classes.imgCardTop}
-              fluid={w4[0].node.childImageSharp.fluid}
-              alt={"Algorytmy Boga"}
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
-            <Img
-              style={{
-                width: "100%",
-                display: "block",
-                objectFit: "cover",
-                borderRadius: "3px",
-                marginBottom: "15px"
-              }}
-              className={classes.imgCardTop}
-              fluid={w5[0].node.childImageSharp.fluid}
-              alt={"Wiara rozum"}
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
-            <Img
-              style={{
-                width: "100%",
-                display: "block",
-                objectFit: "cover",
-                borderRadius: "3px",
-                marginBottom: "15px"
-              }}
-              className={classes.imgCardTop}
-              fluid={w6[0].node.childImageSharp.fluid}
-              alt={"Kler Med"}
-            />
           </GridItem>
         </GridContainer>
       </div>

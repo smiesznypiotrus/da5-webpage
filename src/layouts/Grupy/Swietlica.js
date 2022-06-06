@@ -172,14 +172,14 @@ const Swietlica = () => {
                     zmienia się nie do poznania... To czas przeznaczony dla
                     pewnych wyjątkowych Ludzi, którzy od lat w podobny sposób
                     spędzają czwartkowe popołudnia -
-                    <span className={classNames("body-text-highlight ")}>
+                    <span className={classNames("body-text-bold", "color-skorupki")}>
                       &nbsp;Podopiecznych Świetlicy dla osób z
                       niepełnosprawnością intelektualną.&nbsp;
                     </span>
                     Pogodni, roześmiani (czasem nawet ciut zadziorni… ;) ), ale
                     przede wszystkim spragnieni rozmowy, uwagi i miłości.
                     Potrafiący
-                    <span className={classNames("body-text-highlight ")}>
+                    <span className={classNames("body-text-bold", "color-skorupki")}>
                       &nbsp;obdarzyć uśmiechem prosto z serca i nauczyć prostej
                       szczerości,&nbsp;
                     </span>
@@ -192,7 +192,7 @@ const Swietlica = () => {
                       classes.grayText,
                       "body-text"
                     )}>
-                    <span className={classNames("body-text-highlight ")}>
+                    <span className={classNames("body-text-bold", "color-skorupki")}>
                       Z Świetliczakami co tydzień spotykają się studenci &nbsp;
                     </span>
                     - może to propozycja właśnie dla Ciebie? Przyjdź choćby na
@@ -231,7 +231,7 @@ const Swietlica = () => {
                           "body-text"
                         )}>
                         Chcesz
-                        <span className={classNames("body-text-highlight ")}>
+                        <span className={classNames("body-text-bold", "color-skorupki")}>
                           &nbsp;dać z siebie coś dla innych, &nbsp;
                         </span>
                         poświęcić trochę czasu, by dla kogoś czwartkowe
@@ -256,7 +256,7 @@ const Swietlica = () => {
                         Nie boisz się przełamać swoich oporów przed osobami z
                         niepełnosprawnością intelektualną, (bo i tak się zdarza
                         i to nic złego, ale uwierz, naprawdę
-                        <span className={classNames("body-text-highlight ")}>
+                        <span className={classNames("body-text-bold", "color-skorupki")}>
                           &nbsp;warto próbować to zmieniać. &nbsp;
                         </span>
                       </p>
@@ -277,19 +277,19 @@ const Swietlica = () => {
                           "body-text"
                         )}>
                         Pragniesz wyjść z “Piątki” ubogacony o
-                        <span className={classNames("body-text-highlight ")}>
+                        <span className={classNames("body-text-bold", "color-skorupki")}>
                           &nbsp;nowe relacje&nbsp;
                         </span>
                         i nową dawkę
-                        <span className={classNames("body-text-highlight ")}>
+                        <span className={classNames("body-text-bold", "color-skorupki")}>
                           &nbsp;prostej szczerości,&nbsp;
                         </span>
                         a także pogłębić swoją
-                        <span className={classNames("body-text-highlight ")}>
+                        <span className={classNames("body-text-bold", "color-skorupki")}>
                           &nbsp;wrażliwość,&nbsp;
                         </span>
                         zyskać inne
-                        <span className={classNames("body-text-highlight ")}>
+                        <span className={classNames("body-text-bold", "color-skorupki")}>
                           &nbsp;spojrzenie na życie&nbsp;
                         </span>
                         i nowy pogląd o osobach z niepełnosprawnościami (czyli

@@ -120,12 +120,12 @@
             {
                 "hour": "17:00",
                 "name": "Schola",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Schola.svg?alt=media&token=896bd71f-576c-44d9-94b8-1dcfac92d31d"
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_schola_new.svg?alt=media&token=ba9ba7d5-dc1f-4f1c-a692-f0678fe25440"
             },
             {
                 "hour": "18:00",
                 "name": "Liturgiczna Służba Ołtarza",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Liturgiczna.svg?alt=media&token=4987426d-2e89-48e4-b53d-6d5c8ad2b461"
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_ministranci_new.svg?alt=media&token=07e64c9f-6c8d-4e73-9858-528e1ddffd8a"
             },
             {
                 "hour": "19:00",
@@ -134,7 +134,7 @@
             },
             {
                 "hour": "20:00",
-                "name": "Dobry Start!",
+                "name": "obCZAJNIK!",
                 "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_dobrystart.svg?alt=media&token=e363eab1-eeef-47b0-85b5-1ed95fa558a4"
             }
         ]
