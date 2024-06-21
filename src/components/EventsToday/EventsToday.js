@@ -3,6 +3,7 @@ import { Link, useStaticQuery } from "gatsby"
 // Utils ----------------------------------------------------------------
 import moment from "moment"
 import _ from "underscore"
+import classNames from "classnames"
 // Components ------------------------------------------------------------
 import Card from "../Card/Card.js"
 import CardBody from "../Card/CardBody.js"
@@ -53,8 +54,18 @@ export default function EventsToday() {
       <CardBody style={{ display: "flex", flexDirection: "column" }}>
         {eventsToday}
         <br />
-        <hr />
-        <Link to="/plantygodnia" style={{ alignSelf: "center" }}>
+        {/* <hr /> */}
+        <Link to="/plantygodnia" className={classNames("yellow-background")}
+                  style={{
+                    color: "white",
+                    textAlign: "center",
+                    borderRadius: "25px",
+                    marginTop: "-10px",
+                    fontWeight: "600",
+                    fontFamily: `'Lato', sans-serif`,
+                    textTransform: "uppercase",
+                    fontSize: "0.9rem"
+                  }}>
           Zobacz plan tygodniowy
         </Link>
       </CardBody>

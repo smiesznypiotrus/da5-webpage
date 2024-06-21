@@ -19,14 +19,16 @@ import CardBody from "../../components/Card/CardBody"
 import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
 import Footer from "../../components/Footer/Footer.js"
+import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
 
 // Styles -----------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
 import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSections/teamStyle.js"
 import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
-import "../../assets/css/custom-style.css"
-import "../../assets/css/exodus-style.css"
+// import "../../assets/css/custom-style.css"
+import statics from "../../components/colors"
+import "../../assets/css/group-style.css"
 
 const allStyles = {
   ...styles,
@@ -103,13 +105,9 @@ const Uwielbienie = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color={statics.navBarColor}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
       />
       <div className={classNames("mobile-banner")}>
         <Header color="white" routes={[]} rightLinks={<HeaderLinks />} fixed />
@@ -172,7 +170,7 @@ const Uwielbienie = () => {
                       "body-text"
                     )}>
                     W każdy wtorek o godz. 20.00 gromadzimy się w naszej kaplicy, aby
-                    <span className={classNames("uwielbienie-color")}>
+                    <span className={classNames("body-text-bold", "color-uwielbienie")}>
                       &nbsp;uwielbiać Jezusa w Najświętszym Sakramencie.
                     </span>
                   </p>
@@ -184,7 +182,7 @@ const Uwielbienie = () => {
                       "body-text"
                     )}>
                     Chcemy wówczas oddać chwałę naszemu Panu poprzez
-                    <span className={classNames("uwielbienie-color")}>
+                    <span className={classNames("body-text-bold", "color-uwielbienie")}>
                       &nbsp;pełen radości śpiew i spontaniczną modlitwę.&nbsp;
                     </span>
                   </p>
@@ -195,7 +193,7 @@ const Uwielbienie = () => {
                       classes.grayText,
                       "body-text"
                     )}>
-                    <span className={classNames("uwielbienie-color")}>
+                    <span className={classNames("body-text-bold", "color-uwielbienie")}>
                       &nbsp;Przebywanie w Jego obecności&nbsp;
                     </span>
                     przez te kilkanaście minut ma nam pomóc odnajdywać Go w
@@ -230,7 +228,7 @@ const Uwielbienie = () => {
                           "body-text"
                         )}>
                         Poszukujesz przestrzeni
-                        <span className={classNames("uwielbienie-color")}>
+                        <span className={classNames("body-text-bold", "color-uwielbienie")}>
                           &nbsp;modlitwy wspólnotowej i doświadczenia bliskości
                           Boga&nbsp;
                         </span>
@@ -253,7 +251,7 @@ const Uwielbienie = () => {
                           "body-text"
                         )}>
                         Pragniesz rozwijać
-                        <span className={classNames("uwielbienie-color")}>
+                        <span className={classNames("body-text-bold", "color-uwielbienie")}>
                           &nbsp;wrażliwość na siebie i innych&nbsp;
                         </span>
                         oraz na dobro, którego często nie widzimy lub ponad
@@ -275,7 +273,7 @@ const Uwielbienie = () => {
                           classes.grayText,
                           "body-text"
                         )}>
-                        <span className={classNames("uwielbienie-color")}>
+                        <span className={classNames("body-text-bold", "color-uwielbienie")}>
                           Skupić się bardziej na Bogu &nbsp;
                         </span>
                         i Jego prowadzeniu, niż na sobie, swoich zamiarach,
@@ -292,7 +290,7 @@ const Uwielbienie = () => {
                     <GridItem xs={6} sm={6} md={6} className={classes.itemGrid}>
                       <Img
                         fluid={liderPic[0].node.childImageSharp.fluid}
-                        alt="ExodusLeaderPic"
+                        alt="LeaderPic"
                         className={classNames(
                           classes.imgRaised,
                           classes.imgRoundedCircle,
@@ -301,7 +299,7 @@ const Uwielbienie = () => {
                       />
                     </GridItem>
                     <h4 className={classes.cardTitle}>
-                      ks. Radosław Krych
+                      ks. Mateusz Wójtowicz
                       <br />
                       <small className={classes.smallTitle}>Lider</small>
                     </h4>
@@ -312,10 +310,8 @@ const Uwielbienie = () => {
                           classes.grayText,
                           "body-text"
                         )}>
-                        Imię zobowiązuje, więc staram się zarażać radością
-                        napotkane osoby. Trochę muzyk, trochę kucharz. Ksiądz na
-                        sto procent zakochany w Słowie. Grzesznik, ale kochany –
-                        przez Niego.
+                        Uwielbiać Boga nieustannie i dziękować Mu za to, ile codziennie dostaje… to i tak za mało, 
+                        ale robię co w moich siłach. I nie wyobrażam sobie  nie zapraszać Was do tego czym sam żyje.
                       </p>
                     </CardBody>
                     {/* =============================================================
@@ -376,14 +372,14 @@ const Uwielbienie = () => {
                             />
                           </Button>
                           <a
-                            href="https://www.facebook.com/profile.php?id=100001127734330"
+                            href="https://www.facebook.com/mateusz.wojtowicz.144"
                             className={classNames(
                               classes.margin5,
                               classes.spanText,
                               classes.description
                             )}
                             style={{ textDecoration: "none" }}>
-                            Radoslaw.krych
+                            mateusz.wojtowicz.144
                           </a>
                         </div>
                         <img
@@ -413,7 +409,8 @@ const Uwielbienie = () => {
                               className={classNames(
                                 classes.description,
                                 classes.grayText,
-                                "body-text"
+                                "body-text",
+                                "icon-label"
                               )}>
                               Kaplica
                             </p>
@@ -426,6 +423,7 @@ const Uwielbienie = () => {
               </GridContainer>
             </div>
           </div>
+          <BackToGrupy/>
         </div>
       </div>
 

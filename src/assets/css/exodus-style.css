@@ -1,37 +1,41 @@
-.quote {
-    font-size: 2rem;
-    font-family: 'Pacifico', cursive;
+/* .quote {
+    font-size: 1.8rem;
+    font-family: 'Kalam';
     color: gray;
-    font-weight: 50;
+    font-weight: 40;
     margin-top: 20px;
     line-height: 1.3;
-}
+} */
 
-.body-text {
+/* .body-text {
     font-family: 'Lato', sans-serif;
     text-align: left;
-}
+} */
 
-.meeting-date {
+/* .icon-label {
+    margin-bottom: -10px;
+} */
+
+/* .meeting-date {
     font-family: 'Lato', sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
-}
+} */
 
-.body-text-orange {
+/* .body-text-orange {
     color: #E77542;
     font-weight: 500;
-}
+} */
 
-p.strikearound {
+/* p.strikearound {
     position: relative;
     z-index: 1;
     overflow: hidden;
     text-align: center;
     font-weight: bold;
     color: black;
-}
-p.strikearound:before, p.strikearound:after {
+} */
+/* p.strikearound:before, p.strikearound:after {
     position: absolute;
     top: 51%;
     overflow: hidden;
@@ -39,30 +43,29 @@ p.strikearound:before, p.strikearound:after {
     height: 2px;
     content: '\a0';
     background-color: #E77542;
-}
-p.strikearound:before {
+} */
+/* p.strikearound:before {
     margin-left: -50%;
     text-align: right;
-}
-.icon-text-container {
+} */
+/* .icon-text-container {
     display: flex;
     flex:1;
-    /* background-color: blue; */
     align-items: center;
     margin-bottom: 15px;
-}
-.icon {
+} */
+/* .icon {
     height: 100px;
     width: auto;
     margin: 0px 8px;
-}
-.padding-div {
+} */
+/* .padding-div {
     padding: 0px 25px;
-}
+} */
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
     .icon-text-container {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+} */

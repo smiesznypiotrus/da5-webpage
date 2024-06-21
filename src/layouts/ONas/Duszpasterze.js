@@ -26,6 +26,7 @@ import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSec
 import customStyles from "../CustomClasses.js"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
+import statics from "../../components/colors"
 
 const allStyles = {
   ...styles,
@@ -80,20 +81,16 @@ const Duszpasterze = () => {
   })
 
   const ProPic2 = _.select(data.allFile.edges, node => {
-    return node.node.name === "Radoslaw_Krych_profile"
+    return node.node.name === "Mateusz_Wojtowicz_profile"
   })
 
   return (
     <>
       <Header
-        color="transparent"
+        color={statics.navBarColor}
         routes={[]}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
       />
 
       <div className={classNames("mobile-banner")}>
@@ -293,16 +290,22 @@ Moją pasją jest ... bycie ciekawym świata, lubię poznawać to, co nowe. Stą
                       />
                   </GridItem>
                   <h4 className={classes.cardTitle}>
-                  Ks. Radosław Krych
+                  Ks. Mateusz Wójtowicz
                     
                   </h4>
+                  {/* ========== x Mateusz opis ==========  */}
                   <CardBody>
                     <p
                       className={classes.description}
                       style={{ marginBottom: "0px" }}
                     >
-                      Imię zobowiązuje, więc staram się zarażać radością napotkane osoby. Trochę muzyk, trochę kucharz. Ksiądz na sto procent zakochany w Słowie. Grzesznik, ale kochany – przez Niego.
-                    </p>
+Ksiądz, więc duszpasterz, ale także i fryzjer! Energia, porywczość, ale z uśmiechem. Kierownictwo duchowe, modlitwa, 
+a to wszystko śpiewająco! Przez Maryję do Jezusa w Duchu Świętym oczywiście.
+<br /><br />
+Tak staram się żyć.
+<br /><br />
+Uwielbiać Boga nieustannie i dziękować Mu za to, ile codziennie dostaje… to i tak za mało, ale robię co w moich siłach. I nie wyobrażam sobie  nie zapraszać Was do tego czym sam żyje.
+<br /><br /></p>
                   </CardBody>
                   <CardFooter
                     className={classNames(
@@ -377,7 +380,7 @@ Moją pasją jest ... bycie ciekawym świata, lubię poznawać to, co nowe. Stą
                           <i className={classes.socials + " fa fa-facebook"} />
                         </Button>
                         <a
-                          href="https://www.facebook.com/profile.php?id=100001127734330"
+                          href="https://www.facebook.com/mateusz.wojtowicz.144"
                           className={classNames(
                             classes.margin5,
                             classes.spanText,
@@ -385,7 +388,7 @@ Moją pasją jest ... bycie ciekawym świata, lubię poznawać to, co nowe. Stą
                           )}
                           style={{ textDecoration: "none" }}
                         >
-                          Radoslaw.krych
+                          mateusz.wojtowicz.144
                         </a>
                       </div>
                     </div>

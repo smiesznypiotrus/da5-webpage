@@ -19,6 +19,7 @@ import CardBody from "../../components/Card/CardBody"
 import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
 import Footer from "../../components/Footer/Footer.js"
+import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
 
 // Styles -----------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -26,6 +27,7 @@ import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSec
 import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
+import statics from "../../components/colors"
 import "../../assets/css/oaza-style.css"
 
 const allStyles = {
@@ -103,13 +105,9 @@ const Oaza = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color={statics.navBarColor}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
       />
       <div className={classNames("mobile-banner")}>
         <Header color="white" routes={[]} rightLinks={<HeaderLinks />} fixed />
@@ -379,7 +377,8 @@ const Oaza = () => {
                               className={classNames(
                                 classes.description,
                                 classes.grayText,
-                                "body-text"
+                                "body-text",
+                                "icon-label"
                               )}>
                               Kawiarenka
                             </p>
@@ -392,6 +391,7 @@ const Oaza = () => {
               </GridContainer>
             </div>
           </div>
+          <BackToGrupy/>
         </div>
       </div>
       <Footer />

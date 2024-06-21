@@ -15,6 +15,7 @@ import CardBody from "../../components/Card/CardBody"
 import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
 import Footer from "../../components/Footer/Footer.js"
+import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
 // Styles -----------------------------------------------------------------
 import { makeStyles } from "@material-ui/core/styles"
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -22,6 +23,7 @@ import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSec
 import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
+import statics from "../../components/colors"
 import "../../assets/css/exodus-style.css"
 
 const allStyles = {
@@ -99,13 +101,9 @@ const Exodus = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color={statics.navBarColor}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
       />
       <div className={classNames("mobile-banner")}>
         <Header color="white" routes={[]} rightLinks={<HeaderLinks />} fixed />
@@ -168,7 +166,7 @@ const Exodus = () => {
                       "body-text"
                     )}>
                     Jesteśmy grupą młodych mężczyzn,
-                    <span className={classNames("body-text-orange")}>
+                    <span className={classNames("body-text-bold", "color-exodus")}>
                       &nbsp;chcących zmieniać świat na lepsze - oczywiście
                       zaczynając od siebie.
                     </span>
@@ -181,7 +179,7 @@ const Exodus = () => {
                       "body-text"
                     )}>
                     Poprzez
-                    <span className={classNames("body-text-orange")}>
+                    <span className={classNames("body-text-bold", "color-exodus")}>
                       &nbsp;modlitwę, ascezę i braterstwo,&nbsp;
                     </span>
                     które poza cotygodniowymi spotkaniami obejmuję także wiele
@@ -189,7 +187,7 @@ const Exodus = () => {
                     Bóg jest dla nas kimś żywym i prawdziwym i choć brzmi to
                     dość kościołkowo jesteśmy grupą zwykłych chłopaków, którzy
                     nierzadko właśnie poprzez wspólną formację zrozumieli, że
-                    <span className={classNames("body-text-orange")}>
+                    <span className={classNames("body-text-bold", "color-exodus")}>
                       &nbsp;relacja z Bogiem polega na czymś więcej niż tylko
                       wieczornym pacierzu.&nbsp;
                     </span>
@@ -233,11 +231,11 @@ const Exodus = () => {
                           "body-text"
                         )}>
                         Poszukujesz wspólnoty, która oprócz
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;modlitwy&nbsp;
                         </span>
                         da Ci także możliwość nawiązania
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;bliższych relacji i przyjaźni.&nbsp;
                         </span>
                       </p>
@@ -259,11 +257,11 @@ const Exodus = () => {
                           "body-text"
                         )}>
                         Chcesz zmieniać siebie, aby być
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;lepszym dla innych. &nbsp;
                         </span>
                         Potrafisz od siebie wymagać i widzisz
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;potrzebę ciągłej zmiany na drodze do prawdziwej
                           męskości,&nbsp;
                         </span>
@@ -287,7 +285,7 @@ const Exodus = () => {
                           "body-text"
                         )}>
                         Chcesz
-                        <span className={classNames("body-text-orange")}>
+                        <span className={classNames("body-text-bold", "color-exodus")}>
                           &nbsp;zaangażować się w formację, &nbsp;
                         </span>
                         a nie tylko przyjść na spotkanie raz w miesiącu jako
@@ -313,21 +311,18 @@ const Exodus = () => {
                       />
                     </GridItem>
                     <h4 className={classes.cardTitle}>
-                      Piotr Pyciak
+                      Jędrzej Tarantowicz
                       <br />
                       <small className={classes.smallTitle}>Lider</small>
                     </h4>
                     <CardBody>
                       <p
                         className={classNames(
-                          classes.description,
-                          classes.grayText,
+                          // classes.description,
+                          // classes.grayText,
                           "body-text"
                         )}>
-                        Jeden z młodszych członków grupy. Z racji, że trzeba tu
-                        coś o sobie napisać to wymienię swoje zainteresowania:
-                        górski trekking (nie tylko w Polsce), pielgrzymki oraz
-                        dobre memy.
+                        Opis Tomka. A nawet Jędrzeja
                         <br />
                         <br />
                         Nasze exodusowe hasło to "Walić! Walić! Walić!"
@@ -360,13 +355,13 @@ const Exodus = () => {
                             />
                           </Button>
                           <a
-                            href="mailto:piotr.pyciak@gmail.com"
+                            href="mailto:duszpasterstwo.piatka@gmail.com"
                             className={classNames(
                               classes.primaryColorText,
                               classes.margin5,
                               classes.spanText
                             )}>
-                            piotr.pyciak@gmail.com
+                            todo@gmail.com do uzupelnienia w kodzie
                           </a>
                         </div>
                         {/* =============================================================
@@ -387,14 +382,14 @@ const Exodus = () => {
                             />
                           </Button>
                           <a
-                            href="https://www.facebook.com/smiesznypiotrus "
+                            href="https://www.facebook.com/profile.php?id=100015229204682 "
                             className={classNames(
                               classes.margin5,
                               classes.spanText,
                               classes.description
                             )}
                             style={{ textDecoration: "none" }}>
-                            smiesznypiotrus
+                            Facebook
                           </a>
                         </div>
 
@@ -426,7 +421,8 @@ const Exodus = () => {
                               className={classNames(
                                 classes.description,
                                 classes.grayText,
-                                "body-text"
+                                "body-text",
+                                "icon-label"
                               )}>
                               Salka “Underground”
                             </p>
@@ -439,6 +435,7 @@ const Exodus = () => {
               </GridContainer>
             </div>
           </div>
+          <BackToGrupy/>
         </div>
       </div>
 

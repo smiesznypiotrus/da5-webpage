@@ -8,7 +8,7 @@ const customClasses = {
         textAlign: "center"
     },
     grayText: {
-        color: "#3C4858"
+        color: "#000000" //#3C4858
     },
     purpleSubtitle: {
         color: "#662483",
@@ -17,8 +17,15 @@ const customClasses = {
         textTransform: "uppercase",
         fontSize: "0.9rem"
     },
+    yellowSubtitle: {
+        color: "#662483",
+        fontWeight: "600",
+        fontFamily: `'Lato', sans-serif`,
+        textTransform: "uppercase",
+        fontSize: "0.9rem"
+    },
     fullHeight: {
-        height: "250px",
+        height: "400px",
         //backgroundColor:"#144962"
     },
     sliderImage: {

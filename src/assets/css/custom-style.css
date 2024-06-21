@@ -613,7 +613,13 @@ pre tt:after {
   content: "";
 }
 .quoteBody {
-  font-size: 1.3em;
+  font-size: 0.9em;
+  font-family: 'Pacifico', cursive;
+  line-height: 1.8rem;
+  color: black;
+}
+.quoteBodyOld {
+  font-size: 1.2em;
   font-family: 'Pacifico', cursive;
   line-height: 1.8rem;
   color: white;
@@ -658,6 +664,10 @@ pre tt:after {
   );
 }
 
+.normal-banner {
+  object-fit: fill;
+}
+
 .mobile-banner {
   display: none;
   /* background-color: rgba(232,78,27,1); */
@@ -665,6 +675,17 @@ pre tt:after {
 
 .yellow-subtitle {
   display: inline-block;
+}
+
+.icon-shadow {
+    /* height: 100px;
+    width: 100px; */
+    border-radius: 50px;
+    /* margin: 20px; */
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  /* background-image: url("https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Grupy%20i%20wsp%C3%B3lnoty%2FPostakademicka%2Fico_postakademicka_new.svg?alt=media&token=cfa327a1-2484-44c9-a89f-1c5c3fada432"); */
 }
 
 .modal-width {
@@ -701,10 +722,45 @@ pre tt:after {
   align-items: center;
 }
 
+.body-akt {
+  margin-top: -20px;
+  font-family: Lato;
+  letter-spacing: 0.06em;
+  padding-left: 7%;
+  padding-right: 6%;
+}
+
+.img-akt {
+  width: 90%;
+  height: auto;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 7%;
+}
+
+.grid-text-header {
+  text-align: left;
+  font-weight: bold;
+  padding: 15px 10px 10px 20px;
+}
+
+.grid-text {
+  text-align: left;
+  padding: 15px 50px 15px 8px;
+}
+
+.mobile-text {
+  font-size: 2.0vw;
+  margin-bottom: 40px;
+}
+
 .yellow-background {
   background: #f9bb44;
-  padding: 7px 20px;
-  border-radius: 10px;
+  display: inline-block;
+  border-radius: 25px; 
+  padding:7px 25px; 
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 5px #C1C1C1;
 }
 
 .purple-background {
@@ -717,14 +773,36 @@ pre tt:after {
 }
 
 .carousel-outer .carousel .slide {
-  background-image: url("./../../images/Home/Background_quote_wider.jpg");
+  background-image: url("./../../images/Home/background_quote_wider_new.jpg");
+  width: auto;
+  height: auto;
   background-size: cover;
+}
+
+.mobile-padding{
+  text-align: right;
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel-outer .carousel .slide {
+    background-image: url("./../../images/Home/background_quote_mobile.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+  }
+  .mobile-padding{
+    text-align: center;
+  }
+}
+
+.shadow-background {
+  text-shadow: 2px 2px 8px #404040;
 }
 
 
 @media only screen and (max-width: 320px) {
   .home-title-320 {
-    font-size: 2rem;
+    font-size: 2rem; 
   }
 }
 
@@ -741,15 +819,25 @@ pre tt:after {
   .homeRaisedDiv {
     margin: 0px;
     overflow-x: hidden;
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 10px 10px 6px 6px;
   }
 
   .normal-banner {
     display: none;
+    color:white;
   }
 
   .mobile-banner {
     display: block;
+  }
+
+  .mobile-text {
+    font-size: 5.0vw;
+    margin-bottom: 25px;
+  }
+
+  .uncut-upper-corners {
+    border-radius: 0px 0px 10px 10px;
   }
 
   .no-padding-480 {
@@ -779,12 +867,23 @@ pre tt:after {
   .yellow-subtitle {
     display: none;
   }
+
+  .body-akt {
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+  .img-akt {
+    margin-left: 0px;
+  }
 }
 
 @media only screen and (min-width: 480px) {
   .quoteBody {
     font-size: 0.9em;
     line-height: 2rem;
+    padding-left: 200px;
+    width: 60%;
   }
   .quoteAuthor {
     font-size: 0.9em;

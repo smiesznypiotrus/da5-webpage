@@ -1,5 +1,6 @@
 img {
-  object-fit: cover;
+  object-fit: fill;
+  font-family: Arial;
 }
 
 .gallery-modal {

@@ -4,23 +4,18 @@
         "events": [
             {
                 "hour": "18:30",
-                "name": "Nieszpory (Na żywo)",
+                "name": "Nieszpory",
                 "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_nieszpory.svg?alt=media&token=83cb0da2-ee1b-4773-983f-00cd01a18c28"
             },
             {
                 "hour": "19:00",
-                "name": "Msza Święta (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+                "name": "Msza Święta",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_msza_new.svg?alt=media&token=010afaa2-8c9b-425c-8b50-e5691f9c1cb3"
             },
             {
                 "hour": "20:00",
-                "name": "Oaza studencka  (Online)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Oaza.svg?alt=media&token=0181ed72-b319-4495-8e5e-0cd4285d2fc1"
-            },
-            {
-                "hour": "20:00",
-                "name": "Spotkanie Taize (Online)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Taize.svg?alt=media&token=0ec7fbdb-4682-408e-9576-b14b51e64c90"
+                "name": "Taize",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_taize_new.svg?alt=media&token=077a1243-7041-4cc7-85ae-728a405c14f2"
             }
         ]
     },
@@ -30,22 +25,17 @@
             {
                 "hour": "18:30",
                 "name": "Różaniec",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_rozaniec%2C%20adoracja.svg?alt=media&token=077d7048-0e92-447f-a3e3-3429adf15ee3"
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_rozaniec_new.svg?alt=media&token=027d6cd3-67b0-4819-9d51-5fffb45d7793"
             },
             {
                 "hour": "19:00",
-                "name": "Msza Święta (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+                "name": "Msza Święta",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_msza_new.svg?alt=media&token=010afaa2-8c9b-425c-8b50-e5691f9c1cb3"
             },
             {
                 "hour": "20:00",
-                "name": "Studenckie uwielbienie (Zawieszone)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Uwielbienie.svg?alt=media&token=aa3afb15-f17a-4af0-ac11-880ab7f04742"
-            },
-            {
-                "hour": "20:00",
-                "name": "Liturgiczna Służba Ołtarza (Online)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Liturgiczna.svg?alt=media&token=4987426d-2e89-48e4-b53d-6d5c8ad2b461"
+                "name": "Studenckie uwielbienie",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_uwielbienie_new.svg?alt=media&token=4ac8e379-1c58-480a-8c7f-02dda9a607d2"
             }
         ]
     },
@@ -54,18 +44,23 @@
         "events": [
             {
                 "hour": "18:30",
-                "name": "Cisza i słowo (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/icon_cisza%20i%20slowo%2C%20adoracja.svg?alt=media&token=fb52a5b7-6c1b-4ab6-b6ce-d590b0a11959"
+                "name": "Cisza i słowo",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_adoracja_new.svg?alt=media&token=82e54d51-ab97-4a10-a7b1-4e947a5d17a1"
             },
             {
                 "hour": "19:30",
-                "name": "Msza Święta (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+                "name": "Msza Święta",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_msza_new.svg?alt=media&token=010afaa2-8c9b-425c-8b50-e5691f9c1cb3"
             },
             {
                 "hour": "20:00",
-                "name": "Od Słowa do słowa (Online)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Od%20slowa.svg?alt=media&token=6b75e239-d1da-4500-a7a1-d4ca3372057a"
+                "name": "Od Słowa do słowa",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_odslowa_new.svg?alt=media&token=e457e5de-d20b-48f6-bcbc-e97ba486b7fc"
+            },
+            {
+                "hour": "20:00",
+                "name": "Grupa postakademicka",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_postakademicka_new.svg?alt=media&token=c1a76b28-68dc-4068-af9a-2825c522ad5e"
             }
         ]
     },
@@ -74,27 +69,27 @@
         "events": [
             {
                 "hour": "16:00",
-                "name": "Świetlica dla niepełnosprawnych (Zawieszone)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_swietlica.svg?alt=media&token=83c63810-aa61-4643-9597-99194c8d529b"
+                "name": "Świetlica Skorupki",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_skorupki_new.svg?alt=media&token=729088f5-d8ce-46b0-94d8-a427876a2f73"
             },
             {
                 "hour": "18:30",
-                "name": "Adoracja w ciszy (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/icon_cisza%20i%20slowo%2C%20adoracja.svg?alt=media&token=fb52a5b7-6c1b-4ab6-b6ce-d590b0a11959"
+                "name": "Adoracja w ciszy",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_adoracja_new.svg?alt=media&token=82e54d51-ab97-4a10-a7b1-4e947a5d17a1"
             },
             {
                 "hour": "19:00",
-                "name": "Msza Święta (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+                "name": "Msza Święta",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_msza_new.svg?alt=media&token=010afaa2-8c9b-425c-8b50-e5691f9c1cb3"
             },
             {
                 "hour": "20:00",
-                "name": "Schola (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Schola.svg?alt=media&token=896bd71f-576c-44d9-94b8-1dcfac92d31d"
+                "name": "Schola",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_schola_new.svg?alt=media&token=ba9ba7d5-dc1f-4f1c-a692-f0678fe25440"
             },
             {
-                "hour": "20:30",
-                "name": "Wspólnota Męska Exodus (Na żywo i online)",
+                "hour": "20:15",
+                "name": "Wspólnota Męska Exodus",
                 "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Exodus.svg?alt=media&token=e8879b00-d164-4b3d-835d-0ed3515730bb"
             }
         ]
@@ -104,17 +99,17 @@
         "events": [
             {
                 "hour": "18:30",
-                "name": "Koronka do Bożego Miłosierdzia (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+                "name": "Koronka do Bożego Miłosierdzia",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_rozaniec_new.svg?alt=media&token=027d6cd3-67b0-4819-9d51-5fffb45d7793"
             },
             {
                 "hour": "19:00",
-                "name": "Msza Święta (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+                "name": "Msza Święta",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_msza_new.svg?alt=media&token=010afaa2-8c9b-425c-8b50-e5691f9c1cb3"
             },
             {
                 "hour": "20:00",
-                "name": "Sportowy piątek  (Zawieszone)",
+                "name": "Sportowy piątek",
                 "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_sport.svg?alt=media&token=28f9f93f-72db-4512-862d-ba45aec8b280"
             }
         ]
@@ -124,17 +119,22 @@
         "events": [
             {
                 "hour": "17:00",
-                "name": "Schola (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_Schola.svg?alt=media&token=896bd71f-576c-44d9-94b8-1dcfac92d31d"
+                "name": "Schola",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_schola_new.svg?alt=media&token=ba9ba7d5-dc1f-4f1c-a692-f0678fe25440"
+            },
+            {
+                "hour": "18:00",
+                "name": "Liturgiczna Służba Ołtarza",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_ministranci_new.svg?alt=media&token=07e64c9f-6c8d-4e73-9858-528e1ddffd8a"
             },
             {
                 "hour": "19:00",
-                "name": "Msza Święta (Na żywo)",
-                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_default.svg?alt=media&token=db655d46-a638-450e-aafa-03e39eecaf4c"
+                "name": "Msza Święta",
+                "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/Plan%20tygodnia%2Fico_msza_new.svg?alt=media&token=010afaa2-8c9b-425c-8b50-e5691f9c1cb3"
             },
             {
                 "hour": "20:00",
-                "name": "Dobry Start! (Na żywo)",
+                "name": "obCZAJNIK!",
                 "icon": "https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/ico_dobrystart.svg?alt=media&token=e363eab1-eeef-47b0-85b5-1ed95fa558a4"
             }
         ]

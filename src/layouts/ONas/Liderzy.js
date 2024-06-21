@@ -27,6 +27,7 @@ import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSec
 import customStyles from "../CustomClasses.js"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
+import statics from "../../components/colors"
 
 const allStyles = {
   ...styles,
@@ -77,24 +78,20 @@ const Liderzy = () => {
   })
 
   const ProPic1 = _.select(data.allFile.edges, node => {
-    return node.node.name === "Lider_profile"
+    return node.node.name === "Maria_profile"
   })
 
   const ProPic2 = _.select(data.allFile.edges, node => {
-    return node.node.name === "Vicelider_profile"
+    return node.node.name === "Bartek_profile"
   })
 
   return (
     <>
       <Header
-        color="transparent"
+        color={statics.navBarColor}
         routes={[]}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
       />
 
       <div className={classNames("mobile-banner")}>
@@ -164,7 +161,7 @@ const Liderzy = () => {
                     />
                   </GridItem>
                   <h4 className={classes.cardTitle}>
-                    Ola Chuda
+                    Marysia Kamerduła
                     <br />
                     <small className={classes.smallTitle}>Liderka</small>
                   </h4>
@@ -172,11 +169,10 @@ const Liderzy = () => {
                     <p
                       className={classes.description}
                       style={{ marginBottom: "0px" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Quisque posuere purus id arcu mollis fermentum. Nam
-                      aliquam mattis tempus. Donec at feugiat nisi. Vestibulum
-                      posuere purus vel arcu tempor, id bibendum mauris
-                      bibendum.
+                      Maria pierwszy raz przyszła do Piątki na któreś spotkanie integracyjne w 2019 roku,
+                       a później została na grach, na scholi - a potem została Liderką. Studiuje produkcje filmową
+                      i częściej jeździ rowerem niż chodzi. Co więcej, Marysia ma sprecyzowane preferencje kulinarne: 
+                       jeśli majonez - tylko kielecki, jeśli kanapki z nutellą - to i z masłem, jeśli żart - to suchar.
                     </p>
                   </CardBody>
                   <CardFooter
@@ -198,13 +194,13 @@ const Liderzy = () => {
                           <i className={classes.socials + " fa fa-envelope"} />
                         </Button>
                         <a
-                          href="mailto:test@gmail.com"
+                          href="mailto:kamerdula.maria@gmail.com"
                           className={classNames(
                             classes.primaryColorText,
                             classes.margin5,
                             classes.spanText
                           )}>
-                          test@gmail.com
+                          kamerdula.maria@gmail.com
                         </a>
                       </div>
 
@@ -226,11 +222,11 @@ const Liderzy = () => {
                             classes.spanText,
                             classes.description
                           )}>
-                          +48 111 222 333
+                          +48 666 174 187
                         </span>
                       </div>
 
-                      <div
+                      {/* <div
                         style={{
                           display: "flex",
                           flexDirection: "row",
@@ -243,7 +239,7 @@ const Liderzy = () => {
                           <i className={classes.socials + " fa fa-facebook"} />
                         </Button>
                         <a
-                          href="facebook.com"
+                          href="https://www.facebook.com/da.piatka"
                           className={classNames(
                             classes.margin5,
                             classes.spanText,
@@ -252,7 +248,7 @@ const Liderzy = () => {
                           style={{ textDecoration: "none" }}>
                           Facebook
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </CardFooter>
                 </Card>
@@ -272,19 +268,18 @@ const Liderzy = () => {
                     />
                   </GridItem>
                   <h4 className={classes.cardTitle}>
-                    Piotr Pyciak
+                    Bartek Paczkowski
                     <br />
-                    <small className={classes.smallTitle}>Wicelider</small>
+                    <small className={classes.smallTitle}>Lider</small>
                   </h4>
                   <CardBody>
                     <p
                       className={classes.description}
                       style={{ marginBottom: "0px" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Quisque posuere purus id arcu mollis fermentum. Nam
-                      aliquam mattis tempus. Donec at feugiat nisi. Vestibulum
-                      posuere purus vel arcu tempor, id bibendum mauris
-                      bibendum.
+                      Pierwsze związane z DA5 wspomnienie Bartka to zastępowanie gitarzysty na jednej z prób scholi. 
+                      Obecnie nasz nowy Lider gra nam nie tylko na gitarze, ale i na skrzypcach - ten instrument 
+                      to jego specjalność, studiowana na Akademii Muzycznej Bartek należy do teamu 
+                      "najpierw płatki - potem mleko", nosi tradycyjny zegarek i ma pamięć złotej rybki.
                     </p>
                   </CardBody>
                   <CardFooter
@@ -306,13 +301,13 @@ const Liderzy = () => {
                           <i className={classes.socials + " fa fa-envelope"} />
                         </Button>
                         <a
-                          href="mailto:test@gmail.com"
+                          href="mailto:bpaczkowski@onet.pl"
                           className={classNames(
                             classes.primaryColorText,
                             classes.margin5,
                             classes.spanText
                           )}>
-                          test@gmail.com
+                          bpaczkowski@onet.pl
                         </a>
                       </div>
 
@@ -334,7 +329,7 @@ const Liderzy = () => {
                             classes.spanText,
                             classes.description
                           )}>
-                          +48 111 222 333
+                          +48 721 769 407
                         </span>
                       </div>
 
@@ -351,7 +346,7 @@ const Liderzy = () => {
                           <i className={classes.socials + " fa fa-facebook"} />
                         </Button>
                         <a
-                          href="facebook.com"
+                          href="https://www.facebook.com/bartosz.paczkowski.391"
                           className={classNames(
                             classes.margin5,
                             classes.spanText,

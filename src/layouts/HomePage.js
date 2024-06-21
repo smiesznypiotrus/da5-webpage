@@ -20,19 +20,22 @@ import Card from "../components/Card/Card.js"
 import CardBody from "../components/Card/CardBody.js"
 import EventsToday from "../components/EventsToday/EventsToday"
 import News from "../components/News/News"
-import { facebookUrl, instagramUrl, openWebsite } from "./Common.js"
+import { facebookUrl, instagramUrl, youtubeUrl, openWebsite } from "./Common.js"
 //SVG's -------------------------------------------------------------------
-import SpotkanieLogo from "../images/SVGs/Home/ico_how_to_start_1.svg"
-import Wyjdz from "../images/SVGs/Home/ico_how_to_start_2.svg"
-import Herbata from "../images/SVGs/Home/ico_how_to_start_3.svg"
+import Herbata from "../images/SVGs/Home/ico_how_to_start_1.svg"
+import SpotkanieLogo from "../images/SVGs/Home/ico_how_to_start_2.svg"
+import Wyjdz from "../images/SVGs/Home/ico_how_to_start_3.svg"
 import FbSvg from "../images/SVGs/Home/__Facebook.svg"
 import IgSvg from "../images/SVGs/Home/__instagram.svg"
+import YtSvg from "../images/SVGs/Home/__Youtube.svg"
+import StartBanner from "../images/SVGs/Home/how_to_start_banner.svg"
 // Styles -----------------------------------------------------------------
 import styles from "../assets/jss/material-kit-react/views/landingPage.js"
 import customStyles from "./CustomClasses.js"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import "../assets/css/custom-style.css"
 import { cardTitle } from "../assets/jss/material-kit-react.js"
+import statics from "../components/colors"
 
 const allStyles = {
   ...styles,
@@ -106,7 +109,7 @@ const HomePage = () => {
 
   return (
     <div className={modalOpen ? "modal-block" : ""}>
-      {modalOpen && (
+      {/* {modalOpen && (
         <div
           style={{
             backgroundColor: "black",
@@ -116,18 +119,19 @@ const HomePage = () => {
             position: "fixed",
             zIndex: "499",
           }}></div>
-      )}
+      )} */}
 
       {!modalOpen && (
         <Header
-          color="transparent"
+          color={statics.navBarColor}
+          height="200"
           routes={[]}
           rightLinks={<HeaderLinks />}
           fixed
-          changeColorOnScroll={{
-            height: 100,
-            color: "white",
-          }}
+          // changeColorOnScroll={{
+          //   height: 200,
+          //   color: "rose",
+          // }}
         />
       )}
 
@@ -215,22 +219,23 @@ const HomePage = () => {
                 className={classNames(
                   classes.title,
                   "main-page-title",
-                  "home-title-320"
+                  "home-title-320",
+                  "shadow-background"
                 )}>
                 Duszpasterstwo Akademickie Piątka
               </h1>
 
               <div
-                className={classNames("yellow-background", "yellow-subtitle")}>
-                <h4
-                  className={classNames("home-hide-415")}
+              // className={classNames("yellow-background", "yellow-subtitle")}
+              >
+                <div
+                  className={classNames("home-hide-415", "quoteBodyOld")}
                   style={{
                     margin: "0",
                     padding: "0",
-                    textShadow: "2px 2px 5px #404040",
                   }}>
                   Przyjdź, drzwi dla Ciebie są zawsze otwarte!
-                </h4>
+                </div>
               </div>
             </GridItem>
 
@@ -255,12 +260,12 @@ const HomePage = () => {
         {/* ========== Jak zacząć? ==========  */}
         <div>
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/how_to_start_banner.svg?alt=media&token=cb331a4c-0f05-4a5d-8912-2b0772c3a049"
+            src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/how_to_start_banner.svg?alt=media&token=8cb6ebba-2959-436b-acda-80f9714ed5a4"
             className={classNames("normal-banner")}
             alt="Jak zacząć?"
           />
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/how_to_start_mobile_banner.svg?alt=media&token=09596653-aea1-43a1-9ff1-3cbdbb46a2e6"
+            src="https://firebasestorage.googleapis.com/v0/b/da5-webpage-335612.appspot.com/o/how_to_start_banner_mobile.svg?alt=media&token=f75e273e-a23c-40c9-8001-073dd0f09b08"
             className={classNames("mobile-banner")}
             alt="Jak zacząć?"
           />
@@ -269,7 +274,7 @@ const HomePage = () => {
         <div className={classes.container}>
           <div className={classes.firstSection}>
             <h5 className={classNames(classes.description, classes.grayText)}>
-              Duszpasterstwo Akademickie to propozycja dla tych, którzy w swych
+              <b>Duszpasterstwo Akademickie</b> to propozycja dla tych, którzy w swych
               poszukiwaniach właściwej drogi nie boją się zaufać drugiemu
               człowiekowi i chcą iść naprzód we wspólnocie.
               <br />
@@ -283,20 +288,22 @@ const HomePage = () => {
                 <GridContainer>
                   <GridItem xs={12} sm={12} md={4}>
                     <Herbata className={classNames(classes.svgLogo)} />
-                    <div className={classNames("purple-background")}>
-                      <h5
-                        className={classNames(
-                          classes.description,
-                          classes.purpleSubtitle
-                        )}
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "white",
-                        }}>
-                        Wejdź na herbatę
-                      </h5>
-                    </div>
+                    <Link to="/grupy/obczajnik">
+                      <div className={classNames("purple-background")}>
+                        <h5
+                          className={classNames(
+                            classes.description,
+                            classes.purpleSubtitle
+                          )}
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "white",
+                          }}>
+                          Wejdź na herbatę
+                        </h5>
+                      </div>
+                    </Link>
                     <h5
                       className={classNames(
                         classes.description,
@@ -307,21 +314,22 @@ const HomePage = () => {
                   </GridItem>
                   <GridItem xs={12} sm={12} md={4}>
                     <SpotkanieLogo className={classNames(classes.svgLogo)} />
-                    <div className={classNames("purple-background")}>
-                      <h5
-                        className={classNames(
-                          classes.description,
-                          classes.purpleSubtitle
-                        )}
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "white",
-                        }}>
-                        Przyjdź na spotkanie
-                      </h5>
-                    </div>
-
+                    <Link to="/grupy/od-slowa-do-slowa">
+                      <div className={classNames("purple-background")}>
+                        <h5
+                          className={classNames(
+                            classes.description,
+                            classes.purpleSubtitle
+                          )}
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "white",
+                          }}>
+                          Przyjdź na spotkanie
+                        </h5>
+                      </div>
+                    </Link>
                     <h5
                       className={classNames(
                         classes.description,
@@ -332,20 +340,22 @@ const HomePage = () => {
                   </GridItem>
                   <GridItem xs={12} sm={12} md={4}>
                     <Wyjdz className={classNames(classes.svgLogo)} />
-                    <div className={classNames("purple-background")}>
-                      <h5
-                        className={classNames(
-                          classes.description,
-                          classes.purpleSubtitle
-                        )}
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "white",
-                        }}>
-                        Wyjedź nami
-                      </h5>
-                    </div>
+                    <Link to="/akt">
+                      <div className={classNames("purple-background")}>
+                        <h5
+                          className={classNames(
+                            classes.description,
+                            classes.purpleSubtitle
+                          )}
+                          style={{
+                            margin: "0px",
+                            padding: "0px 10px 0px 10px",
+                            color: "white",
+                          }}>
+                          Wyjedź z nami
+                        </h5>
+                      </div>
+                    </Link>
 
                     <h5
                       className={classNames(
@@ -362,16 +372,21 @@ const HomePage = () => {
                   Możesz też po prostu przyjść na którekolwiek spotkanie lub
                   modlitwę, które odbywają się w duszpasterstwie.
                 </h5>
-                <Link
-                  to="/grupyiwspolnoty"
-                  className={classNames("yellow-background")}
-                  style={{
-                    color: "white",
-                    borderRadius: "25px",
-                    padding: "10px 25px",
-                    boxShadow: "3px 3px 5px #989898",
-                  }}>
-                  POZNAJ NASZE GRUPY &#62;&#62;
+                <Link to="/grupyiwspolnoty">
+                    <div className={classNames("yellow-background")}>
+                        <h5
+                          className={classNames(
+                            classes.description,
+                            classes.yellowSubtitle
+                          )}
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "white",
+                          }}>
+                          POZNAJ NASZE GRUPY
+                        </h5>
+                    </div>
                 </Link>
               </GridItem>
             </GridContainer>
@@ -411,8 +426,8 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* ========== Quote Slider ==========  */}
-        <div style={{ paddingTop: "35px" }}>
+        {/* ========== Quote Slider / Słowo od patrona ==========  */}
+        {/* <div style={{ paddingTop: "35px" }}>
           <div>
             <img
               src="https://firebasestorage.googleapis.com/v0/b/da5-webpage.appspot.com/o/main_quote_banner.svg?alt=media&token=69a369c9-6cdb-4b25-9f07-51c7f34f8b7e"
@@ -433,8 +448,8 @@ const HomePage = () => {
               xs={12}
               sm={12}
               md={12}
-              className={"carousel-outer"}
-              style={{ height: "250px", position: "relative" }}>
+              className={"carousel-outer normal-banner"}
+              style={{ height: "400px", position: "relative" }}>
               <Carousel
                 animationHandler="fade"
                 className={"carousel"}
@@ -443,9 +458,9 @@ const HomePage = () => {
                 showThumbs={true}
                 autoPlay={true}
                 infiniteLoop={true}
-                interval={6000}>
-                {/* ========== Quote 1 ==========  */}
-                <div className={classes.fullHeight}>
+                interval={6000}> */}
+                {/* ========== Quote 1  // Cytat 1 ==========  */}
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Jezus jest ze mną. Nie mam się czego bać”
@@ -462,42 +477,45 @@ const HomePage = () => {
                         borderRadius: "15px",
                         padding: "5px 25px",
                         boxShadow: "3px 3px 5px black",
-                        fontSize:"15px"
+                        fontSize: "15px",
                       }}>
-                      <span className="quoteSubtitle">CHCESZ JECHAĆ W GORY JAK FRASSATI?</span>
+                      <span className="quoteSubtitle">
+                        CHCESZ JECHAĆ W GORY JAK FRASSATI?
+                      </span>
                       <br />
-                      <span className="quoteSubtitle" 
-                        style={{ fontWeight: "bold"}}>
-                          ZRÓB TO Z NAMI!
+                      <span
+                        className="quoteSubtitle"
+                        style={{ fontWeight: "bold" }}>
+                        ZRÓB TO Z NAMI!
                       </span>
                     </Link>
                   </div>
-                </div>
+                </div> */}
                 {/* ========== Quote 2 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Prawdziwe dobro czyni się niepostrzeżenie, powoli,
                       codziennie, w zwykłych sprawach”
-                    </p>
-                    <p className={"quoteAuthor"}>
+                    </p> */}
+                    {/* <p className={"quoteAuthor"}>
                       błogosławiony Pier Giorgio Frassati
-                    </p>
-                  </div>
-                </div>
+                    </p> */}
+                  {/* </div>
+                </div> */}
                 {/* ========== Quote 3 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Puste słowa zastępuję modlitwami”
-                    </p>
-                    <p className={"quoteAuthor"}>
+                    </p> */}
+                    {/* <p className={"quoteAuthor"}>
                       błogosławiony Pier Giorgio Frassati
-                    </p>
-                  </div>
-                </div>
+                    </p> */}
+                  {/* </div>
+                </div> */}
                 {/* ========== Quote 3 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Bóg bardzo dobrze podzielił nasze życie, przeplatając
@@ -507,9 +525,9 @@ const HomePage = () => {
                       błogosławiony Pier Giorgio Frassati
                     </p>
                   </div>
-                </div>
+                </div> */}
                 {/* ========== Quote 4 ==========  */}
-                <div className={classes.fullHeight}>
+                {/* <div className={classes.fullHeight}>
                   <div className={classes.overlay}>
                     <p className={"quoteBody"}>
                       „Przyszłość jest w ręku Boga. Lepiej być nie może!”
@@ -518,11 +536,51 @@ const HomePage = () => {
                       błogosławiony Pier Giorgio Frassati
                     </p>
                   </div>
+                </div> */}
+              {/* </Carousel>
+            </GridItem>
+            <GridItem
+              xs={12}
+              sm={12}
+              md={12}
+              className={"carousel-outer mobile-banner"}
+              style={{ height: "237px", position: "relative"}}>
+              <Carousel
+                animationHandler="fade"
+                className={"carousel"}
+                swipeable={false}
+                showStatus={false}
+                showThumbs={true}
+                autoPlay={true}
+                infiniteLoop={true}
+                interval={6000}> */}
+                {/* ========== Quote 2 ==========  */}
+                {/* <div className={classes.fullHeight}>
+                  <div className={classes.overlay}>
+                    <p className={"quoteBody"}>
+                      „Prawdziwe dobro czyni się niepostrzeżenie, powoli,
+                      codziennie, w zwykłych sprawach”
+                    </p> */}
+                    {/* <p className={"quoteAuthor"}>
+                      błogosławiony Pier Giorgio Frassati
+                    </p> */}
+                  {/* </div>
+                </div> */}
+                {/* ========== Quote 3 ==========  */}
+                {/* <div className={classes.fullHeight}>
+                  <div className={classes.overlay}>
+                    <p className={"quoteBody"}>
+                      „Puste słowa zastępuję modlitwami”
+                    </p> */}
+                    {/* <p className={"quoteAuthor"}>
+                      błogosławiony Pier Giorgio Frassati
+                    </p> */}
+                  {/* </div>
                 </div>
               </Carousel>
             </GridItem>
           </GridContainer>
-        </div>
+        </div> */}
 
         {/* ========== Obserwuj nas ==========  */}
         <div>
@@ -547,9 +605,8 @@ const HomePage = () => {
                 </h5>
               </GridItem>
             </GridContainer>
-
             <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={6}>
+              <GridItem xs={12} sm={12} md={4}>
                 <FbSvg
                   className={classNames(classes.svgLogo)}
                   style={{ cursor: "pointer" }}
@@ -557,12 +614,8 @@ const HomePage = () => {
                   onKeyDown={() => openWebsite(facebookUrl)}
                   aria-hidden="true"
                 />
-                <h5
-                  className={classNames(classes.description, classes.grayText)}>
-                  Facebook
-                </h5>
               </GridItem>
-              <GridItem xs={12} sm={12} md={6}>
+              <GridItem xs={12} sm={12} md={4}>
                 <IgSvg
                   className={classNames(classes.svgLogo)}
                   style={{ cursor: "pointer" }}
@@ -570,10 +623,19 @@ const HomePage = () => {
                   onKeyDown={() => openWebsite(instagramUrl)}
                   aria-hidden="true"
                 />
-                <h5
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <YtSvg
+                  className={classNames(classes.svgLogo)}
+                  style={{ cursor: "pointer" }}
+                  onClick={() => openWebsite(youtubeUrl)}
+                  onKeyDown={() => openWebsite(youtubeUrl)}
+                  aria-hidden="true"
+                />
+                {/* <h5
                   className={classNames(classes.description, classes.grayText)}>
-                  Instagram
-                </h5>
+                  Facebook
+                </h5> */}
               </GridItem>
             </GridContainer>
           </div>

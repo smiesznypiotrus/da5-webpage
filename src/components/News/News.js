@@ -47,7 +47,7 @@ export default function News(props) {
           xs={12}
           sm={12}
           md={6}
-          style={{ textAlign: "center" }}
+          style={{ textAlign: "left" }}
           key={item.title}>
           <Card>
             <img

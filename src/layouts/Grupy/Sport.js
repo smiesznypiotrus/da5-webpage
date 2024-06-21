@@ -17,6 +17,7 @@ import GridItem from "../../components/Grid/GridItem"
 import Card from "../../components/Card/Card"
 import CardFooter from "../../components/Card/CardFooter"
 import Footer from "../../components/Footer/Footer.js"
+import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
 
 // Styles -----------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -24,6 +25,7 @@ import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSec
 import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
+import statics from "../../components/colors"
 import "../../assets/css/oaza-style.css"
 
 const allStyles = {
@@ -98,13 +100,9 @@ const Sport = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color={statics.navBarColor}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
       />
       <div className={classNames("mobile-banner")}>
         <Header color="white" routes={[]} rightLinks={<HeaderLinks />} fixed />
@@ -162,7 +160,7 @@ const Sport = () => {
                       "body-text"
                     )}>
                     Duszpasterstwo Akademickie
-                    <span className={classNames("sport-color")}>
+                    <span className={classNames("body-text-bold", "color-sport")}>
                       &nbsp;stawia na Twój rozwój fizyczny,&nbsp;
                     </span>
                     proponując możliwość uprawiania sportu.
@@ -186,11 +184,11 @@ const Sport = () => {
                       "body-text"
                     )}>
                     Oczywiście wybieramy
-                    <span className={classNames("sport-color")}>
+                    <span className={classNames("body-text-bold", "color-sport")}>
                       &nbsp;wyłącznie gry zespołowe,&nbsp;
                     </span>
                     tak aby
-                    <span className={classNames("sport-color")}>
+                    <span className={classNames("body-text-bold", "color-sport")}>
                       &nbsp;wzmocnić nie tylko ciało, ale i naszą wspólnotę.
                     </span>
                   </p>
@@ -300,9 +298,10 @@ const Sport = () => {
                               className={classNames(
                                 classes.description,
                                 classes.grayText,
-                                "body-text"
+                                "body-text",
+                                "icon-label"
                               )}>
-                              Sala gimnastyczna Seminarium Duchownego
+                              Tymczasowo zawieszone :( &nbsp; trwa remont Sali gimnastycznej
                             </p>
                           </div>
                         </GridItem>
@@ -313,6 +312,7 @@ const Sport = () => {
               </GridContainer>
             </div>
           </div>
+          <BackToGrupy/>
         </div>
       </div>
       <Footer />

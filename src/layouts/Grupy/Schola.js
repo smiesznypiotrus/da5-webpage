@@ -19,6 +19,7 @@ import CardBody from "../../components/Card/CardBody"
 import CardFooter from "../../components/Card/CardFooter"
 import Button from "../../components/CustomButtons/Button"
 import Footer from "../../components/Footer/Footer.js"
+import BackToGrupy from "../../components/CustomButtons/BackToGrupy"
 
 // Styles -----------------------------------------------------------------
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js"
@@ -26,7 +27,8 @@ import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSec
 import customStyles from "../CustomClasses"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
-import "../../assets/css/swietlica-style.css"
+import statics from "../../components/colors"
+import "../../assets/css/group-style.css"
 
 const allStyles = {
   ...styles,
@@ -103,13 +105,9 @@ const Schola = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color={statics.navBarColor}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
       />
       <div className={classNames("mobile-banner")}>
         <Header color="white" routes={[]} rightLinks={<HeaderLinks />} fixed />
@@ -174,11 +172,11 @@ const Schola = () => {
                     )}
                   >
                     Schola duszpasterstwa akademickiego to grupa osób, których 
-                    <span className={classNames("schola-color")}>
+                    <span className={classNames("body-text-bold", "color-schola")}>
                       &nbsp;pasją jest śpiew i gra na instrumentach.&nbsp;
                     </span>
                     Poprzez swój śpiew chcą 
-                    <span className={classNames("schola-color")}>
+                    <span className={classNames("body-text-bold", "color-schola")}>
                       &nbsp;oddawać chwałę Panu Bogu&nbsp;
                     </span>
                     i pomóc innym uczestnikom liturgii w odpowiednim przeżyciu Mszy świętej.
@@ -192,7 +190,7 @@ const Schola = () => {
                     )}
                   >
                       Oprócz śpiewania na liturgii członkowie scholi akademickiej 
-                    <span className={classNames("schola-color")}>
+                    <span className={classNames("body-text-bold", "color-schola")}>
                     &nbsp;biorą udział w różnego rodzaju wydarzeniach&nbsp;
                     </span>
                     np. koncercie kolęd w auli duszpasterstwa, czy kolędowaniu u podopiecznych Zakładu Opiekuńczo-Leczniczego.
@@ -283,7 +281,7 @@ const Schola = () => {
                     <GridItem xs={6} sm={6} md={6} className={classes.itemGrid}>
                       <Img
                         fluid={liderPic[0].node.childImageSharp.fluid}
-                        alt="SwietlicaLeaderPic"
+                        alt="ScholaLeaderPic"
                         className={classNames(
                           classes.imgRaised,
                           classes.imgRoundedCircle,
@@ -388,7 +386,8 @@ const Schola = () => {
                               className={classNames(
                                 classes.description,
                                 classes.grayText,
-                                "body-text"
+                                "body-text",
+                                "icon-label"
                               )}
                             >
                               Kawiarenka
@@ -402,6 +401,7 @@ const Schola = () => {
               </GridContainer>
             </div>
           </div>
+          <BackToGrupy/>
         </div>
       </div>
 

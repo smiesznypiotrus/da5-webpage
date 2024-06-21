@@ -16,6 +16,7 @@ import teamStyles from "../../assets/jss/material-kit-react/views/landingPageSec
 import customStyles from "./../CustomClasses.js"
 import "font-awesome/css/font-awesome.min.css"
 import "../../assets/css/custom-style.css"
+import statics from "../../components/colors"
 
 const allStyles = {
   ...styles,
@@ -71,7 +72,7 @@ const Szkutnia = () => {
         title={link}
         src={link}
         width="75%"
-        height="240px"
+        height="152px"
         frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
@@ -92,14 +93,10 @@ const Szkutnia = () => {
   return (
     <>
       <Header
-        color="transparent"
+        color={statics.navBarColor}
         routes={[]}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 150,
-          color: "white",
-        }}
       />
 
       <div className={classNames("mobile-banner")}>
@@ -130,12 +127,15 @@ const Szkutnia = () => {
           left: "50%",
           transform: "translateX(-50%)",
         }}>
+          <p className={classes.description} style={{ margin: "25px"}}>
+          Podcast prowadzony przez naszego duszpasterza - księdza, przybliżający nauczanie papieża Franciszka w encyklice Fratelli Tutti.
+        </p>
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: "40px",
+            padding: "10px 40px 40px 40px",
           }}>
           {iframes}
           {youtubeVideos}
